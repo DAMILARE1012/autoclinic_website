@@ -7,7 +7,7 @@
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
  
  <!-- Title -->
- <title>Autoclinic- | Homepage.</title>
+ <title>Autoclinic @yield('title')</title>
  
  <!-- Favicon -->
  <link rel="icon" href="img/favicon.png">
