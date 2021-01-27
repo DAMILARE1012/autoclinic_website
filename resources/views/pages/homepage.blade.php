@@ -13,8 +13,7 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,
-                                    faucibus libero eu, gravida quam. </p>
+                                <p>Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up, Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We offer excellent services available at affordable prices to get you back on the road in no time.</p>
                                 <div class="button">
                                     <a href="#" class="btn">Services</a>
                                     <a href="#" class="btn primary">About Us</a>
@@ -32,8 +31,9 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Automated Car Wash</span> Services</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,
-                                    faucibus libero eu, gravida quam. </p>
+                                <p>
+                                Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car Detailing, Engine Wash and Underneath Wash.
+                                     </p>
                                 <div class="button">
                                     <a href="#" class="btn">About Us</a>
                                     <a href="#" class="btn primary">Services</a>
@@ -51,8 +51,14 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris sed nisl pellentesque,
-                                    faucibus libero eu, gravida quam. </p>
+                                <p>We offer specialized and general training program and some of our program at AutoClinic Technical Training Centre include:
+                                    Introduction to the Automotive Industry and Shop Safety    
+                                    Auto-Cosmetics and Auto Beautification
+                                    Preventive Maintenance
+                                    Service Wheels, Tires, Hubs and Bearings
+                                    Operation & Service Hydraulic Brake Systems
+                                    Operation and Servicing of Hydraulic Brake Systems etc.
+                                     </p>
                                 <div class="button">
                                     <a href="#" class="btn">About Us</a>
                                     <a href="#" class="btn primary">Services</a>
@@ -80,9 +86,11 @@
                                     <i class="fa fa-ambulance"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Lorem Amet</span> --}}
+                                    {{-- <span>Lorem Amet</span>
+                                    --}}
                                     <h4>Our History</h4>
-                                    <p>NGS Auto Clinic Centre is the home for all cars. Since our inceptions in 2017, we have remained the number one choice for every car users.</p>
+                                    <p>NGS Auto Clinic Centre is the home for all cars. Since our inceptions in 2017, we
+                                        have remained the number one choice for every car users.</p>
                                     <a href="{{ route('about') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -96,9 +104,11 @@
                                     <i class="icofont-prescription"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Fusce Porttitor</span> --}}
+                                    {{-- <span>Fusce Porttitor</span>
+                                    --}}
                                     <h4>Our Services</h4>
-                                    <p>We provide general repairs services, automated car wash, car make-up, full AC services, computer diagnosis, and other vehicle miscellaneous services.</p>
+                                    <p>We provide general repairs services, automated car wash, car make-up, full AC
+                                        services, computer diagnosis, and other vehicle miscellaneous services.</p>
                                     <a href="#">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -112,7 +122,8 @@
                                     <i class="icofont-ui-clock"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Donec luctus</span> --}}
+                                    {{-- <span>Donec luctus</span>
+                                    --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
                                         <li class="day">Monday - Friday <span>8.00-20.00</span></li>
@@ -136,7 +147,7 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>We Offer Different Services To Improve Your Health</h2>
+                        <h2>Welcome to NGS Auto Clinic Centre</h2>
                         <img src="img/section-img.png" alt="#">
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
                     </div>
@@ -147,22 +158,22 @@
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>Who We Are</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas pharetra antege vel est
-                            lobortis, a commodo magna rhoncus. In quis nisi non emet quam pharetra commodo. </p>
-                        <p>Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. </p>
+                        <p>NGS Auto Clinic Centre is the home for all cars. Since our inception in 2017, we have remained the number one choice for every car users. With our state-of-the-art facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy their work, we are always proud of our exceptional services. We use the latest technology and globally acceptable standard to keep your car humming and healthy all the time.
+                        </p>
+                        <p>We offer excellent services available at affordable prices to get you back on the road in no time. Our comprehensive auto clinic services includes: </p>
                         <div class="row">
-                            <div class="col-lg-6">
+                            <div class="col-lg-5">
                                 <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-                                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                                    <li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+                                    <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
+                                    <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
+                                    <li><i class="fa fa-caret-right"></i>Car Make-up</li>
                                 </ul>
                             </div>
-                            <div class="col-lg-6">
+                            <div class="col-lg-7">
                                 <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>Maecenas vitae luctus nibh. </li>
-                                    <li><i class="fa fa-caret-right"></i>Duis massa massa.</li>
-                                    <li><i class="fa fa-caret-right"></i>Aliquam feugiat interdum.</li>
+                                    <li><i class="fa fa-caret-right"></i>Full AC Services</li>
+                                    <li><i class="fa fa-caret-right"></i>Computer Diagnosis</li>
+                                    <li><i class="fa fa-caret-right"></i>Other Vehicle Miscellaneous Services</li>
                                 </ul>
                             </div>
                         </div>
@@ -200,9 +211,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Keep up with Our Most Recent Medical News.</h2>
+                        <h2>Keep up with Our Services</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                        <p>With our state-of-the-art facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy their work, we are always proud of our exceptional services in the following areas:</p>
                     </div>
                 </div>
             </div>
@@ -215,10 +226,12 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">22 Aug, 2020</div>
-                                <h2><a href="blog-single.html">We have annnocuced our new product.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>General Repairs Services.</b></a></h2>
+                                <p class="text" style="text-align: justify;">Our General Repairs Services include but not limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel Balancing.
+
+                                    We are capable and reliable!
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -232,10 +245,10 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">15 Jul, 2020</div>
-                                <h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>Car Make-Up</b></a></h2>
+                                <p class="text" style="text-align: justify;">Our Car Make-up Services are Polishing, Paint Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -249,10 +262,12 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">05 Jan, 2020</div>
-                                <h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>Automated Car Wash</b></a></h2>
+                                <p class="text" style="text-align: justify;">Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car Detailing, Engine Wash and Underneath Wash.
+
+                                    Patronize us today as you see the clean that goes into your car. 
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -267,10 +282,12 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">15 Jul, 2020</div>
-                                <h2><a href="blog-single.html">Top five way for solving teeth problems.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>Full AC Services / Auto Refill</b></a></h2>
+                                <p class="text" style="text-align: justify;">our AC service covers the following: Car AC Troubleshooting, AC Diagnose, and Automated AC Vacuum/Refill.
+
+                                    Cooling should never be your problem again.
+                                    </p>
                             </div>
                         </div>
                     </div>
@@ -284,10 +301,10 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">05 Jan, 2020</div>
-                                <h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>Computer Diagnosis</b></a></h2>
+                                <p class="text" style="text-align: justify;">Our Computer Diagnosis Services include but not limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light, and All Kinds of Key Programming.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -302,10 +319,12 @@
                         </div>
                         <div class="news-body">
                             <div class="news-content">
-                                <div class="date">05 Jan, 2020</div>
-                                <h2><a href="blog-single.html">We provide highly business soliutions.</a></h2>
-                                <p class="text">Lorem ipsum dolor a sit ameti, consectetur adipisicing elit, sed do eiusmod
-                                    tempor incididunt sed do incididunt sed.</p>
+                                <div class="date">Available</div>
+                                <h2><a href="blog-single.html"><b>Technical Training Centre</b></a></h2>
+                                <p class="text" style="text-align: justify;">We offer specialized and general training program and some of our program at AutoClinic Technical Training Centre include: Introduction to the Automotive Industry and Shop Safety  etc.  
+                                    
+                                    
+                                </p>
                             </div>
                         </div>
                     </div>

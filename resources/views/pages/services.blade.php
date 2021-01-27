@@ -9,11 +9,11 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>Blog Single</h2>
+							<h2>Services</h2>
 							<ul class="bread-list">
 								<li><a href="index.html">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Blog Single</li>
+								<li class="active">Services</li>
 							</ul>
 						</div>
 					</div>
@@ -26,31 +26,16 @@
 		<section class="news-single section">
 			<div class="container">
 				<div class="row">
-					<div class="col-lg-8 col-12">
+					<div class="col-lg-6 col-12">
 						<div class="row">
 							<div class="col-12">
 								<div class="single-main">
-									<!-- News Head -->
-									<div class="news-head">
-										<img src="img/blog1.jpg" alt="#">
-									</div>
-									<!-- News Title -->
-									<h1 class="news-title"><a href="news-single.html">More than 80 clinical trials launch to test of the coronavirus .</a></h1>
 									<!-- Meta -->
 									<div class="meta">
-										<div class="meta-left">
-											<span class="author"><a href="#"><img src="img/author1.jpg" alt="#">Naimur Rahman</a></span>
-											<span class="date"><i class="fa fa-clock-o"></i>03 Feb 2019</span>
-										</div>
-										<div class="meta-right">
-											<span class="comments"><a href="#"><i class="fa fa-comments"></i>05 Comments</a></span>
-											<span class="views"><i class="fa fa-eye"></i>33K Views</span>
-										</div>
+										<h1 class="news-title"><a href="#">General Repairs Services</a></h1>
 									</div>
 									<!-- News Text -->
 									<div class="news-text">
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam.</p>
-										<p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commod</p>
 										<div class="image-gallery">
 											<div class="row">
 												<div class="col-lg-6 col-md-6 col-12">
@@ -65,118 +50,215 @@
 												</div>
 											</div>
 										</div>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam.</p>
-										<blockquote class="overlay">
-											<p>Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales</p>					
-										</blockquote>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse porttitor nunc a sodales tempor. Mauris sed felis maximus, interdum metus vel, tincidunt diam. Nam ac risus vitae sem vehicula egestas. Sed velit nulla, viverra non commodo et, sodales id dui.</p>
-										<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse facilisis ultricies tortor, nec sollicitudin lorem sagittis vitae. Curabitur rhoncus commodo rutrum. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aliquam nec lacus pulvinar, laoreet dolor quis, pellentesque ante. Cras nulla orci, pharetra at dictum consequat, pretium pretium nulla. Suspendisse</p>
-									</div>
-									<div class="blog-bottom">
-										<!-- Social Share -->
-										<ul class="social-share">
-											<li class="facebook"><a href="#"><i class="fa fa-facebook"></i><span>Facebook</span></a></li>
-											<li class="twitter"><a href="#"><i class="fa fa-twitter"></i><span>Twitter</span></a></li>
-											<li class="google-plus"><a href="#"><i class="fa fa-google-plus"></i></a></li>
-											<li class="linkedin"><a href="#"><i class="fa fa-linkedin"></i></a></li>
-											<li class="pinterest"><a href="#"><i class="fa fa-pinterest"></i></a></li>
-										</ul>
-										<!-- Next Prev -->
-										<ul class="prev-next">
-											<li class="prev"><a href="#"><i class="fa fa-angle-double-left"></i></a></li>
-											<li class="next"><a href="#"><i class="fa fa-angle-double-right"></i></a></li>
-										</ul>
-										<!--/ End Next Prev -->
+										<p style="text-align: justify">When you choose NGS for your vehicle General Repairs Services, you are joining the ranks of thousands of other Nigerians who have entrusted their vehicles in our care.
+										<br>	
+										Our General Repairs Services include but not limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel Balancing.
+										
+										We are capable and reliable!
+											</p>
 									</div>
 								</div>
 							</div>
 						</div>
 					</div>
-					<div class="col-lg-4 col-12">
-						<div class="main-sidebar">
-							<!-- Single Widget -->
-							<div class="single-widget search">
-								<div class="form">
-									<input type="email" placeholder="Search Here...">
-									<a class="button" href="#"><i class="fa fa-search"></i></a>
-								</div>
-							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget category">
-								<h3 class="title">Blog Categories</h3>
-								<ul class="categor-list">
-									<li><a href="#">Men's Apparel</a></li>
-									<li><a href="#">Women's Apparel</a></li>
-									<li><a href="#">Bags Collection</a></li>
-									<li><a href="#">Accessories</a></li>
-									<li><a href="#">Sun Glasses</a></li>
-								</ul>
-							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget recent-post">
-								<h3 class="title">Recent post</h3>
-								<!-- Single Post -->
-								<div class="single-post">
-									<div class="image">
-										<img src="img/blog-sidebar1.jpg" alt="#">
+					<div class="col-lg-6 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- Meta -->
+									<div class="meta">
+										<h1 class="news-title"><a href="#">Car Make-Up</a></h1>
 									</div>
-									<div class="content">
-										<h5><a href="#">We have annnocuced our new product.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Jan 11, 2020</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>35</li>
-										</ul>
+									<!-- News Text -->
+									<div class="news-text">
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog2.jpg" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog3.jpg" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p style="text-align: justify">We do not comprise beauty!
+											<br>
+											We know how sad it is when a car can no longer hold on to its original value. We always want your car to look good and new, and yet retain its elegance. That is why we also provide a Car Make-up Service.
+											
+											Our Car Make-up Services are Polishing, Paint Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
+											</p>
 									</div>
 								</div>
-								<!-- End Single Post -->
-								<!-- Single Post -->
-								<div class="single-post">
-									<div class="image">
-										<img src="img/blog-sidebar2.jpg" alt="#">
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- Meta -->
+									<div class="meta">
+										<h1 class="news-title"><a href="#">Automated Car Wash</a></h1>
 									</div>
-									<div class="content">
-										<h5><a href="#">Top five way for solving teeth problems.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>Mar 05, 2019</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>59</li>
-										</ul>
+									<!-- News Text -->
+									<div class="news-text">
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog2.jpg" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog3.jpg" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p style="text-align: justify">We offer a fully automated auto wash that meet the attainable and acceptable global standard.
+
+											With our ultra modern equipment, you can have your vehicle looking squeaky clean in just a couple of minutes. Our job is to make your vehicle sparkle and shine, both inside and outside.
+											
+											Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car Detailing, Engine Wash and Underneath Wash.
+											
+											Patronize us today as you see the clean that goes into your car. 
+											
+											</p>
 									</div>
 								</div>
-								<!-- End Single Post -->
-								<!-- Single Post -->
-								<div class="single-post">
-									<div class="image">
-										<img src="img/blog-sidebar3.jpg" alt="#">
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- Meta -->
+									<div class="meta">
+										<h1 class="news-title"><a href="#">Full AC Services/Auto-Refill</a></h1>
 									</div>
-									<div class="content">
-										<h5><a href="#">We provide highly business soliutions.</a></h5>
-										<ul class="comment">
-											<li><i class="fa fa-calendar" aria-hidden="true"></i>June 09, 2019</li>
-											<li><i class="fa fa-commenting-o" aria-hidden="true"></i>44</li>
-										</ul>
+									<!-- News Text -->
+									<div class="news-text">
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog2.jpg" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog3.jpg" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p style="text-align: justify">Your comfort is always our utmost priority. We care for you and we know you will always be much concerned about the cooling of your car AC. Therefore, we also provide a Full AC Services/Auto Refill for your car.
+
+											At any time of the day, our AC service covers the following: Car AC Troubleshooting, AC Diagnose, and Automated AC Vacuum/Refill.
+											
+											Cooling should never be your problem again.
+											
+											</p>
 									</div>
 								</div>
-								<!-- End Single Post -->
 							</div>
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<!--/ End Single Widget -->
-							<!-- Single Widget -->
-							<div class="single-widget side-tags">
-								<h3 class="title">Tags</h3>
-								<ul class="tag">
-									<li><a href="#">business</a></li>
-									<li><a href="#">wordpress</a></li>
-									<li><a href="#">html</a></li>
-									<li><a href="#">multipurpose</a></li>
-									<li><a href="#">education</a></li>
-									<li><a href="#">template</a></li>
-									<li><a href="#">Ecommerce</a></li>
-								</ul>
+						</div>
+					</div>
+				</div>
+
+				<div class="row">
+					<div class="col-lg-6 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- Meta -->
+									<div class="meta">
+										<h1 class="news-title"><a href="#">Computer Diagnosis</a></h1>
+									</div>
+									<!-- News Text -->
+									<div class="news-text">
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog2.jpg" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog3.jpg" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p style="text-align: justify">In this day and age where technology is moving at a fast pace and automobile systems are becoming sophisticated, the general make up of a car are also becoming highly sensitive. We are well equipped with modern facilities to carry out computer diagnosis on your vehicles.
+
+											Our Computer Diagnosis Services include but not limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light, and All Kinds of Key Programming.
+											
+											</p>
+									</div>
+								</div>
 							</div>
-							<!--/ End Single Widget -->
+						</div>
+					</div>
+					<div class="col-lg-6 col-12">
+						<div class="row">
+							<div class="col-12">
+								<div class="single-main">
+									<!-- Meta -->
+									<div class="meta">
+										<h1 class="news-title"><a href="#">Autoclinic Technical Training Centre</a></h1>
+									</div>
+									<!-- News Text -->
+									<div class="news-text">
+										<div class="image-gallery">
+											<div class="row">
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog2.jpg" alt="#">
+													</div>
+												</div>
+												<div class="col-lg-6 col-md-6 col-12">
+													<div class="single-image">
+														<img src="img/blog3.jpg" alt="#">
+													</div>
+												</div>
+											</div>
+										</div>
+										<p style="text-align: justify">We offer specialized and general training program and some of our program at AutoClinic Technical Training Centre include:
+
+											<br>
+											Introduction to the Automotive Industry and Shop Safety,    
+											Auto-Cosmetics and Auto Beautification,
+											Preventive Maintenance,
+											Service Wheels, Tires, Hubs and Bearings,
+											Operation & Service Hydraulic Brake Systems,
+											Operation and Servicing of Hydraulic Brake Systems,
+											Operation & Service Suspension Systems,
+											Operation & Service Steering Systems,
+											Service the Drive Lines and Drive Axles,
+											Electrical Fundamentals,
+											Basic Introduction to Computer System,
+											General Electrical Systems Diagnostics,
+											Service Gasoline Engine,
+											Service Lubrication and Cooling Systems,
+											Operation & Service Ignition Systems,
+											Operation and Servicing Fuel Injection Systems,
+											Service Emissions and Computer Control System.
+											Our Car Make-up Services are Polishing, Paint Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
+											</p>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>
