@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', '| Contact Us')
+@section('title', '| Contact NGS')
      
 @section('content')
     <!-- Breadcrumbs -->
@@ -9,11 +9,11 @@
 				<div class="bread-inner">
 					<div class="row">
 						<div class="col-12">
-							<h2>Contact Us</h2>
+							<h2>Contact NGS</h2>
 							<ul class="bread-list">
 								<li><a href="index.html">Home</a></li>
 								<li><i class="icofont-simple-right"></i></li>
-								<li class="active">Contact Us</li>
+								<li class="active">Contact NGS</li>
 							</ul>
 						</div>
 					</div>
@@ -36,8 +36,8 @@
 						</div>
 						<div class="col-lg-6 col-offset-3">
 							<div class="contact-us-form">
-								<h2>Contact With Us</h2>
-								<p>If you have any questions please fell free to contact with us.</p>
+								<h2>Contact NGS</h2>
+							
 								<!-- Form -->
 								<form class="form" method="post" action="mail/mail.php">
 									<div class="row">
@@ -70,9 +70,7 @@
 											<div class="form-group login-btn">
 												<button class="btn" type="submit">Send</button>
 											</div>
-											<div class="checkbox">
-												<label class="checkbox-inline" for="2"><input name="news" id="2" type="checkbox">Do you want to subscribe our Newsletter ?</label>
-											</div>
+											
 										</div>
 									</div>
 								</form>

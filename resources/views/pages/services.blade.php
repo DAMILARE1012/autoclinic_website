@@ -23,7 +23,7 @@
     <!-- End Breadcrumbs -->
 
     <!-- Single News -->
-    <section class="news-single section">
+    <section id="repairs" class="news-single section">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-12">
@@ -32,7 +32,7 @@
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">General Repairs Services</a></h1>
+                                    <h1 class="news-title">General Repairs Services</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">
@@ -64,13 +64,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+                <div id="make-up" class="col-lg-6 col-12" >
                     <div class="row">
                         <div class="col-12">
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">Car Make-Up</a></h1>
+                                    <h1 class="news-title">Car Make-Up</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">
@@ -104,14 +104,14 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-12">
+            <div id="wash" class="row">
+                <div class="col-lg-6 col-12" >
                     <div class="row">
                         <div class="col-12">
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">Automated Car Wash</a></h1>
+                                    <h1 class="news-title">Automated Car Wash</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">
@@ -147,13 +147,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+                <div id="ac" class="col-lg-6 col-12" >
                     <div class="row">
                         <div class="col-12">
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">Full AC Services/Auto-Refill</a></h1>
+                                    <h1 class="news-title">Full AC Services/Auto-Refill</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">
@@ -188,14 +188,14 @@
                 </div>
             </div>
 
-            <div class="row">
-                <div class="col-lg-6 col-12">
+            <div id="computer" class="row">
+                <div class="col-lg-6 col-12" >
                     <div class="row">
                         <div class="col-12">
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">Computer Diagnosis</a></h1>
+                                    <h1 class="news-title">Computer Diagnosis</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">
@@ -228,13 +228,13 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-6 col-12">
+                <div id="training" class="col-lg-6 col-12" >
                     <div class="row">
                         <div class="col-12">
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title"><a href="#">Autoclinic Technical Training Centre</a></h1>
+                                    <h1 class="news-title">Autoclinic Technical Training Centre</h1>
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">

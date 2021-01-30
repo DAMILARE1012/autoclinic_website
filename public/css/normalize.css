@@ -356,7 +356,7 @@ Preloader Area CSS
 }
 
 .preloader .loader .indicator svg polyline#front {
-    stroke: #1a76d1;
+    stroke: #2011ec;
     stroke-dasharray: 12, 36;
     stroke-dashoffset: 48;
     -webkit-animation: dash 1s linear infinite;
@@ -372,7 +372,7 @@ Preloader Area CSS
     height: 100%;
     width: 60%;
     z-index: -1;
-    background: #1a76d1;
+    background: #57b95f;
     -webkit-transition: 0.9s;
     transition: 0.9s;
 }
@@ -534,7 +534,7 @@ Preloader Area CSS
     top: 0;
     height: 100%;
     width: 100%;
-    background: #1a76d1;
+    background: #8be792;
     opacity: 0.8;
 }
 /* Bread Crumbs */
