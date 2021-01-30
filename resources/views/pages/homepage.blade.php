@@ -7,13 +7,13 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/slider2.jpg')">
+            <div class="single-slider" style="background-image:url('img/slider.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
-                                <p>Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
+                                <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
                                     Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
                                     offer excellent services available at affordable prices to get you back on the road in
                                     no time.</p>
@@ -34,7 +34,7 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Automated Car Wash</span> Services</h1>
-                                <p>
+                                <p style="color: white;">
                                     Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
                                     Detailing, Engine Wash and Underneath Wash.
                                 </p>
@@ -49,13 +49,13 @@
             </div>
             <!-- Start End Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/slider3.jpg')">
+            <div class="single-slider" style="background-image:url('img/slider.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
-                                <p>We offer specialized and general training program and some of our program at AutoClinic
+                                <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
                                     Technical Training Centre include:
                                     Introduction to the Automotive Industry and Shop Safety
                                     Auto-Cosmetics and Auto Beautification
@@ -203,7 +203,7 @@
                                 </div>
                             </div>
                             <!--/ End Video Animation -->
-                            <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i
+                            <a href="#" class="video mfp-iframe"><i
                                     class="fa fa-play"></i></a>
                         </div>
                     </div>
@@ -234,7 +234,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog1.jpg" alt="#">
+                            <img src="img/gcr_4.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -255,7 +255,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog2.jpg" alt="#">
+                            <img src="img/gcr_1.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -273,7 +273,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog3.jpg" alt="#">
+                            <img src="img/slider.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -295,7 +295,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog2.jpg" alt="#">
+                            <img src="img/cd_1.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -315,7 +315,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog3.jpg" alt="#">
+                            <img src="img/gcr_1.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -335,7 +335,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/blog3.jpg" alt="#">
+                            <img src="img/trc_1.jpg" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">

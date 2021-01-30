@@ -7,25 +7,26 @@
     <!-- Start Why choose -->
     <section class="why-choose section">
         <div class="container">
-            <div class="row">
-                <div class="col-lg-6 col-12">
+                <div class="col-md-12 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>Who We Are</h3>
-                        <p>Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
+                        <p style="text-align: justify;">Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
                             “The passion lies in our concern for our people and how they’re being treated with their cars” – Nathaniel Okwesiri.
                             Having gained exposure studying in Europe for over 2 decades, he realised how backwards Nigeria and Africa as a whole is in the automobile industry. His approach looks into understanding the foundation of how the car functions and interacts with its ecosystem. We all know that we are in a digital age. And at the forefront of automobile technology is Autotronics. Autotronics synergises the technology of automobile as well as electronics in order to create lightweight, robust, environmentally-friendly and convenient vehicles.
+                            <br>
                             
                             “We have noticed a disparity in the normal roadside mechanics who aren’t literate and those who are literates do not even know what a spanner is. Out goal is to marry both. To get the best of both worlds” – Nathaniel Okwesiri.
+                            <br><br>
                             
                             We as seek to extend our reach for the entire nation as a whole to place more emphasis on the automobile industry. As the populace relies heavily on vehicular transportation of all forms, it has become more integral in daily affairs. This shows the power that a mechanic has. A faulty part of the body can cause little or no damage to others around him. A faulty vehicle on the other hand, not only puts the passengers at risk but largely affects others as well. 
-                            
+                            <br><br>
                             We also aim to raise awareness and to educate properly in line with the reality we are faced with in our contemporary society. There is a disparity between the demand for education and certificates and the actual implementation of the required knowledge.
                             
                             Additionally, we seek to create a platform and environment where the populace can be empowered in diverse capacities. This in turn goes to aid the government in alleviating crime and boosting economic growth and capacity. 
                             
                             Nothing built to last is ever built on a faulty foundation. That is the reason why we have gained expert, first-hand professional and hands-on experience from institutions and industrialists alike. This is to set a quality standard that can pave the way for posterity and further innovation. 
-                            
+                            <br><br>
                             Furthermore, we have partners who we work with hand in hand to bring this vision to reality. One of such is the tertiary institution of the Federal University of Technology, Minna.
                             
                             The vision is to become a hub for professional automobile services, an institution of quality learning and a system of empowerment.
@@ -53,28 +54,6 @@
                     </div>
                     <!-- End Choose Left -->
                 </div>
-                <div class="col-lg-6 col-12" style="margin-top: 75px;">
-                    <!-- Start Choose Rights -->
-                    <div class="choose-right">
-                        <div class="video-image">
-                            <!-- Video Animation -->
-                            <div class="promo-video">
-                                <div class="waves-block">
-                                    <div class="waves wave-1"></div>
-                                    <div class="waves wave-2"></div>
-                                    <div class="waves wave-3"></div>
-                                </div>
-                            </div>
-                            <!--/ End Video Animation -->
-                            <a href="https://www.youtube.com/watch?v=RFVXy6CRVR4" class="video video-popup mfp-iframe"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
-                    </div>
-                    <!-- End Choose Rights -->
-
-                    
-                </div>
-            </div>
         </div>
     </section>
 

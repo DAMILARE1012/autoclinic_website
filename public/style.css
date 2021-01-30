@@ -52,7 +52,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     font-size: 14px;
-    color: #888;
+    color: #000;
 }
 .pro-features {
     position: fixed;
@@ -1008,7 +1008,6 @@ body {
 }
 .why-choose .choose-right {
     height: 100%;
-    max-height: 350px;
     width: 100%;
     background-image: url("img/video-bg.jpg");
     background-size: cover;
