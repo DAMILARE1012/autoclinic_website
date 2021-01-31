@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title', '| Homepage')
+@section('title', '| Home')
 
 @section('content')
     <!-- Slider Area -->
@@ -18,8 +18,8 @@
                                     offer excellent services available at affordable prices to get you back on the road in
                                     no time.</p>
                                 <div class="button">
-                                    <a href="{{ route('services') }}" class="btn">Services</a>
-                                    <a href="{{ route('about') }}" class="btn primary">About Us</a>
+                                    <a href="{{ route('services') }}" class="btn">NGS Services</a>
+                                    <a href="{{ route('about') }}" class="btn primary">About NGS</a>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,8 @@
                                     Detailing, Engine Wash and Underneath Wash.
                                 </p>
                                 <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About Us</a>
-                                    <a href="{{ route('services') }}" class="btn primary">Services</a>
+                                    <a href="{{ route('about') }}" class="btn">About NGS</a>
+                                    <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +65,8 @@
                                     Operation and Servicing of Hydraulic Brake Systems etc.
                                 </p>
                                 <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About Us</a>
-                                    <a href="{{ route('services') }}" class="btn primary">Services</a>
+                                    <a href="{{ route('about') }}" class="btn">About NGS</a>
+                                    <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
                                 </div>
                             </div>
                         </div>
@@ -90,13 +90,12 @@
                                 <div class="icon">
                                     <i class="fa fa-ambulance"></i>
                                 </div>
-                                <div class="single-content">
+                                <div class="single-content" >
                                     {{-- <span>Lorem Amet</span>
                                     --}}
-                                    <h4>Our History</h4>
-                                    <p>NGS Auto Clinic Centre is the home for all cars. Since our inceptions in 2017, we
-                                        have remained the number one choice for every car users.</p>
-                                    <a href="{{ route('about') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <h4>History</h4>
+                                    <p style="text-align: justify;">NGS Auto Clinic Centre, since 2017. We are the first to provide comprehensive auto clinic services offering excellent services available at affordable prices to get you back on the road in no time.</p>
+                                    <a href="{{ route('about') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -109,12 +108,12 @@
                                     <i class="icofont-prescription"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Fusce Porttitor</span>
-                                    --}}
-                                    <h4>Our Services</h4>
-                                    <p>We provide general repairs services, automated car wash, car make-up, full AC
-                                        services, computer diagnosis, and other vehicle miscellaneous services.</p>
-                                    <a href="#">READ MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <!-- <span>Fusce Porttitor</span> -->
+                                    <h4>Services</h4>
+                                    <p style="text-align: justify;">We provide general repairs services, automated car wash, car make-up, full AC
+                                        services, computer diagnosis, and other vehicle miscellaneous services.<br>You can always count on us! </p>
+                                        
+                                    <a href="{{ route('services') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -131,11 +130,12 @@
                                     --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
-                                        <li class="day">Monday - Friday <span>8.00-20.00</span></li>
-                                        <li class="day">Saturday <span>9.00-18.30</span></li>
-                                        <li class="day">Sunday<span>9.00-15.00</span></li>
+                                        <li class="day">Monday - Friday <span>8.00am -5.00pm</span></li>
+                                        <li class="day">Saturday <span>9.00am-5.00pm</span></li>
+                                        <li class="day">Sunday<span>9.00am-5.00pm</span></li>
+                                        <li class="day">Contact us<span>080xxxxxxx</span></li>
                                     </ul>
-                                    <a href="#">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{ route('contact') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -152,9 +152,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Welcome to NGS Auto Clinic Centre</h2>
+                        <h2>NGS Auto Clinic Centre</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>Lorem ipsum dolor sit amet consectetur adipiscing elit praesent aliquet. pretiumts</p>
+                        <p>NGS Auto Clinic Centre, The first of its kind in Nigeria, and strategically located in the heart of the nation at the Federal Capital Territory, Abuja.
+                        </p>
                     </div>
                 </div>
             </div>
@@ -162,12 +163,8 @@
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
-                        <h3>Who We Are</h3>
-                        <p>NGS Auto Clinic Centre is the home for all cars. Since our inception in 2017, we have remained
-                            the number one choice for every car users. With our state-of-the-art facilities, modern day
-                            equipment, and a team of highly skilled technicians that truly enjoy their work, we are always
-                            proud of our exceptional services. We use the latest technology and globally acceptable standard
-                            to keep your car humming and healthy all the time.
+                        <h3>About NGS</h3>
+                        <p style="text-align: justify;">NGS Auto Clinic Centre is the home for all cars. Since our inception in 2017, we have remained the number one choice for every car users. With our state-of-the-art facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy their work, we are always proud of our exceptional services. We use the latest technology and globally acceptable standard to keep your car humming and healthy all the time.
                         </p>
                         <p>We offer excellent services available at affordable prices to get you back on the road in no
                             time. Our comprehensive auto clinic services includes: </p>
@@ -177,6 +174,8 @@
                                     <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
                                     <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
                                     <li><i class="fa fa-caret-right"></i>Car Make-up</li>
+                                    <li style="color:#11db22"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
+                                    
                                 </ul>
                             </div>
                             <div class="col-lg-7">
@@ -185,7 +184,9 @@
                                     <li><i class="fa fa-caret-right"></i>Computer Diagnosis</li>
                                     <li><i class="fa fa-caret-right"></i>Other Vehicle Miscellaneous Services</li>
                                 </ul>
+                                
                             </div>
+                            
                         </div>
                     </div>
                     <!-- End Choose Left -->
@@ -193,7 +194,7 @@
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Rights -->
                     <div class="choose-right">
-                        <div class="video-image">
+                        <!-- <div class="video-image"> -->
                             <!-- Video Animation -->
                             <div class="promo-video">
                                 <div class="waves-block">
@@ -203,9 +204,9 @@
                                 </div>
                             </div>
                             <!--/ End Video Animation -->
-                            <a href="#" class="video mfp-iframe"><i
-                                    class="fa fa-play"></i></a>
-                        </div>
+                           <!--  <a href="#" class="video mfp-iframe"><i
+                                    class="fa fa-play"></i></a> -->
+                        <!-- </div> -->
                     </div>
                     <!-- End Choose Rights -->
                 </div>
@@ -221,10 +222,10 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Keep up with Our Services</h2>
+                        <h2>Services</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>With our state-of-the-art facilities, modern day equipment, and a team of highly skilled
-                            technicians that truly enjoy their work, we are always proud of our exceptional services in the
+                        <p>With NGS state-of-the-art facilities, modern day equipment, and a team of highly skilled
+                            technicians that truly enjoy their work, we are always proud of NGS exceptional services in the
                             following areas:</p>
                     </div>
                 </div>
@@ -234,18 +235,20 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/gcr_4.jpg" alt="#">
+                            <img src="img/gcr_4.jpg" alt="img">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>General Repairs Services.</b></a></h2>
-                                <p class="text" style="text-align: justify;">Our General Repairs Services include but not
+                                <h2><a href="{{ route('services') }} "><b>General Repairs Services.</b></a></h2>
+                                <p class="text" style="text-align: justify;">NGS General Repairs Services include but not
                                     limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel
                                     Balancing.
-
                                     We are capable and reliable!
                                 </p>
+                                <div style="color:#11db22">
+                                    <a href="{{ route('services') }}#repairs"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -264,6 +267,9 @@
                                 <p class="text" style="text-align: justify;">Our Car Make-up Services are Polishing, Paint
                                     Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
                                 </p>
+                                <div style="color: #11db22">
+                                    <a href="{{ route('services') }}#make-up"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -285,6 +291,9 @@
 
                                     Patronize us today as you see the clean that goes into your car.
                                 </p>
+                                <div style="color:#11db22">
+                                    <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -306,6 +315,9 @@
 
                                     Cooling should never be your problem again.
                                 </p>
+                                <div style="color:#11db22">
+                                    <a href="{{ route('services') }}#ac"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -325,6 +337,9 @@
                                     limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light,
                                     and All Kinds of Key Programming.
                                 </p>
+                                <div style="color: #11db22">
+                                    <a href="{{ route('services') }}#computer"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -344,9 +359,10 @@
                                 <p class="text" style="text-align: justify;">We offer specialized and general training
                                     program and some of our program at AutoClinic Technical Training Centre include:
                                     Introduction to the Automotive Industry and Shop Safety etc.
-
-
                                 </p>
+                                <div style="color: #11db22">
+                                    <a href="{{ route('services') }}#training"><strong> <em> learn more...</em></strong></a>
+                                </div>
                             </div>
                         </div>
                     </div>

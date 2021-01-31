@@ -3,14 +3,31 @@
 @section('title', '| About Us')
 
 @section('content')
-
+<!-- Breadcrumbs -->
+    <div class="breadcrumbs overlay">
+        <div class="container">
+            <div class="bread-inner">
+                <div class="row">
+                    <div class="col-12">
+                        <h2>About NGS</h2>
+                        <ul class="bread-list">
+                            <li><a href="index.html">Home</a></li>
+                            <li><i class="icofont-simple-right"></i></li>
+                            <li class="active">About NGS</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        <!-- End Breadcrumbs -->
     <!-- Start Why choose -->
     <section class="why-choose section">
         <div class="container">
                 <div class="col-md-12 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
-                        <h3>Who We Are</h3>
+                        <h3>About NGS</h3>
                         <p style="text-align: justify;">Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
                             “The passion lies in our concern for our people and how they’re being treated with their cars” – Nathaniel Okwesiri.
                             
