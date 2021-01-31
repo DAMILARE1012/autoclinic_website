@@ -174,7 +174,7 @@
                                     <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
                                     <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
                                     <li><i class="fa fa-caret-right"></i>Car Make-up</li>
-                                    <li style="color:#11db22"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
+                                    <li style="color:#fff" class="btn btn-primary btn-xs"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
                                     
                                 </ul>
                             </div>
