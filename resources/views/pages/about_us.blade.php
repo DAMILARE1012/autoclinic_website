@@ -13,7 +13,9 @@
                         <h3>Who We Are</h3>
                         <p style="text-align: justify;">Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
                             “The passion lies in our concern for our people and how they’re being treated with their cars” – Nathaniel Okwesiri.
-                            Having gained exposure studying in Europe for over 2 decades, he realised how backwards Nigeria and Africa as a whole is in the automobile industry. His approach looks into understanding the foundation of how the car functions and interacts with its ecosystem. We all know that we are in a digital age. And at the forefront of automobile technology is Autotronics. Autotronics synergises the technology of automobile as well as electronics in order to create lightweight, robust, environmentally-friendly and convenient vehicles.
+                            
+                            Having gained exposure studying in Europe for over 2 decades, he realised how backwards Nigeria and Africa as a whole is in the automobile industry. His approach looks into understanding the foundation of how the car functions and interacts with its ecosystem.
+                             We all know that we are in a digital age. And at the forefront of automobile technology is Autotronics. Autotronics synergises the technology of automobile as well as electronics in order to create lightweight, robust, environmentally-friendly and convenient vehicles.
                             <br>
                             
                             “We have noticed a disparity in the normal roadside mechanics who aren’t literate and those who are literates do not even know what a spanner is. Out goal is to marry both. To get the best of both worlds” – Nathaniel Okwesiri.
