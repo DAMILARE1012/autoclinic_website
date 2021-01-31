@@ -128,7 +128,7 @@ body {
     right: 15px;
     padding: 10px 20px;
     background: #11db22;
-    color: #fff;
+    color: #2011ec;
     font-size: 25px;
     width: 45px;
     height: 45px;
@@ -705,7 +705,7 @@ body {
     text-align: left;
     z-index: 3;
     border-radius: 5px;
-    background: #2011ec;
+    background: #11db22;
     -webkit-transition: all 0.3s ease-out 0s;
     -moz-transition: all 0.3s ease-out 0s;
     -ms-transition: all 0.3s ease-out 0s;
@@ -728,7 +728,7 @@ body {
     margin: 0 auto;
     width: 80%;
     height: 90%;
-    background: #2011ec;
+    background: #11db22;
     opacity: 0;
     filter: blur(10px);
     -webkit-transition: all 0.3s ease-out 0s;

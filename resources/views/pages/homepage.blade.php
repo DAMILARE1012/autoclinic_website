@@ -174,7 +174,7 @@
                                     <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
                                     <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
                                     <li><i class="fa fa-caret-right"></i>Car Make-up</li>
-                                    <li style="color:#2011ec"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
+                                    <li style="color:#11db22"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
                                     
                                 </ul>
                             </div>
@@ -246,7 +246,7 @@
                                     Balancing.
                                     We are capable and reliable!
                                 </p>
-                                <div style="color:#2011ec">
+                                <div style="color:#11db22">
                                     <a href="{{ route('services') }}#repairs"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
@@ -267,7 +267,7 @@
                                 <p class="text" style="text-align: justify;">Our Car Make-up Services are Polishing, Paint
                                     Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
                                 </p>
-                                <div style="color: #2011ec">
+                                <div style="color: #11db22">
                                     <a href="{{ route('services') }}#make-up"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
@@ -291,7 +291,7 @@
 
                                     Patronize us today as you see the clean that goes into your car.
                                 </p>
-                                <div style="color:#2011ec">
+                                <div style="color:#11db22">
                                     <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
@@ -315,7 +315,7 @@
 
                                     Cooling should never be your problem again.
                                 </p>
-                                <div style="color:#2011ec">
+                                <div style="color:#11db22">
                                     <a href="{{ route('services') }}#ac"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
@@ -337,7 +337,7 @@
                                     limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light,
                                     and All Kinds of Key Programming.
                                 </p>
-                                <div style="color: #2011ec">
+                                <div style="color: #11db22">
                                     <a href="{{ route('services') }}#computer"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
@@ -360,7 +360,7 @@
                                     program and some of our program at AutoClinic Technical Training Centre include:
                                     Introduction to the Automotive Industry and Shop Safety etc.
                                 </p>
-                                <div style="color: #2011ec">
+                                <div style="color: #11db22">
                                     <a href="{{ route('services') }}#training"><strong> <em> learn more...</em></strong></a>
                                 </div>
                             </div>
