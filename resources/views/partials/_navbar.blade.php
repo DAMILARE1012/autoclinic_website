@@ -34,8 +34,8 @@
                     <div class="col-lg-3 col-md-3 col-12">
                         <!-- Start Logo -->
                         <div class="logo">
-                            <span>NGS-AUTOCLINIC</span>
-                            {{-- <a href="{{ route('home') }}"><img src="img/logo.png" alt="#"></a> --}}
+                            <!-- <span>NGS-AUTOCLINIC</span> -->
+                            <a href="{{ route('home') }}"><img src="img/logo.png" alt="logo"></a>
                         </div>
                         <!-- End Logo -->
                         <!-- Mobile Nav -->

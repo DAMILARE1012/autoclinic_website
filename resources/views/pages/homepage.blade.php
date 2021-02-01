@@ -13,10 +13,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
-                                <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
+                                <!-- <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
                                     Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
                                     offer excellent services available at affordable prices to get you back on the road in
-                                    no time.</p>
+                                    no time.</p> -->
                                 <div class="button">
                                     <a href="{{ route('services') }}" class="btn">NGS Services</a>
                                     <a href="{{ route('about') }}" class="btn primary">About NGS</a>
@@ -34,10 +34,10 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Provide <span>Automated Car Wash</span> Services</h1>
-                                <p style="color: white;">
+                                <!-- <p > <h4 style="color: #d9dddb;">
                                     Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
-                                    Detailing, Engine Wash and Underneath Wash.
-                                </p>
+                                    Detailing, Engine Wash and Underneath Wash.</h4>
+                                </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -55,7 +55,7 @@
                         <div class="col-lg-7">
                             <div class="text">
                                 <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
-                                <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
+                                <!-- <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
                                     Technical Training Centre include:
                                     Introduction to the Automotive Industry and Shop Safety
                                     Auto-Cosmetics and Auto Beautification
@@ -63,7 +63,7 @@
                                     Service Wheels, Tires, Hubs and Bearings
                                     Operation & Service Hydraulic Brake Systems
                                     Operation and Servicing of Hydraulic Brake Systems etc.
-                                </p>
+                                </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -88,7 +88,7 @@
                         <div class="single-schedule first">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="fa fa-ambulance"></i>
+                                    <i class="fa fa-history"></i>
                                 </div>
                                 <div class="single-content" >
                                     {{-- <span>Lorem Amet</span>
@@ -105,7 +105,7 @@
                         <div class="single-schedule middle">
                             <div class="inner">
                                 <div class="icon">
-                                    <i class="icofont-prescription"></i>
+                                    <i class="icofont-automation"></i>
                                 </div>
                                 <div class="single-content">
                                     <!-- <span>Fusce Porttitor</span> -->
@@ -154,7 +154,7 @@
                     <div class="section-title">
                         <h2>NGS Auto Clinic Centre</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>NGS Auto Clinic Centre, The first of its kind in Nigeria, and strategically located in the heart of the nation at the Federal Capital Territory, Abuja.
+                        <p>NGS Auto Clinic Centre... <em> Your Confort is our Priority.</em> 
                         </p>
                     </div>
                 </div>
@@ -222,11 +222,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>Services</h2>
+                        <h2>NGS Services</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>With NGS state-of-the-art facilities, modern day equipment, and a team of highly skilled
-                            technicians that truly enjoy their work, we are always proud of NGS exceptional services in the
-                            following areas:</p>
+                        <p>NGS Auto Clinic Centre...  Do it once and do it right...</p>
                     </div>
                 </div>
             </div>
@@ -264,7 +262,7 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Car Make-Up</b></a></h2>
-                                <p class="text" style="text-align: justify;">Our Car Make-up Services are Polishing, Paint
+                                <p class="text" style="text-align: justify;">NGS Car Make-up Services are Polishing, Paint
                                     Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
                                 </p>
                                 <div style="color: #11db22">
@@ -285,11 +283,9 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Automated Car Wash</b></a></h2>
-                                <p class="text" style="text-align: justify;">Our Automated Car Wash Service includes
+                                <p class="text" style="text-align: justify;">NGS Automated Car Wash Service includes
                                     Interior Cleaning, Exterior Soft Brush Wash, Car Detailing, Engine Wash and Underneath
                                     Wash.
-
-                                    Patronize us today as you see the clean that goes into your car.
                                 </p>
                                 <div style="color:#11db22">
                                     <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>
@@ -310,7 +306,7 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Full AC Services / Auto Refill</b></a></h2>
-                                <p class="text" style="text-align: justify;">our AC service covers the following: Car AC
+                                <p class="text" style="text-align: justify;">NGS AC service covers the following: Car AC
                                     Troubleshooting, AC Diagnose, and Automated AC Vacuum/Refill.
 
                                     Cooling should never be your problem again.
@@ -333,7 +329,7 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Computer Diagnosis</b></a></h2>
-                                <p class="text" style="text-align: justify;">Our Computer Diagnosis Services include but not
+                                <p class="text" style="text-align: justify;">NGS Computer Diagnosis Services include but not
                                     limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light,
                                     and All Kinds of Key Programming.
                                 </p>
@@ -356,9 +352,9 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Technical Training Centre</b></a></h2>
-                                <p class="text" style="text-align: justify;">We offer specialized and general training
-                                    program and some of our program at AutoClinic Technical Training Centre include:
-                                    Introduction to the Automotive Industry and Shop Safety etc.
+                                <p class="text" style="text-align: justify;">NGS offer specialized and general training
+                                    program and some of NGD's program at AutoClinic Technical Training Centre include and
+                                    introduction to the automotive industry and shop safety and more. 
                                 </p>
                                 <div style="color: #11db22">
                                     <a href="{{ route('services') }}#training"><strong> <em> learn more...</em></strong></a>

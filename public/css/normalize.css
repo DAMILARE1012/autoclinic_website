@@ -523,6 +523,11 @@ Preloader Area CSS
     color: #888;
     margin-top: 15px;
 }
+.section-title h6 {
+    font-size: 17px;
+    color: rgb(70, 68, 68);
+    margin-top: 15px;
+}
 /* Overlay */
 .overlay {
     position: relative;
@@ -618,7 +623,7 @@ Preloader Area CSS
 }
 .pagination .pagination-list li.active a,
 .pagination .pagination-list li:hover a {
-    background: #1a76d1;
+    background: #2011ec;
     color: #fff;
     border-color: transparent;
 }

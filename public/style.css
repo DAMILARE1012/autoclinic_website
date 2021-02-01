@@ -728,7 +728,6 @@ body {
     margin: 0 auto;
     width: 80%;
     height: 90%;
-    background: #89bf39;
     opacity: 0;
     filter: blur(10px);
     -webkit-transition: all 0.3s ease-out 0s;

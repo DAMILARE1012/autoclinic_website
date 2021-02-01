@@ -26,6 +26,11 @@
     <section id="repairs" class="news-single section">
         <div class="container">
             <div class="row">
+                <div class="section-title">
+                    <h6> ...with NGS state-of-the-art facilities, modern day equipment, and a team of highly skilled
+                        technicians that truly enjoy their work, we are always proud of NGS exceptional services in the
+                        following areas:</h6>
+                </div>
                 <div class="col-lg-6 col-12">
                     <div class="row">
                         <div class="col-12">
