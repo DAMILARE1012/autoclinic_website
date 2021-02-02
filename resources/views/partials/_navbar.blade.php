@@ -49,7 +49,7 @@
                                 <ul class="nav menu">
                                     <li class="{{ (Request()->is('/')) ? 'active':"" }}"><a href="{{ route('home') }}">Home</a>
                                     </li>
-                                    <li class="{{ (Request()->is('about')) ? 'active':"" }}"><a href="{{ route('about') }}">About NGS</a></li>
+                                    <li class="{{ (Request()->is('about')) ? 'active':"" }}"><a href="{{ route('about') }}">About</a></li>
                                     <li class="{{ (Request()->is('inventory')) ? 'active':"" }}"><a href="{{ route('inventory') }}">Inventory</a></li>
                                     <li class="{{ (Request()->is('dealers')) ? 'active':"" }}"><a href="#">Dealers</a></li>
                                     <li class="{{ (Request()->is('services')) ? 'active':"" }}"><a href="{{ route('services') }}">Services</a></li>
@@ -58,7 +58,7 @@
                                             <li><a href="blog-single.html">Blog Details</a></li>
                                         </ul>
                                     </li> --}}
-                                    <li class="{{ (Request()->is('contact')) ? 'active':"" }}"><a href="{{ route('contact') }}">Contact NGS</a></li>
+                                    <li class="{{ (Request()->is('contact')) ? 'active':"" }}"><a href="{{ route('contact') }}">Contact</a></li>
                                 </ul>
                             </nav>
                         </div>
