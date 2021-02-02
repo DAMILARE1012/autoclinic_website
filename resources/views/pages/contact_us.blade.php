@@ -87,7 +87,7 @@
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
 									<h3>+(000) 1234 56789</h3>
-									<p>info@company.com</p>
+									<p>okwesirin@yahoo.com</p>
 								</div>
 							</div>
 						</div>
@@ -97,8 +97,7 @@
 							<div class="single-info">
 								<i class="icofont-google-map"></i>
 								<div class="content">
-									<h3>2 Fir e Brigade Road</h3>
-									<p>Chittagonj, Lakshmipur</p>
+									<p> Plot 758 Zone 06-06 Block Industry Layout Dei Dei Abuja, Nigeria</p>
 								</div>
 							</div>
 						</div>
@@ -108,8 +107,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
-									<h3>Mon - Sat: 8am - 5pm</h3>
-									<p>Sunday Closed</p>
+									<p>Mon - Sat: 8am - 5pm</p>
+									<p>Sunday 9am - 5pm</p>
 								</div>
 							</div>
 						</div>

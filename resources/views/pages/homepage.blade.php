@@ -130,10 +130,10 @@
                                     --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
-                                        <li class="day">Monday - Friday <span>8.00am -5.00pm</span></li>
-                                        <li class="day">Saturday <span>9.00am-5.00pm</span></li>
+                                        <li class="day">Monday - Saturday <span>8.00am -5.00pm</span></li>
                                         <li class="day">Sunday<span>9.00am-5.00pm</span></li>
-                                        <li class="day">Contact us<span>080xxxxxxx</span></li>
+                                        <li class="day">Location<span>Abuja, Nigeria</span></li>
+                                        <li class="day">Contact Person<span>+(000) 1234 56789</span></li>
                                     </ul>
                                     <a href="{{ route('contact') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
