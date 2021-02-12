@@ -283,9 +283,8 @@
                             <div class="news-content">
                                 <div class="date">Available</div>
                                 <h2><a href="blog-single.html"><b>Automated Car Wash</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS Automated Car Wash Service includes
-                                    Interior Cleaning, Exterior Soft Brush Wash, Car Detailing, Engine Wash and Underneath
-                                    Wash.
+                                <p class="text" style="text-align: justify;">
+                                    Having noticed subpar washing techniques that produce undesired results such as: scuffing, scratching, brown stains, water residue, odour and in some cases damage...
                                 </p>
                                 <div style="color:#11db22">
                                     <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>

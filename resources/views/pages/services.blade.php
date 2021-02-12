@@ -134,17 +134,11 @@
                                             </div>
                                         </div>
                                     </div>
-                                    <p style="text-align: justify">We offer a fully automated auto wash that meet the
-                                        attainable and acceptable global standard.
-
-                                        With our ultra modern equipment, you can have your vehicle looking squeaky clean in
-                                        just a couple of minutes. Our job is to make your vehicle sparkle and shine, both
-                                        inside and outside.
-
-                                        Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash,
-                                        Car Detailing, Engine Wash and Underneath Wash.
-
-                                        Patronize us today as you see the clean that goes into your car.
+                                    <p style="text-align: justify">
+                                        
+                                        Having noticed subpar washing techniques that produce undesired results such as: scuffing, scratching, brown stains, water residue, odour and in some cases damage, we set out to bring you the best car wash services. We utilize not only state-of-the-art equipment but also the required washing techniques and materials such as cloths, washing chemicals and much more to achieve a beautiful finish both inside and outside. <br>
+                                        With our expertise, you can be rest assured of shiny and attractive look after washing that makes you look a million bucks! Our interior detailing services provides cleaning as well disinfection that leaves a pleasant long-lasting fragrance and that new car smell!
+                                        Come on down today!
 
                                     </p>
                                 </div>
