@@ -135,7 +135,7 @@
                                         <li class="day" >Location<span ><a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6" target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
                                         <li class="day"> <span> </span></li>
                                         <li class="day">Contact<span>+234 703 711 0944</span></li>
-                                        <li class="day">Email<span>info@ngsautoclinic.com.ng</span></li>
+                                        <li class="day">Email<span><a href="mailto:info@ngsautoclinic.com.ng"  target="_blank" style="display: inline;">info@ngsautoclinic.com.ng</a> </span></li>
                                     </ul>
                                     <a href="{{ route('contact') }}">CONTACT NGS<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
