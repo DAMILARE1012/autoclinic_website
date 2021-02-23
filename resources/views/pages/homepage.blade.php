@@ -7,7 +7,7 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/1_slider.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -28,7 +28,7 @@
             </div>
             <!-- End Single Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/1b_slider.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -49,7 +49,7 @@
             </div>
             <!-- Start End Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/1c_slider.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -176,8 +176,6 @@
                                     <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
                                     <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
                                     <li><i class="fa fa-caret-right"></i>Car Make-up</li>
-                                    <li style="color:#fff" class="btn btn-primary btn-xs"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></li>
-                                    
                                 </ul>
                             </div>
                             <div class="col-lg-7">
@@ -188,8 +186,11 @@
                                 </ul>
                                 
                             </div>
-                            
                         </div>
+                        <br>
+                        <p>
+                            <span style="color:#fff" class="btn btn-primary btn-xs"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></span>
+                        </p>
                     </div>
                     <!-- End Choose Left -->
                 </div>
@@ -296,7 +297,9 @@
                     </div>
                     <!-- End Single Blog -->
                 </div>
-
+            </div>
+            <br>
+            <div class="row">
                 <div class="col-lg-4 col-md-6 col-12">
                     <!-- Single Blog -->
                     <div class="single-news">
