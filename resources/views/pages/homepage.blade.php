@@ -95,7 +95,7 @@
                                     --}}
                                     <h4>History</h4>
                                     <p style="text-align: justify;">NGS Auto Clinic Centre, since 2017. We are the first to provide comprehensive auto clinic services offering excellent services available at affordable prices to get you back on the road in no time.</p>
-                                    <a href="{{ route('about') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{ route('about') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -113,7 +113,7 @@
                                     <p style="text-align: justify;">We provide general repairs services, automated car wash, car make-up, full AC
                                         services, computer diagnosis, and other vehicle miscellaneous services.<br>You can always count on us! </p>
                                         
-                                    <a href="{{ route('services') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{ route('services') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -130,12 +130,14 @@
                                     --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
-                                        <li class="day">Monday - Saturday <span>8.00am -5.00pm</span></li>
-                                        <li class="day">Sunday<span>9.00am-5.00pm</span></li>
-                                        <li class="day">Location<span>Abuja, Nigeria</span></li>
-                                        <li class="day">Contact Person<span>+(000) 1234 56789</span></li>
+                                        <li class="day">Monday - Saturday <span>8.00am - 6.00pm</span></li>
+                                        <li class="day">Sunday<span>12.00pm - 5.00pm</span></li>
+                                        <li class="day" >Location<span ><a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6" target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
+                                        <li class="day"> <span> </span></li>
+                                        <li class="day">Contact<span>+234 703 711 0944</span></li>
+                                        <li class="day">Email<span>info@ngsautoclinic.com.ng</span></li>
                                     </ul>
-                                    <a href="{{ route('contact') }}">LEARN MORE<i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{ route('contact') }}">CONTACT NGS<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>

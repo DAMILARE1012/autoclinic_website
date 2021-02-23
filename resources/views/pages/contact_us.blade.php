@@ -86,8 +86,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
-									<h3>+(000) 1234 56789</h3>
-									<p>okwesirin@yahoo.com</p>
+									<h3>+234 703 711 0944</h3>
+									<p> <a href="mailto:info@ngsautoclinic.com.ng">info@ngsautoclinic.com.ng</a> </p>
 								</div>
 							</div>
 						</div>
@@ -97,7 +97,7 @@
 							<div class="single-info">
 								<i class="icofont-google-map"></i>
 								<div class="content">
-									<p> Plot 758 Zone 06-06 Block Industry Layout Dei Dei Abuja, Nigeria</p>
+									<p> <a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6" target="_blank">Plot CP-129A, ONEX Along Dei-Dei Zuba Road by Dantata Junction Abuja, Nigeria</a> </p>
 								</div>
 							</div>
 						</div>
@@ -107,8 +107,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
-									<p>Mon - Sat: 8am - 5pm</p>
-									<p>Sunday 9am - 5pm</p>
+									<p>Mon - Sat: 8am - 6pm</p>
+									<p>Sunday 12am - 5pm</p>
 								</div>
 							</div>
 						</div>

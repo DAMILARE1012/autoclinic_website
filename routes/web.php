@@ -21,8 +21,4 @@ Route::get('dealers', "PagesController@getDealers")->name('dealers');
 Route::get('services', "PagesController@getServices")->name('services');
 Auth::routes();
 
-Route::get('/home', 'HomeController@index')->name('home');
-
-Auth::routes();
-
-Route::get('/home', 'HomeController@index')->name('home');
+Route::get('/admin', 'HomeController@index')->name('admin.home');
