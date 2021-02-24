@@ -241,7 +241,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }} "><b>General Repairs Services.</b></a></h2>
+                                <h2><a href="{{ route('services') }}#repairs "><b>General Repairs Services.</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS General Repairs Services include but not
                                     limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel
                                     Balancing.
@@ -264,7 +264,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>Car Make-Up</b></a></h2>
+                                <h2><a href="{{ route('services') }}#make-up"><b>Car Make-Up</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS Car Make-up Services are Polishing, Paint
                                     Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
                                 </p>
@@ -285,7 +285,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>Automated Car Wash</b></a></h2>
+                                <h2><a href="{{ route('services') }}#wash"><b>Automated Car Wash</b></a></h2>
                                 <p class="text" style="text-align: justify;">
                                     Having noticed subpar washing techniques that produce undesired results such as: scuffing, scratching, brown stains, water residue, odour and in some cases damage...
                                 </p>
@@ -309,7 +309,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>Full AC Services / Auto Refill</b></a></h2>
+                                <h2><a href="{{ route('services') }}#ac"><b>Full AC Services / Auto Refill</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS AC service covers the following: Car AC
                                     Troubleshooting, AC Diagnose, and Automated AC Vacuum/Refill.
 
@@ -332,7 +332,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>Computer Diagnosis</b></a></h2>
+                                <h2><a href="{{ route('services') }}#computer"><b>Computer Diagnosis</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS Computer Diagnosis Services include but not
                                     limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light,
                                     and All Kinds of Key Programming.
@@ -355,7 +355,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="blog-single.html"><b>Technical Training Centre</b></a></h2>
+                                <h2><a href="{{ route('services') }}#training"><b>Technical Training Centre</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS offer specialized and general training
                                     program and some of NGD's program at AutoClinic Technical Training Centre include and
                                     introduction to the automotive industry and shop safety and more. 

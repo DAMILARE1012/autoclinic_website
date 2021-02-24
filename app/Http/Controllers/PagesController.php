@@ -16,8 +16,8 @@ class PagesController extends Controller
     public function getServices(){
         return view('pages.services');
     }
-    public function getDealers(){
-        return view('pages.dealers');
+    public function getTraining(){
+        return view('pages.training');
     }
     public function getInventory(){
         return view('pages.inventory');
