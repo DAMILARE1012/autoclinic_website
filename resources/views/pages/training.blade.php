@@ -46,33 +46,32 @@
                     <br>
                 	<div class="row">
                 		<div class="col-md-4">
-                			<h4><strong>Vision</strong> </h4>
+                			<h3>Vision</h3>
                 			<p style="text-align: justify;">
 							To be the preferred Centre of Excellence in provision of life-Long learning approach for the development of Autotronics Skills in Nigeria</p>	
                 		</div>
                 		<div class="col-md-4">
 
-                			<h4><strong>Mission</strong> </h4>
+                			<h3>Mission</h3>
 							<p style="text-align: justify;">ATTC will provide conducive Autotronics skill acquisition learning environment driven by ICT in enshrining long life learning approach through the use of formal, non-formal and informal vocational learning, workplace and work-based learning, and other learning opportunities.</p>
                 		</div>
                 		<div class="col-md-4">
 
-                			<h4><strong>ATTC Overview</strong> </h4>
+                			<h3>ATTC Overview</h3>
 							<p style="text-align: justify;"> Knowing fully well that ATTC is a section in Autoclinic Centre, the relationship that will exist between ATTC and other business are as shown herewith. ATTC will have sufficient theoretical knowledge in additional to autoronics related skills.</p>
                 		</div>
                 	</div>
                         
                     <div class="row">
                     	<div class="col-md-6">
-                    		<p  style="text-align: justify;"><h4><strong>Growth Plan</strong> </h4>
-							Our growth plan activities shall be divided into short-term, mid-term and long term activities. The short-term program shall majorly focus on having funds to keep ATTC afloat with little return on investment (ROI) while the Mid-term and long-term shall focus on generating ROI and expansion. <br><br>
-							The shorter programs or activities shall basically consist of specialized training and skill acquisition program such as weekend training and skill acquisition, Holiday program etc. The short-term and long-term are as shown
-							</p>
+                            <h3>Growth Plan</h3>
+							<p style="text-align: justify;">Our growth plan activities shall be divided into short-term, mid-term and long term activities. The short-term program shall majorly focus on having funds to keep ATTC afloat with little return on investment (ROI) while the Mid-term and long-term shall focus on generating ROI and expansion. <br><br>
+                            The shorter programs or activities shall basically consist of specialized training and skill acquisition program such as weekend training and skill acquisition, Holiday program etc. The short-term and long-term are as shown.</p>
+                		
+                    		
                     	</div>
                     	<div class="col-md-6">
                     		<div class="news-head">
-                			<br>
-                			<br>
                 			<img src="img/growth_plan.png" alt="training image">
                     	</div>
                     	</div>
@@ -81,7 +80,7 @@
                     <div class="row">
                     	
                         <div class="col-lg-6">
-                        	<p  style="text-align: justify;"><h4><strong>Facilities</strong> </h4>
+                        	<p  style="text-align: justify;"><h3>Facilities</h3>
                         	<br>
 					        To effectively function, ATTC should have the following: </p>
                             <ul class="list">
@@ -93,7 +92,8 @@
                             </ul>
                         </div>
                         <div class="col-lg-6">
-								<p  style="text-align: justify;"><h4><strong>Requirements and Needs</strong> </h4></p>
+                                <p  style="text-align: justify;"><h3>Requirements and Needs</h3>
+                                </p>
                             <ul class="list">
                                 <li><i class="fa fa-caret-right"></i>List of tools available </li>
                                 <li><i class="fa fa-caret-right"></i>Dept/Sections</li>
@@ -106,7 +106,7 @@
                         </div>
                     </div>
                     <br>	 
-                    <h4><strong>Trainings/Faculty Members<strong> </h4>
+                    <h3>Trainings/Faculty Members</h3>
                     <br>
                     <div class="row">
                 		<div class="col-md-4">
@@ -130,7 +130,7 @@
                 		</div>
                 	</div>
                 	<br>
-                    <h4><strong>Past Organized Trainings<strong> </h4>
+                    <h3>Past Organized Trainings</h3>
                     <br>
                     <div class="row">
                         <div class="col-md-4">
@@ -181,7 +181,7 @@
                         </div>
                             
                     </div>
-                    <h4><strong>Trainees/Students<strong> </h4>
+                    <h3>Trainees/Students</h3>
 					<br>
                 	<div class="row">
                 		<div class="col-md-4">
