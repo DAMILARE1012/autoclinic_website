@@ -19,6 +19,7 @@ Route::get('about', "PagesController@getAbout")->name('about');
 Route::get('inventory', "PagesController@getInventory")->name('inventory');
 Route::get('training_hug', "PagesController@getTraining")->name('training');
 Route::get('services', "PagesController@getServices")->name('services');
-Auth::routes();
 
+//admin
+Auth::routes();
 Route::get('/admin', 'HomeController@index')->name('admin.home');
