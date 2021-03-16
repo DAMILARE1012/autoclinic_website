@@ -30,14 +30,13 @@
 						<div class="col-lg-6">
 							<div class="contact-us-left">
 								<!--Start Google-map -->
-								<div id="myMap"></div>
+								<div class="mapouter"><div class="gmap_canvas"><iframe width="549" height="515" id="gmap_canvas" src="https://maps.google.com/maps?q=NGS%20Auto%20Clinic%20Centre,%20Abuja&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><style>.mapouter{position:relative;text-align:right;height:515px;width:549px;}</style><a href="https://google-map-generator.com"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:515px;width:549px;}</style></div></div>
+								</div>
 								<!--/End Google-map -->
-							</div>
 						</div>
 						<div class="col-lg-6 col-offset-3">
 							<div class="contact-us-form">
 								<h2>Contact NGS</h2>
-							
 								<!-- Form -->
 								<form class="form" method="post" action="mail/mail.php">
 									<div class="row">
