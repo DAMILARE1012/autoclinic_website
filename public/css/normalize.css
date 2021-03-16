@@ -692,6 +692,18 @@ img {
     /* Adhere to container width. */
 }
 
+
+@media screen and (max-width: 800px) {
+    img {
+        height: auto;
+        /* Make sure images are scaled correctly. */
+        max-width: 100%;
+        display: inline-block;
+        /* Adhere to container width. */
+    }
+}
+
+
 figure {
     margin: 1em 0;
     /* Extra wide images within figure tags don't overflow the content area. */
