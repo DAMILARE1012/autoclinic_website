@@ -14,9 +14,9 @@
                             <div class="text">
                                 <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
                                 <!-- <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
-                                    Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
-                                    offer excellent services available at affordable prices to get you back on the road in
-                                    no time.</p> -->
+                                        Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
+                                        offer excellent services available at affordable prices to get you back on the road in
+                                        no time.</p> -->
                                 <div class="button">
                                     <a href="{{ route('services') }}" class="btn">NGS Services</a>
                                     <a href="{{ route('about') }}" class="btn primary">About NGS</a>
@@ -35,9 +35,9 @@
                             <div class="text">
                                 <h1>We Provide <span>Automated Car Wash</span> Services</h1>
                                 <!-- <p > <h4 style="color: #d9dddb;">
-                                    Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
-                                    Detailing, Engine Wash and Underneath Wash.</h4>
-                                </p> -->
+                                        Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
+                                        Detailing, Engine Wash and Underneath Wash.</h4>
+                                    </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -56,14 +56,14 @@
                             <div class="text">
                                 <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
                                 <!-- <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
-                                    Technical Training Centre include:
-                                    Introduction to the Automotive Industry and Shop Safety
-                                    Auto-Cosmetics and Auto Beautification
-                                    Preventive Maintenance
-                                    Service Wheels, Tires, Hubs and Bearings
-                                    Operation & Service Hydraulic Brake Systems
-                                    Operation and Servicing of Hydraulic Brake Systems etc.
-                                </p> -->
+                                        Technical Training Centre include:
+                                        Introduction to the Automotive Industry and Shop Safety
+                                        Auto-Cosmetics and Auto Beautification
+                                        Preventive Maintenance
+                                        Service Wheels, Tires, Hubs and Bearings
+                                        Operation & Service Hydraulic Brake Systems
+                                        Operation and Servicing of Hydraulic Brake Systems etc.
+                                    </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -90,11 +90,12 @@
                                 <div class="icon">
                                     <i class="fa fa-history"></i>
                                 </div>
-                                <div class="single-content" >
-                                    {{-- <span>Lorem Amet</span>
-                                    --}}
+                                <div class="single-content">
+                                    {{-- <span>Lorem Amet</span> --}}
                                     <h4>History</h4>
-                                    <p style="text-align: justify;">NGS Auto Clinic Centre, since 2017. We are the first to provide comprehensive auto clinic services offering excellent services available at affordable prices to get you back on the road in no time.</p>
+                                    <p style="text-align: justify;">NGS Auto Clinic Centre, since 2017. We are the first to
+                                        provide comprehensive auto clinic services offering excellent services available at
+                                        affordable prices to get you back on the road in no time.</p>
                                     <a href="{{ route('about') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -110,9 +111,11 @@
                                 <div class="single-content">
                                     <!-- <span>Fusce Porttitor</span> -->
                                     <h4>Services</h4>
-                                    <p style="text-align: justify;">We provide general repairs services, automated car wash, car make-up, full AC
-                                        services, computer diagnosis, and other vehicle miscellaneous services.<br>You can always count on us! </p>
-                                        
+                                    <p style="text-align: justify;">We provide general repairs services, automated car wash,
+                                        car make-up, full AC
+                                        services, computer diagnosis, and other vehicle miscellaneous services.<br>You can
+                                        always count on us! </p>
+
                                     <a href="{{ route('services') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -126,16 +129,18 @@
                                     <i class="icofont-ui-clock"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Donec luctus</span>
-                                    --}}
+                                    {{-- <span>Donec luctus</span> --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
                                         <li class="day">Monday - Saturday <span>8.00am - 6.00pm</span></li>
                                         <li class="day">Sunday<span>12.00pm - 5.00pm</span></li>
-                                        <li class="day" >Location<span ><a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6" target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
+                                        <li class="day">Location<span><a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6"
+                                                    target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
                                         <li class="day"> <span> </span></li>
                                         <li class="day">Contact<span>+234 703 711 0944</span></li>
-                                        <li class="day">Email<span><a href="mailto:info@ngsautoclinic.com.ng"  target="_blank" style="display: inline;">info@ngsautoclinic.com.ng</a> </span></li>
+                                        <li class="day">Email<span><a href="mailto:info@ngsautoclinic.com.ng"
+                                                    target="_blank" style="display: inline;">info@ngsautoclinic.com.ng</a>
+                                            </span></li>
                                     </ul>
                                     <a href="{{ route('contact') }}">CONTACT NGS<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
@@ -156,7 +161,7 @@
                     <div class="section-title">
                         <h2>NGS Auto Clinic Centre</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>NGS Auto Clinic Centre... <em> Your Confort is our Priority.</em> 
+                        <p>NGS Auto Clinic Centre... <em> Your Confort is our Priority.</em>
                         </p>
                     </div>
                 </div>
@@ -166,7 +171,11 @@
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>About NGS</h3>
-                        <p style="text-align: justify;">NGS Auto Clinic Centre is the home for all cars. Since our inception in 2017, we have remained the number one choice for every car users. With our state-of-the-art facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy their work, we are always proud of our exceptional services. We use the latest technology and globally acceptable standard to keep your car humming and healthy all the time.
+                        <p style="text-align: justify;">NGS Auto Clinic Centre is the home for all cars. Since our inception
+                            in 2017, we have remained the number one choice for every car users. With our state-of-the-art
+                            facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy
+                            their work, we are always proud of our exceptional services. We use the latest technology and
+                            globally acceptable standard to keep your car humming and healthy all the time.
                         </p>
                         <p>We offer excellent services available at affordable prices to get you back on the road in no
                             time. Our comprehensive auto clinic services includes: </p>
@@ -184,12 +193,13 @@
                                     <li><i class="fa fa-caret-right"></i>Computer Diagnosis</li>
                                     <li><i class="fa fa-caret-right"></i>Other Vehicle Miscellaneous Services</li>
                                 </ul>
-                                
+
                             </div>
                         </div>
                         <br>
                         <p>
-                            <span style="color:#fff" class="btn btn-primary btn-xs"><a href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></span>
+                            <span style="color:#fff" class="btn btn-primary btn-xs"><a
+                                    href="{{ route('about') }}"><strong> <em> learn more...</em></strong></a></span>
                         </p>
                     </div>
                     <!-- End Choose Left -->
@@ -198,17 +208,17 @@
                     <!-- Start Choose Rights -->
                     <div class="choose-right">
                         <!-- <div class="video-image"> -->
-                            <!-- Video Animation -->
-                            <div class="promo-video">
-                                <div class="waves-block">
-                                    <div class="waves wave-1"></div>
-                                    <div class="waves wave-2"></div>
-                                    <div class="waves wave-3"></div>
-                                </div>
+                        <!-- Video Animation -->
+                        <div class="promo-video">
+                            <div class="waves-block">
+                                <div class="waves wave-1"></div>
+                                <div class="waves wave-2"></div>
+                                <div class="waves wave-3"></div>
                             </div>
-                            <!--/ End Video Animation -->
-                           <!--  <a href="#" class="video mfp-iframe"><i
-                                    class="fa fa-play"></i></a> -->
+                        </div>
+                        <!--/ End Video Animation -->
+                        <!--  <a href="#" class="video mfp-iframe"><i
+                                        class="fa fa-play"></i></a> -->
                         <!-- </div> -->
                     </div>
                     <!-- End Choose Rights -->
@@ -227,7 +237,7 @@
                     <div class="section-title">
                         <h2>NGS Services</h2>
                         <img src="img/section-img.png" alt="#">
-                        <p>NGS Auto Clinic Centre...  Do it once and do it right...</p>
+                        <p>NGS Auto Clinic Centre... Do it once and do it right...</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +258,8 @@
                                     We are capable and reliable!
                                 </p>
                                 <div style="color:#11db22">
-                                    <a href="{{ route('services') }}#repairs"><strong> <em> learn more...</em></strong></a>
+                                    <a href="{{ route('services') }}#repairs"><strong> <em> learn
+                                                more...</em></strong></a>
                                 </div>
                             </div>
                         </div>
@@ -269,7 +280,8 @@
                                     Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
                                 </p>
                                 <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#make-up"><strong> <em> learn more...</em></strong></a>
+                                    <a href="{{ route('services') }}#make-up"><strong> <em> learn
+                                                more...</em></strong></a>
                                 </div>
                             </div>
                         </div>
@@ -287,7 +299,8 @@
                                 <div class="date">Available</div>
                                 <h2><a href="{{ route('services') }}#wash"><b>Automated Car Wash</b></a></h2>
                                 <p class="text" style="text-align: justify;">
-                                    Having noticed subpar washing techniques that produce undesired results such as: scuffing, scratching, brown stains, water residue, odour and in some cases damage...
+                                    Having noticed subpar washing techniques that produce undesired results such as:
+                                    scuffing, scratching, brown stains, water residue, odour and in some cases damage...
                                 </p>
                                 <div style="color:#11db22">
                                     <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>
@@ -338,7 +351,8 @@
                                     and All Kinds of Key Programming.
                                 </p>
                                 <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#computer"><strong> <em> learn more...</em></strong></a>
+                                    <a href="{{ route('services') }}#computer"><strong> <em> learn
+                                                more...</em></strong></a>
                                 </div>
                             </div>
                         </div>
@@ -358,10 +372,11 @@
                                 <h2><a href="{{ route('services') }}#training"><b>Technical Training Centre</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS offer specialized and general training
                                     program and some of NGD's program at AutoClinic Technical Training Centre include and
-                                    introduction to the automotive industry and shop safety and more. 
+                                    introduction to the automotive industry and shop safety and more.
                                 </p>
                                 <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#training"><strong> <em> learn more...</em></strong></a>
+                                    <a href="{{ route('services') }}#training"><strong> <em> learn
+                                                more...</em></strong></a>
                                 </div>
                             </div>
                         </div>
@@ -373,69 +388,75 @@
     </section>
     <!-- End Blog Area -->
 
-  
-      <!-- ======= Testimonials Section ======= -->
-      <section id="testimonials" class="padd-section text-center" style="margin-bottom: 30px;">
+
+    <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="padd-section text-center" style="margin-bottom: 35px;">
         <div class="container" data-aos="fade-up">
-          <div class="row justify-content-center">
-  
-            <div class="col-md-8">
-  
-              <div class="testimonials-content">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-  
-                  <div class="carousel-inner" role="listbox">
-  
-                    <div class="carousel-item  active">
-                      <div class="top-top">
-  
-                        <h2>Our Customers Speak volume of us</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                          specimen book. It has survived not only five centuries.</p>
-                        <h4>Kolo Ezra<span> Web Developer </span></h4>
-  
-                      </div>
+            <div class="row justify-content-center">
+
+                <div class="col-md-8">
+
+                    <div class="testimonials-content">
+                        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="carousel-item  active">
+                                    <div class="top-top">
+
+                                        <h2>Our Customers Speak volume of us</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book. It has survived not only five centuries.</p>
+                                        <h4>Kolo Ezra<span> Web Developer </span></h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <div class="top-top">
+
+                                        <h2>Our Customers Speak volume of us</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book. It has survived not only five centuries.</p>
+                                        <h4>Benjamen A. <span>Web Developer</span></h4>
+
+                                    </div>
+                                </div>
+
+                                <div class="carousel-item ">
+                                    <div class="top-top">
+
+                                        <h2>Our Customers Speak volume of us</h2>
+                                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem
+                                            Ipsum has been the industry's standard dummy text ever since the 1500s, when an
+                                            unknown printer took a galley of type and scrambled it to make a type
+                                            specimen book. It has survived not only five centuries.</p>
+                                        <h4>Benjamen A.<span> Web Developer</span></h4>
+
+                                    </div>
+                                </div>
+
+                            </div>
+
+                            <div class="btm-btm">
+
+                                <ul class="list-unstyled carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                                </ul>
+
+                            </div>
+
+                        </div>
                     </div>
-  
-                    <div class="carousel-item ">
-                      <div class="top-top">
-  
-                        <h2>Our Customers Speak volume of us</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                          specimen book. It has survived not only five centuries.</p>
-                        <h4>Benjamen A. <span>Web Developer</span></h4>
-  
-                      </div>
-                    </div>
-  
-                    <div class="carousel-item ">
-                      <div class="top-top">
-  
-                        <h2>Our Customers Speak volume of us</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type
-                          specimen book. It has survived not only five centuries.</p>
-                        <h4>Benjamen A.<span> Web Developer</span></h4>
-  
-                      </div>
-                    </div>
-  
-                  </div>
-  
-                  <div class="btm-btm">
-  
-                    <ul class="list-unstyled carousel-indicators">
-                      <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                      <li data-target="#carousel-example-generic" data-slide-to="2"></li>
-                    </ul>
-  
-                  </div>
-  
                 </div>
-              </div>
+
             </div>
-  
-          </div>
         </div>
-      </section><!-- End Testimonials Section -->
+    </section><!-- End Testimonials Section -->
 @endsection
