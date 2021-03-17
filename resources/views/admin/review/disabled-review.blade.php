@@ -16,7 +16,7 @@
   <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Team Members</h4>
+                  <h4 class="card-title">Customer Reviews AWaiting Approval</h4>
                   @if(Session::has('success'))
                   <div class="alert  alert-success alert-dismissible fade show">
                       <span class="badge badge-pill badge-success">Success</span>
@@ -24,47 +24,51 @@
                   </div>
                   @endif
                  
-                  @if($team->count() > 0)
+                  @if($review->count() > 0)
                   <div class="table-responsive">
                     
                     <table class="table table-striped">
                       <thead>
                         <tr>
                           <th>
-                            Image
+                            #
                           </th>
                           <th>
                             Name
                           </th>
+                          <th>email</th>
                           <th>
-                            Email
+                            Rate
                           </th>
-                          <th>
-                            Rank
-                          </th>
-                          <th>
-                            Action
-                          </th>
+                          <th></th>
+                          <th>Action</th>
                         </tr>
                       </thead>
                       <tbody>
-                        @foreach($team as $row)
+                        @php
+                         $count = 1;
+                        @endphp
+                        @foreach($review as $row)
                         <tr>
-                          <td class="py-1">
-                            <img src="{{ asset('/img/team/'.$row->img) }}" alt="image"/>
-                          </td>
                           <td>
+                            {{ $count++ }}
+                          </td>
+                          <td class="py-1">
                             {{ $row->name }}
                           </td>
                           <td>
                             {{ $row->email }}
                           </td>
                           <td>
-                            {{ $row->rank }}
+                          	{{ $row->rate }} Stars
                           </td>
                           <td>
-                            <a href="{{ route('edit.team', ['id' => $row->id]) }}"> Edit |</a><a href="/admin/team/delete/{{ $row->id }}"  onclick="return confirm('Are you sure?')"> Delete</a>
+                            <a href="{{ route('enable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Enable review</a>
                           </td>
+                          <td>
+                            <a href="{{ route('show.review', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a>
+                          </td>
+                          <td><a href="{{ route('delete.review', ['id' => $row->id]) }}" class=""> Delete</a></td>
                         </tr>
                          @endforeach
                         
@@ -73,7 +77,7 @@
                     
                   </div>
                   @else
-                        <h6 class="text-center text-danger">No Team Members</h6>
+                        <h6 class="text-center text-danger">No Reviews!</h6>
                     @endif
                 </div>
               </div>

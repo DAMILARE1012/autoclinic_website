@@ -7,6 +7,7 @@ use Image;
 use Illuminate\Support\Facades\DB;
 use App\Gallery;
 use App\Inventory;
+use App\Review;
 
 class AdminController extends Controller
 {
@@ -26,7 +27,8 @@ class AdminController extends Controller
     {
         $gallery = DB::table('galleries')->get();
         $inventory = DB::table('inventories')->get();
-        return view('admin.home', compact('gallery', 'inventory'));
+        $review = DB::table('reviews')->get();
+        return view('admin.home', compact('gallery', 'inventory', 'review'));
     }
 
     public function gallery()
@@ -244,9 +246,11 @@ class AdminController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function reviewindex()
     {
-        //
+         $review = Review::where('status', 1)->orderBy('created_at', 'desc')->get();
+
+         return view('admin.review.review', compact('review'));
     }
 
     /**
@@ -266,9 +270,37 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+
+    public function disablereview(Request $request, $id)
     {
-        //
+        $review = Review::find($id);
+        $review->status = 0;
+        $review->save();
+
+        $request->session()->flash('success', 'Review disabled');
+        return redirect()->back();
+    }
+
+    public function enablereview(Request $request, $id)
+    {
+        $review = Review::find($id);
+        $review->status = 1;
+        $review->save();
+
+        $request->session()->flash('success', 'Review Enabled');
+        return redirect()->back();
+    }
+
+    public function disabledreviewlist()
+    {
+        $review = Review::where('status', 0)->orderBy('created_at', 'desc')->get();
+        return view('admin.review.disabled-review', compact('review'));
+    }
+
+    public function reviewshow($id)
+    {
+        $review_data = Review::find($id);   
+        return view('admin.review.show-review', compact('review_data'));
     }
 
     /**
@@ -300,8 +332,9 @@ class AdminController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function reviewdestroy($id)
     {
-        //
+        Review::where('id', $id)->delete();   
+        return redirect()->back()->with('success', 'Post deleted successfully!');
     }
 }
