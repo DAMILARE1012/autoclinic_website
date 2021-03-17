@@ -14,9 +14,9 @@
                             <div class="text">
                                 <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
                                 <!-- <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
-                                            Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
-                                            offer excellent services available at affordable prices to get you back on the road in
-                                            no time.</p> -->
+                                                Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
+                                                offer excellent services available at affordable prices to get you back on the road in
+                                                no time.</p> -->
                                 <div class="button">
                                     <a href="{{ route('services') }}" class="btn">NGS Services</a>
                                     <a href="{{ route('about') }}" class="btn primary">About NGS</a>
@@ -35,9 +35,9 @@
                             <div class="text">
                                 <h1>We Provide <span>Automated Car Wash</span> Services</h1>
                                 <!-- <p > <h4 style="color: #d9dddb;">
-                                            Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
-                                            Detailing, Engine Wash and Underneath Wash.</h4>
-                                        </p> -->
+                                                Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
+                                                Detailing, Engine Wash and Underneath Wash.</h4>
+                                            </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -56,14 +56,14 @@
                             <div class="text">
                                 <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
                                 <!-- <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
-                                            Technical Training Centre include:
-                                            Introduction to the Automotive Industry and Shop Safety
-                                            Auto-Cosmetics and Auto Beautification
-                                            Preventive Maintenance
-                                            Service Wheels, Tires, Hubs and Bearings
-                                            Operation & Service Hydraulic Brake Systems
-                                            Operation and Servicing of Hydraulic Brake Systems etc.
-                                        </p> -->
+                                                Technical Training Centre include:
+                                                Introduction to the Automotive Industry and Shop Safety
+                                                Auto-Cosmetics and Auto Beautification
+                                                Preventive Maintenance
+                                                Service Wheels, Tires, Hubs and Bearings
+                                                Operation & Service Hydraulic Brake Systems
+                                                Operation and Servicing of Hydraulic Brake Systems etc.
+                                            </p> -->
                                 <div class="button">
                                     <a href="{{ route('about') }}" class="btn">About NGS</a>
                                     <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
@@ -218,7 +218,7 @@
                         </div>
                         <!--/ End Video Animation -->
                         <!--  <a href="#" class="video mfp-iframe"><i
-                                            class="fa fa-play"></i></a> -->
+                                                class="fa fa-play"></i></a> -->
                         <!-- </div> -->
                     </div>
                     <!-- End Choose Rights -->
