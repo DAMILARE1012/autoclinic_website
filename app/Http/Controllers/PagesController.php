@@ -29,4 +29,12 @@ class PagesController extends Controller
     public function getAbout(){
         return view('pages.about_us');
     }
+
+    public function getGallery(){
+        return view('pages.gallery');
+    }
+
+    public function getReviews(){
+        return view('pages.reviews');
+    }
 }

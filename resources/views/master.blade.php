@@ -31,7 +31,7 @@
         <div class="button">
             <a href="{{ route('contact') }}" target="_blank" class="btn">Request an appointment ?</a>
             <a href="{{ route('contact') }}" target="_blank" class="btn">Contact the shop ?</a>
-            <a href="{{ route('home') }}#testimonials" class="btn">Read our reviews ?</a>
+            <a href="{{ route('reviews') }}" class="btn">Read our reviews ?</a>
         </div>
     </ul>
     {{-- End of Get Pro Button --}}

@@ -38,3 +38,8 @@
 <script src="{{ asset('js/bootstrap.min.js') }}"></script>
 <!-- Main JS -->
 <script src="{{ asset('js/main.js') }}"></script>
+{{-- Lightbox JavaScript --}}
+<script src="{{ asset('js/lightbox.min.js') }}"></script>
+
+{{-- Review JavaScript --}}
+<script src="{{ asset('js/review.js') }}"></script>

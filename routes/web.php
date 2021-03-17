@@ -19,6 +19,8 @@ Route::get('about', "PagesController@getAbout")->name('about');
 Route::get('inventory', "PagesController@getInventory")->name('inventory');
 Route::get('training_hug', "PagesController@getTraining")->name('training');
 Route::get('services', "PagesController@getServices")->name('services');
+Route::get('gallery', "PagesController@getGallery")->name('gallery');
+Route::get('reviews', "PagesController@getReviews")->name('reviews');
 
 //admin
 Auth::routes();

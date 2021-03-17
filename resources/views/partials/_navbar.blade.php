@@ -53,12 +53,7 @@
                                     <li class="{{ (Request()->is('inventory')) ? 'active':"" }}"><a href="{{ route('inventory') }}">Inventory</a></li>
                                     <li class="{{ (Request()->is('training')) ? 'active':"" }}"><a href="{{ route('training') }} ">Training Hub</a></li>
                                     <li class="{{ (Request()->is('services')) ? 'active':"" }}"><a href="{{ route('services') }}">Services</a></li>
-                                    {{-- <li><a href="#">Blogs <i class="icofont-rounded-down"></i></a>
-                                        <ul class="dropdown">
-                                            <li><a href="blog-single.html">Blog Details</a></li>
-                                        </ul>
-                                    </li> --}}
-                                    <li class="{{ (Request()->is('contact')) ? 'active':"" }}"><a href="{{ route('contact') }}">Contact</a></li>
+                                    <li class="{{ (Request()->is('gallery')) ? 'active':"" }}"><a href="{{ route('gallery') }}">Gallery</a></li>
                                 </ul>
                             </nav>
                         </div>
