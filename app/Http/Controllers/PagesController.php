@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\DB;
 
 class PagesController extends Controller
 {
@@ -31,7 +32,8 @@ class PagesController extends Controller
     }
 
     public function getGallery(){
-        return view('pages.gallery');
+        $gallery = DB::table('galleries')->orderBy('created_at', 'desc')->get();
+        return view('pages.gallery', compact('gallery'));
     }
 
     public function getReviews(){

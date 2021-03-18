@@ -14,7 +14,8 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        //
+        $review = Review::where('status', 1)->orderBy('created_at', 'desc')->get();
+        return view('pages.reviews', compact('review'));
     }
 
     /**
@@ -24,7 +25,7 @@ class ReviewController extends Controller
      */
     public function create()
     {
-        //
+         
     }
 
     /**
@@ -35,7 +36,23 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        //
+         $this->validate($request, [
+            'rate' => 'required',
+            'name' => 'required',
+            'email' => 'required',
+            'message' => 'required',
+        ]);
+                
+        $review = new Review();
+        $review->rate = $request->rate;
+        $review->name = $request->name;
+        $review->email = $request->email;
+        $review->message = $request->message;
+        $review->status =0;
+        $review->save(); 
+        $request->session()->flash('success', 'Thanks for your Review!');
+
+        return redirect()->back();  
     }
 
     /**

@@ -4260,7 +4260,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-between;
     padding: 10px;
-    text-align: center;
+    text-align: left;
   }
 
   .image_gallery img{

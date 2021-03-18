@@ -26,25 +26,21 @@
     <section id="repairs" class="news-single section">
         <div class="container">
             <div class="row">
-                <div class="section-title">
+                <!-- <div class="section-title">
                     <h6> ...with NGS state-of-the-art facilities, modern day equipment, and a team of highly skilled
                         technicians that truly enjoy their work, we are always proud of NGS exceptional services in the
                         following areas:</h6>
-                </div>
+                </div> -->
                 <div class="col-12">
                     <div class="row" id="img_gallery">
                         <div class="image_gallery">
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-1"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-2"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-3"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-4"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-5"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-6"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-6"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-6"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
-
-                            <a href="{{ asset('img/galleryz/gcr_1.jpg') }}" data-lightbox="mygallery" data-title="Image-6"><img src="{{ asset('img/galleryz/gcr_1.jpg') }}" alt="#"></a>
+                            @if($gallery->count() > 0)
+                            @foreach($gallery as $row)
+                            <a href="{{ asset('/img/galleryz/'.$row->img) }}" data-lightbox="mygallery" data-title="{{ $row->description }} "><img src="{{ asset('/img/galleryz/'.$row->img) }}" alt="image"/></a>
+                            @endforeach
+                            @else
+                                <h6 class="text-center text-danger">No Picture in Gallery</h6>
+                            @endif
                         </div>
 
                     </div>
