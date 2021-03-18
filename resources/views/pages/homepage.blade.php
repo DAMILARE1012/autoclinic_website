@@ -390,7 +390,7 @@
 
 
     <!-- ======= Testimonials Section ======= -->
-    <section id="testimonials" class="padd-section text-center" style="margin-bottom: 40px;">
+<!--     <section id="testimonials" class="padd-section text-center" style="margin-bottom: 40px;">
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
 
@@ -458,5 +458,5 @@
 
             </div>
         </div>
-    </section><!-- End Testimonials Section -->
+    </section> --><!-- End Testimonials Section -->
 @endsection
