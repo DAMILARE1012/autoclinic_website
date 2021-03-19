@@ -14,8 +14,9 @@ class ReviewController extends Controller
      */
     public function index()
     {
-        $review = Review::where('status', 1)->orderBy('created_at', 'desc')->get();
-        return view('pages.reviews', compact('review'));
+        $review = Review::where('status', 1)->orderBy('created_at', 'desc')->get()->skip(1);
+        $review_one = Review::where('status', 1)->orderBy('created_at', 'desc')->first();
+        return view('pages.reviews', compact('review', 'review_one'));
     }
 
     /**
@@ -48,7 +49,7 @@ class ReviewController extends Controller
         $review->name = $request->name;
         $review->email = $request->email;
         $review->message = $request->message;
-        $review->status =0;
+        $review->status =1;
         $review->save(); 
         $request->session()->flash('success', 'Thanks for your Review!');
 

@@ -56,8 +56,8 @@
             </a>
             <div class="collapse" id="auth">
               <ul class="nav flex-column sub-menu">
-                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reviews') }} "> Approved Reviews</a></li>
-                <li class="nav-item"> <a class="nav-link" href="{{ route('unpublished.review') }} ">Awaiting Approval</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.reviews') }} ">Reviews</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('unpublished.review') }} ">Unapproved Review</a></li>
               </ul>
             </div>
           </li>

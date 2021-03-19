@@ -23,43 +23,86 @@
     <!-- End Breadcrumbs -->
     <br>
     <br>
+
     <section id="testimonials" class="padd-section text-center" style="margin-bottom: 40px;">
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
-                @if($review->count() > 0)
-                        @foreach($review as $row)
-                <div class="col-md-4">
+
+                <div class="col-md-8">
 
                     <div class="testimonials-content">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-                            <div class="top-top">
 
-                                <fieldset class="supaview__rating">
-                                        <input type="radio" id="star5" name="rate" value="5" / active><label for="star5"></label>
-                                        <input type="radio" id="star4" name="rate" value="4" /><label for="star4"></label>
-                                        <input type="radio" id="star3" name="rate" value="3" /><label for="star3"></label>
-                                        <input type="radio" id="star2" name="rate" value="2" /><label for="star2"></label>
-                                        <input type="radio" id="star1" name="rate" value="1" /><label for="star1"></label>
-                                    </fieldset>
-                                <p>{{ $row->message }}</p>
-                                <h4>{{ $row->name }}<span>{{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</span></h4>
+                            <div class="carousel-inner" role="listbox">
+
+                                <div class="carousel-item  active">
+                                    <div class="top-top">
+
+                                        <h2><fieldset class="supaview__rating">
+                                        @if($review_one->rate == 1)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($review_one->rate == 2)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($review_one->rate == 3)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($review_one->rate == 4)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($review_one->rate == 5)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @endif
+                                    </fieldset></h2>
+                                        <p>{{ $review_one->message }} </p>
+                                        <h4>{{ $review_one->name }}<span> {{ \Carbon\Carbon::parse($review_one->created_at)->diffForHumans() }} </span></h4>
 
                                     </div>
-                        
+                                </div>
+
+                                @foreach($review as $row)
+
+                                <div class="carousel-item ">
+                                    <div class="top-top">
+
+                                        <h2><fieldset class="supaview__rating">
+                                        @if($row->rate == 1)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($row->rate == 2)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($row->rate == 3)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($row->rate == 4)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @elseif($row->rate == 5)
+                                        <i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i><i class="fa fa-star" style="color:#6ecb90;"></i>
+                                        @endif
+                                    </fieldset></h2>
+                                        <p>{{ $row->message }}</p>
+                                        <h4>{{ $row->name }} <span> {{ \Carbon\Carbon::parse($row->created_at)->diffForHumans() }}</span></h4>
+
+                                    </div>
+                                </div>
+                                @endforeach
+
+                            </div>
+
+                            <div class="btm-btm">
+
+                                <ul class="list-unstyled carousel-indicators">
+                                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                                    @foreach($review as $row)
+                                    <li data-target="#carousel-example-generic" data-slide-to="{{ $row->id }}"></li>
+                                    @endforeach
+                                </ul>
+
+                            </div>
+
                         </div>
-                    </div>
-                </div>
-                 @endforeach
-                        @else
-                        <h6 class="text-center text-danger">No Reviews!</h6>
-                    @endif
-                       
                     </div>
                 </div>
 
             </div>
         </div>
-    </section>
+    </section> --><!-- End Testimonials Section -->
+    
 
     <!-- Single News -->
     <section id="repairs" class="news-single section">
