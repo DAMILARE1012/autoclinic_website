@@ -53,7 +53,7 @@ class AdminController extends Controller
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
-        $image->resize(350, 290);
+        $image->resize(1200, 799);
         $image->save($path.$name);
         
         $gallery = new Gallery();
@@ -95,7 +95,7 @@ class AdminController extends Controller
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
-        $image->resize(718, 486);
+        $image->resize(1200, 799);
         $image->save($path.$name); 
         $gallery->img = $name; 
         }

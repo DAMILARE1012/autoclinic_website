@@ -29,9 +29,9 @@
         <li>Hi there!</li>
         <li>How can we help you ?</li>
         <div class="button">
-            <a href="{{ route('contact') }}" target="_blank" class="btn">Request an appointment ?</a>
-            <a href="{{ route('contact') }}" target="_blank" class="btn">Contact the shop ?</a>
-            <a href="{{ route('reviews') }}" class="btn">Read our reviews ?</a>
+            <a href="{{ route('contact') }}" target="_blank" class="btn">Book an appointment?</a>
+            <a href="{{ route('contact') }}" target="_blank" class="btn">Contact our Office?</a>
+            <a href="{{ route('reviews') }}" class="btn">Our reviews?</a>
         </div>
     </ul>
     {{-- End of Get Pro Button --}}

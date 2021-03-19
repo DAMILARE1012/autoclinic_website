@@ -10,8 +10,8 @@
                         <!-- Social -->
                         <ul class="social">
                             <li><a href="#"><i class="icofont-facebook"></i></a></li>
-                            <li><a href="#"><i class="icofont-twitter"></i></a></li>
-                            <li><a href="#"><i class="icofont-instagram"></i></a></li>
+                            <li><a href=" https://twitter.com/ngs_auto?s=08" target="blank_"><i class="icofont-twitter"></i></a></li>
+                            <li><a href="https://instagram.com/ngs_autoclinic_centre?igshid=592fsjuquj1o" target="blank_"><i class="icofont-instagram"></i></a></li>
                         </ul>
                         <!-- End Social -->
                     </div>
