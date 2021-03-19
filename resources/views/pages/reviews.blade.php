@@ -32,12 +32,11 @@
                         following areas</h6>
                 </div>
                 <div class="col-md-8" id="review">
-                    <div class="supaviews">
-                        <div class="supaviews__gradient"></div>
+                    <div class="col-12 supaviews">
                         <div class="supaviews__add">
                             <div class="supaview">
                                 <h1 class="supaview__title" style="text-align: center; color: black; margin-bottom: 10px;">Add a new review</h1>
-                                <form id="review" method="POST" action="route({{  }})">
+                                <form id="review" method="POST" action="#">
                                     @csrf
                                     <fieldset class="supaview__rating">
                                         <input type="radio" id="star5" name="rate" value="5" /><label for="star5"></label>
@@ -54,9 +53,6 @@
                                     <button class="supaview__submit">Submit review</button>
                                 </form>
                             </div>
-                        </div>
-                        <div class="supaviews__list">
-                            <div class="supaview" style="color: black;">Looks empty around here..</div>
                         </div>
                     </div>
                     
