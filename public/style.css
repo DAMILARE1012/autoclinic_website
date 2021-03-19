@@ -4405,7 +4405,7 @@ body {
     }
     .supaview,
     .supaerror {
-        margin: 20px;
-        padding: 15px;
+        margin: 2px;
+        padding: 5px;
     }
 }

@@ -95,7 +95,7 @@
                                     <div class="supaview__copy">
                                         <input type="text" name="name" placeholder="Name" / required>
                                         <input type="email" name="email" placeholder="Email Address" / required>
-                                        <textarea name="message" placeholder="Message" rows="5" required></textarea>
+                                        <textarea name="message" placeholder="Message" rows="3" required></textarea>
                                     </div>
                                     <button class="supaview__submit">Submit review</button>
                                 </form>
