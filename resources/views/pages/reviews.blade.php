@@ -23,7 +23,7 @@
     <!-- End Breadcrumbs -->
     <br>
     <br>
-
+    @if($review->count() > 0)
     <section id="testimonials" class="padd-section text-center" style="margin-bottom: 40px;">
         <div class="container" data-aos="fade-up">
             <div class="row justify-content-center">
@@ -102,6 +102,9 @@
             </div>
         </div>
     </section> --><!-- End Testimonials Section -->
+    @else
+        <h6 class="text-center text-danger">No Reviews</h6>
+    @endif
     
 
     <!-- Single News -->
