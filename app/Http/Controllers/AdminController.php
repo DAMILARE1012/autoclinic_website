@@ -162,7 +162,7 @@ class AdminController extends Controller
         $originalImage = $request->file('img');
         $name = time().$originalImage->getClientOriginalName();
         $image = Image::make($originalImage);
-        $image->resize(350, 290);
+        $image->resize(718, 486);
         $image->save($path.$name);
         
         $inventory = new Inventory();
@@ -217,7 +217,7 @@ class AdminController extends Controller
         $image = Image::make($originalImage);
         $image->resize(718, 486);
         $image->save($path.$name); 
-        $gallery->img = $name; 
+        $inventory->img = $name; 
         }
         $inventory->name = $request->name;
         $inventory->price = $request->price;

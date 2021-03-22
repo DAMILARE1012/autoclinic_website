@@ -36,7 +36,7 @@
           </li>
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
-              <i class="ti-user menu-icon"></i>
+              <i class="ti-gallery menu-icon"></i>
               <span class="menu-title">Gallery</span>
               <i class="menu-arrow"></i>
             </a>
@@ -75,12 +75,11 @@
             </div>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="{{ route('logout') }}"
-                onclick="event.preventDefault();
-                            document.getElementById('logout-form').submit();" ><i class="ti-power-off text-primary" style="padding-right: 20px"> </i>
-                {{ __('Logout') }}
+            <a class="nav-link" href="{{ route('logout') }} " onclick="event.preventDefault();
+                            document.getElementById('logout-form').submit();" >
+              <i class="ti-power-off menu-icon"></i>
+              <span class="menu-title">Logout</span>
             </a>
-
             <form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
                 @csrf
             </form>

@@ -37,9 +37,24 @@
                               <div class="card">                   
                                 <div class="col-md-8">
                                 <div class="card-body my-3"><p> <b>Name: </b>{{ $inventory_data->name }}</p>
-                                  <p> <b> Description: </b>{{ $inventory_data->description }} </p>
                                   <p> <b> Price: </b>{{ $inventory_data->price }} </p>
 
+                              </div>
+                            </div>
+                            <br>
+                            </div>
+                            <br>
+                            <div class="row">
+                          <div class="col-md-6">
+                             <strong><h4> Inventory Description</h4> </strong>     
+                          </div>
+                         
+                        </div>                       
+
+                              <div class="card">                   
+                                <div class="col-md-8">
+                                <div class="card-body my-3">
+                                  <p>{{ $inventory_data->description }} </p>
                               </div>
                             </div>
                             <br>
@@ -48,5 +63,6 @@
         </div>
     </div>
 </div>
-
+</div>
+<br>
 @endsection
