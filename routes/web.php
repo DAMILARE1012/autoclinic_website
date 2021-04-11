@@ -15,6 +15,7 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@getHomepage')->name('home');
 Route::get('contact', "PagesController@getContact")->name('contact');
+Route::post('contact', 'PagesController@mail')->name('sendmail');
 Route::get('about', "PagesController@getAbout")->name('about');
 Route::get('inventory', "PagesController@getInventory")->name('inventory');
 Route::get('training_hug', "PagesController@getTraining")->name('training');

@@ -33,10 +33,14 @@
                 </div> -->
                 <div class="col-12">
                     <div class="row" id="img_gallery">
-                        <div class="image_gallery">
+                        <div class="image_gallery" style="display: flex;">
                             @if($gallery->count() > 0)
                             @foreach($gallery as $row)
-                            <a href="{{ asset('/img/galleryz/'.$row->img) }}" data-lightbox="mygallery" data-title="{{ $row->description }} "><img src="{{ asset('/img/galleryz/'.$row->img) }}" alt="image"/></a>
+                            <a href="{{ asset('/img/galleryz/'.$row->img) }}" data-lightbox="mygallery" data-title="{{ $row->description }} "><img src="{{ asset('/img/galleryz/'.$row->img) }}" alt="image" style="max-height:300px; max-width:300px;"/> 
+                            <p>{{ $row->description }}</p>
+                            </a><br>
+                            
+
                             @endforeach
                             @else
                                 <h6 class="text-center text-danger">No Picture in Gallery</h6>

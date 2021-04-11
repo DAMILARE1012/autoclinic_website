@@ -4,6 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Mail;
+use App\Mail\SendMailable;
+
 
 class PagesController extends Controller
 {
@@ -13,6 +16,21 @@ class PagesController extends Controller
 
     public function getContact(){
         return view('pages.contact_us');
+    }
+
+    public function mail(Request $request)
+    {
+        $data = request()->validate([
+            'name' => 'required',
+            'phone' => '',
+            'subject' => 'required',
+            'email' => 'required|email',
+            'message' => 'required'
+        ]);
+
+        $admin_mail = 'profmusaprojects@gmail.com';
+        \Mail::to($admin_mail)->send(new SendMailable($data));
+        return redirect(route('contact'))->with('message', 'Thank You for your message. We will be in touch.');
     }
 
     public function getServices(){
@@ -36,7 +54,5 @@ class PagesController extends Controller
         return view('pages.gallery', compact('gallery'));
     }
 
-    public function getReviews(){
-        return view('pages.reviews');
-    }
+
 }

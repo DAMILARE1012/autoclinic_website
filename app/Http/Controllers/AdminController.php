@@ -42,30 +42,36 @@ class AdminController extends Controller
         return view('admin.gallery.create_gallery');
     }
 
-     public function galstore(Request $request)
+    public function galstore(Request $request)
+
     {
         $this->validate($request, [
-            'description' => 'required',
-            'img' => 'required|image|mimes:jpeg,png,jpg'
+
+                'description' => 'required',
+                'img' => 'required',
+                'img.*' => 'mimes:jpeg,png,jpg'
         ]);
 
-        $path = public_path().'/img/galleryz/';
-        $originalImage = $request->file('img');
-        $name = time().$originalImage->getClientOriginalName();
-        $image = Image::make($originalImage);
-        $image->resize(1200, 799);
-        $image->save($path.$name);
-        
-        $gallery = new Gallery();
-
-        $gallery->description = $request->description;
-        $gallery->img = $name;
-
-        $gallery->save(); 
-
-        $request->session()->flash('success', 'Picture Added successfully');
-        return redirect()->route('admin.gallery');
+        if ($files = $request->file('img')) {
+            // Define upload path
+            $destinationPath = public_path('/img/galleryz/'); // upload path
+            foreach($files as $img) {
+            // Upload Orginal Image           
+            $profileImage =time().$img->getClientOriginalName();
+            $img->move($destinationPath, $profileImage);
+            // Save In Database
+            $imagemodel= new Gallery();
+            $imagemodel->img="$profileImage";
+            $imagemodel->description= $request->description;
+            $imagemodel->save();
     }
+
+            $request->session()->flash('success', 'Picture(s) Added successfully');
+            return redirect()->route('admin.gallery');
+
+            }
+    }
+
 
      public function galedit($id)
     {

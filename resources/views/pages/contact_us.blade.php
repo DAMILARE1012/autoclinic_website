@@ -38,31 +38,32 @@
 							<div class="contact-us-form">
 								<h2>Contact NGS</h2>
 								<!-- Form -->
-								<form class="form" method="post" action="mail/mail.php">
+								<form class="form" method="post" action="{{ route('sendmail') }}">
+									@csrf
 									<div class="row">
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="name" placeholder="Name" required="">
+												<input type="text" name="name" placeholder="Full Name" value="{{ old('name') }}" required>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="email" name="email" placeholder="Email" required="">
+												<input type="email" name="email" placeholder="Email" value="{{ old('email') }}" required>
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="phone" placeholder="Phone" required="">
+												<input type="text" name="phone" placeholder="Phone" value="{{ old('phone') }}">
 											</div>
 										</div>
 										<div class="col-lg-6">
 											<div class="form-group">
-												<input type="text" name="subject" placeholder="Subject" required="">
+												<input type="text" name="subject" placeholder="Subject" value="{{ old('subject') }}" required>
 											</div>
 										</div>
 										<div class="col-lg-12">
 											<div class="form-group">
-												<textarea name="message" placeholder="Your Message" required=""></textarea>
+												<textarea name="message" placeholder="Your Message" required> {{ old('message') }}</textarea>
 											</div>
 										</div>
 										<div class="col-12">

@@ -31,7 +31,7 @@
         <div class="form-group">
           <label>Image upload</label>
           <br>
-                <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file" required></div>
+                <div class="col-12 col-md-9"><input type="file" id="img" name="img[]" class="form-control-file" multiple  required></div>
             </div>
 
         <button type="submit" class="btn btn-primary mr-2">Send</button>
