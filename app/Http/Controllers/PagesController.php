@@ -4,8 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
-use Illuminate\Support\Facades\Mail;
-use App\Mail\SendMailable;
+use Mail;
+use App\Mail\contactus;
 
 
 class PagesController extends Controller
@@ -29,7 +29,7 @@ class PagesController extends Controller
         ]);
 
         $admin_mail = 'profmusaprojects@gmail.com';
-        \Mail::to($admin_mail)->send(new SendMailable($data));
+        Mail::to($admin_mail)->send(new contactus($data));
         return redirect(route('contact'))->with('message', 'Thank You for your message. We will be in touch.');
     }
 
