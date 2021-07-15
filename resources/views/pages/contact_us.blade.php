@@ -38,6 +38,14 @@
 							<div class="contact-us-form">
 								<h2>Contact NGS</h2>
 								<!-- Form -->
+								@foreach ($errors->all() as $error)
+					            	<li>{{ $error }}</li>
+					            @endforeach
+					            @if(session('info'))
+	                            <div class="alert alert-success">
+	                            {{ session('info') }}
+	                            </div>
+	                            @endif
 								<form class="form" method="post" action="{{ route('sendmail') }}">
 									@csrf
 									<div class="row">

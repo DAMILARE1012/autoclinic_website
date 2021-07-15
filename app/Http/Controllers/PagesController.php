@@ -28,9 +28,9 @@ class PagesController extends Controller
             'message' => 'required'
         ]);
 
-        $admin_mail = 'profmusaprojects@gmail.com';
+        $admin_mail = 'contact@ngsautoclinic.com.ng';
         Mail::to($admin_mail)->send(new contactus($data));
-        return redirect(route('contact'))->with('message', 'Thank You for your message. We will be in touch.');
+        return redirect(route('contact'))->with('info', 'Thank You for your message. We will be in touch.');
     }
 
     public function getServices(){
