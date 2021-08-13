@@ -28,7 +28,7 @@
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>About Us</h3>
-                        <em><h6>Download our <a href="{{ asset('autoclinic_brochure.pdf') }} "><span style="color: blue;">Brochure</span> </a></h6></em>
+                        <em><h6>Download our <a href="{{ asset('autoclinic_brochure.pdf') }} " target="_blank"><span style="color: blue;">Brochure</span> </a></h6></em>
                         <br>
                         <p style="text-align: justify;">Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
                             “The passion lies in our concern for our people and how they’re being treated with their cars” – Nathaniel Okwesiri.

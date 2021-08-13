@@ -25,6 +25,8 @@
                                     <li><a href="{{ route('home') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
                                     <li><a href="{{ route('about') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
                                     <li><a href="{{ route('inventory') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Inventory</a></li>
+                                    <li><a href="{{ asset('autoclinic_brochure.pdf') }}" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>Brochure</a></li>
+                                    
                                     	
                                 </ul>
                             </div>

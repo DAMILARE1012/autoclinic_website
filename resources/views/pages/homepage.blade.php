@@ -7,12 +7,12 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/1_slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/slide_3.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
-                                <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
+                                <h1 style="color: black;">We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
                                 <!-- <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
                                                 Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
                                                 offer excellent services available at affordable prices to get you back on the road in
@@ -28,12 +28,12 @@
             </div>
             <!-- End Single Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/1b_slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/slide_2.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
-                                <h1>We Provide <span>Automated Car Wash</span> Services</h1>
+                                <h1 style="color: black;">We Provide <span>Automated Car Wash</span> Services</h1>
                                 <!-- <p > <h4 style="color: #d9dddb;">
                                                 Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
                                                 Detailing, Engine Wash and Underneath Wash.</h4>
@@ -49,12 +49,12 @@
             </div>
             <!-- Start End Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image:url('img/1c_slider.jpg')">
+            <div class="single-slider" style="background-image:url('img/slide_1.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
-                                <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
+                                <h1 style="color: black;">We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
                                 <!-- <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
                                                 Technical Training Centre include:
                                                 Introduction to the Automotive Industry and Shop Safety
@@ -110,7 +110,7 @@
                                 </div>
                                 <div class="single-content">
                                     <!-- <span>Fusce Porttitor</span> -->
-                                    <h4>Services</h4>
+                                    <h4>Our Services</h4>
                                     <p style="text-align: justify;">We provide general repairs services, automated car wash,
                                         car make-up, full AC
                                         services, computer diagnosis, and other vehicle miscellaneous services.<br>You can
