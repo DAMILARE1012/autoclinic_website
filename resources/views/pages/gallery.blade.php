@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
+    <div class="breadcrumbs overlay" style="background-image:url('img/gallery.jpg')">
         <div class="container">
             <div class="bread-inner">
                 <div class="row">

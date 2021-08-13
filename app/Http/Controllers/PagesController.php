@@ -18,6 +18,11 @@ class PagesController extends Controller
         return view('pages.contact_us');
     }
 
+    public function appointment()
+    {
+        return view('pages.appointment');
+    }
+
     public function mail(Request $request)
     {
         $data = request()->validate([

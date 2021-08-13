@@ -4,7 +4,7 @@
 
 @section('content')
     <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
+    <div class="breadcrumbs overlay" style="background-image:url('img/about_us.jpg')">
         <div class="container">
             <div class="bread-inner">
                 <div class="row">
@@ -29,7 +29,6 @@
             <div class="row justify-content-center">
 
                 <div class="col-md-8">
-
                     <div class="testimonials-content">
                         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
@@ -61,7 +60,6 @@
 
                                 <div class="carousel-item ">
                                     <div class="top-top">
-
                                         <h2><fieldset class="supaview__rating">
                                         @if($row->rate == 1)
                                         <i class="fa fa-star" style="color:#6ecb90;"></i>

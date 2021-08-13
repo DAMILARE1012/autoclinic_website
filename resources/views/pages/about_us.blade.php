@@ -4,16 +4,16 @@
 
 @section('content')
 <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
+    <div class="breadcrumbs overlay"  style="background-image:url('img/about_us.jpg')">
         <div class="container">
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>About </h2>
+                        <h2>About Us</h2>
                         <ul class="bread-list">
                             <li><a href=" {{ route('home') }} ">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">About </li>
+                            <li class="active">About Us</li>
                         </ul>
                     </div>
                 </div>
@@ -27,7 +27,9 @@
                 <div class="col-md-12 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
-                        <h3>About NGS</h3>
+                        <h3>About Us</h3>
+                        <em><h6>Download our <a href="{{ asset('autoclinic_brochure.pdf') }} "><span style="color: blue;">Brochure</span> </a></h6></em>
+                        <br>
                         <p style="text-align: justify;">Founded in 2017, NGS Autoclinic is the brain child of Nathaniel Okwesiri.
                             “The passion lies in our concern for our people and how they’re being treated with their cars” – Nathaniel Okwesiri.
                             

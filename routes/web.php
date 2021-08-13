@@ -15,11 +15,12 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'PagesController@getHomepage')->name('home');
 Route::get('contact', "PagesController@getContact")->name('contact');
+Route::get('book_appointment', "PagesController@appointment")->name('appointment');
 Route::post('contact', 'PagesController@mail')->name('sendmail');
-Route::get('about', "PagesController@getAbout")->name('about');
+Route::get('about_us', "PagesController@getAbout")->name('about');
 Route::get('inventory', "PagesController@getInventory")->name('inventory');
-Route::get('training_hug', "PagesController@getTraining")->name('training');
-Route::get('services', "PagesController@getServices")->name('services');
+Route::get('our_training_hub', "PagesController@getTraining")->name('training');
+Route::get('our_services', "PagesController@getServices")->name('services');
 Route::get('gallery', "PagesController@getGallery")->name('gallery');
 Route::get('reviews', "ReviewController@index")->name('reviews');
 Route::post('post/reviews', "ReviewController@store")->name('store.review');

@@ -4,16 +4,16 @@
 
 @section('content')
 <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
+    <div class="breadcrumbs overlay"  style="background-image:url('img/trc_2.jpg')">
         <div class="container">
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Training Hub </h2>
+                        <h2>Our Training Hub </h2>
                         <ul class="bread-list">
                             <li><a href="{{ route('home') }} ">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Training Hub </li>
+                            <li class="active">Our Training Hub </li>
                         </ul>
                     </div>
                 </div>

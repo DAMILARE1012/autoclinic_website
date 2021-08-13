@@ -4,16 +4,16 @@
 
 @section('content')
     <!-- Breadcrumbs -->
-    <div class="breadcrumbs overlay">
+    <div class="breadcrumbs overlay" style="background-image:url('img/video-bg.jpg')">
         <div class="container">
             <div class="bread-inner">
                 <div class="row">
                     <div class="col-12">
-                        <h2>Services</h2>
+                        <h2>Our Services</h2>
                         <ul class="bread-list">
                             <li><a href="{{ route('home') }}">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li class="active">Services</li>
+                            <li class="active">Our Services</li>
                         </ul>
                     </div>
                 </div>
@@ -45,12 +45,12 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_4.jpg" alt="#">
+                                                    <img src="{{ asset('img/gcr_4.png')}}" alt="#">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/cd_1.jpg" alt="#">
+                                                    <img src="{{ asset('img/gcr_4_2.png')}}" alt="#">
                                                 </div>
                                             </div>
                                         </div>
@@ -83,12 +83,12 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_1.jpg" alt="#">
+                                                    <img src="{{ asset('img/gcr_1.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/cm_1.jpg" alt="#">
+                                                    <img src="{{ asset('img/gcr_11.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                         </div>
@@ -124,12 +124,12 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/slider.jpg" alt="#">
+                                                    <img src="{{asset('img/slider.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/slider.jpg" alt="#">
+                                                    <img src="{{asset('img/slider2.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                         </div>
@@ -160,12 +160,12 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_1.jpg" alt="#">
+                                                    <img src="{{asset('img/cd_1.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_1.jpg" alt="#">
+                                                    <img src="{{asset('img/cd_2.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                         </div>
@@ -202,12 +202,12 @@
                                         <div class="row">
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_1.jpg" alt="#">
+                                                    <img src="{{asset('img/diagnosis.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/gcr_1.jpg" alt="#">
+                                                    <img src="{{asset('img/diagnosis2.jpg')}}" alt="#">
                                                 </div>
                                             </div>
                                         </div>
@@ -246,7 +246,7 @@
                                             </div>
                                             <div class="col-lg-6 col-md-6 col-12">
                                                 <div class="single-image">
-                                                    <img src="img/trc_1.jpg" alt="#">
+                                                    <img src="img/trc_2.jpg" alt="#">
                                                 </div>
                                             </div>
                                         </div>

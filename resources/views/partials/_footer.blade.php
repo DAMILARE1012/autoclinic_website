@@ -23,16 +23,16 @@
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
                                     <li><a href="{{ route('home') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Home</a></li>
-                                    <li><a href="{{ route('about') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>About</a></li>
+                                    <li><a href="{{ route('about') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>About Us</a></li>
                                     <li><a href="{{ route('inventory') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Inventory</a></li>
                                     	
                                 </ul>
                             </div>
                             <div class="col-lg-6 col-md-6 col-12">
                                 <ul>
-                                    <li><a href="{{ route('training') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Training Hub</a></li>
-                                    <li><a href="{{ route('services') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Services</a></li>
-                                    <li><a href="{{ route('contact') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact</a></li>
+                                    <li><a href="{{ route('training') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Training Hub</a></li>
+                                    <li><a href="{{ route('services') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Services</a></li>
+                                    <li><a href="{{ route('contact') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
                                     	
                                 </ul>
                             </div>

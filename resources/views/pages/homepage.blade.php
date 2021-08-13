@@ -18,8 +18,8 @@
                                                 offer excellent services available at affordable prices to get you back on the road in
                                                 no time.</p> -->
                                 <div class="button">
-                                    <a href="{{ route('services') }}" class="btn">NGS Services</a>
-                                    <a href="{{ route('about') }}" class="btn primary">About NGS</a>
+                                    <a href="{{ route('services') }}" class="btn">Our Services</a>
+                                    <a href="{{ route('about') }}" class="btn primary">About Us</a>
                                 </div>
                             </div>
                         </div>
@@ -39,8 +39,8 @@
                                                 Detailing, Engine Wash and Underneath Wash.</h4>
                                             </p> -->
                                 <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About NGS</a>
-                                    <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
+                                    <a href="{{ route('about') }}" class="btn">About Us</a>
+                                    <a href="{{ route('services') }}" class="btn primary">Our Services</a>
                                 </div>
                             </div>
                         </div>
@@ -65,8 +65,8 @@
                                                 Operation and Servicing of Hydraulic Brake Systems etc.
                                             </p> -->
                                 <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About NGS</a>
-                                    <a href="{{ route('services') }}" class="btn primary">NGS Services</a>
+                                    <a href="{{ route('about') }}" class="btn">About Us</a>
+                                    <a href="{{ route('services') }}" class="btn primary">Our Services</a>
                                 </div>
                             </div>
                         </div>
@@ -160,7 +160,7 @@
                 <div class="col-lg-12">
                     <div class="section-title">
                         <h2>NGS Auto Clinic Centre</h2>
-                        <img src="img/section-img.png" alt="#">
+                        <img src="{{asset('img/section-img.png')}}" alt="#">
                         <p>NGS Auto Clinic Centre... <em> Your Confort is our Priority.</em>
                         </p>
                     </div>
@@ -170,7 +170,7 @@
                 <div class="col-lg-6 col-12">
                     <!-- Start Choose Left -->
                     <div class="choose-left">
-                        <h3>About NGS</h3>
+                        <h3>About Us</h3>
                         <p style="text-align: justify;">NGS Auto Clinic Centre is the home for all cars. Since our inception
                             in 2017, we have remained the number one choice for every car users. With our state-of-the-art
                             facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy
@@ -235,9 +235,9 @@
             <div class="row">
                 <div class="col-lg-12">
                     <div class="section-title">
-                        <h2>NGS Services</h2>
-                        <img src="img/section-img.png" alt="#">
-                        <p>NGS Auto Clinic Centre... Do it once and do it right...</p>
+                        <h2>Our Services</h2>
+                        <img src="{{asset('img/section-img.png')}}" alt="#">
+                        <p>NGS Auto Clinic Centre... Do it Once, Do it Right</p>
                     </div>
                 </div>
             </div>
@@ -246,12 +246,12 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/gcr_4.jpg" alt="img">
+                            <img src="{{ asset('img/gcr_4.png')}}" alt="img">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#repairs "><b>General Repairs Services.</b></a></h2>
+                                <h2><a href="{{ route('services') }}#repairs "><b>General Repairs Services</b></a></h2>
                                 <p class="text" style="text-align: justify;">NGS General Repairs Services include but not
                                     limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel
                                     Balancing.
@@ -270,7 +270,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/gcr_1.jpg" alt="#">
+                            <img src="{{asset('img/gcr_1.jpg')}}" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -292,7 +292,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/slider.jpg" alt="#">
+                            <img src="{{asset('img/slider.jpg')}}" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -317,7 +317,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/cd_1.jpg" alt="#">
+                            <img src="{{asset('img/cd_1.jpg')}}" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -340,7 +340,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/gcr_1.jpg" alt="#">
+                            <img src="{{asset('img/diagnosis.jpg')}}" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
@@ -364,7 +364,7 @@
                     <!-- Single Blog -->
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="img/trc_1.jpg" alt="#">
+                            <img src="{{asset('img/trc_1.jpg')}}" alt="#">
                         </div>
                         <div class="news-body">
                             <div class="news-content">

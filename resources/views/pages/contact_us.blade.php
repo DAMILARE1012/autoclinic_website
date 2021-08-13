@@ -4,7 +4,7 @@
      
 @section('content')
     <!-- Breadcrumbs -->
-		<div class="breadcrumbs overlay">
+		<div class="breadcrumbs overlay"  style="background-image:url('img/contact.jpg')">
 			<div class="container">
 				<div class="bread-inner">
 					<div class="row">
@@ -36,7 +36,7 @@
 						</div>
 						<div class="col-lg-6 col-offset-3">
 							<div class="contact-us-form">
-								<h2>Contact NGS</h2>
+								<h2>Contact Us</h2>
 								<!-- Form -->
 								@foreach ($errors->all() as $error)
 					            	<li>{{ $error }}</li>
@@ -71,7 +71,7 @@
 										</div>
 										<div class="col-lg-12">
 											<div class="form-group">
-												<textarea name="message" placeholder="Your Message" required> {{ old('message') }}</textarea>
+												<textarea name="message" rows="6" cols="70" placeholder="Your Message">{{ old('message') }}</textarea>
 											</div>
 										</div>
 										<div class="col-12">
@@ -94,7 +94,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
-									<h3>+234 703 711 0944</h3>
+									<h3>+234 703 711 0944</h3><p>
+									<h3> <a href="https://wa.me/message/ZFHWKAVH4HMIP1" target="_blank">WhatsApp Us</a> </h3></p>
 									<p> <a href="mailto:info@ngsautoclinic.com.ng">info@ngsautoclinic.com.ng</a> </p>
 								</div>
 							</div>

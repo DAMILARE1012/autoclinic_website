@@ -49,10 +49,10 @@
                                 <ul class="nav menu">
                                     <li class="{{ (Request()->is('/')) ? 'active':"" }}"><a href="{{ route('home') }}">Home</a>
                                     </li>
-                                    <li class="{{ (Request()->is('about')) ? 'active':"" }}"><a href="{{ route('about') }}">About</a></li>
+                                    <li class="{{ (Request()->is('about')) ? 'active':"" }}"><a href="{{ route('about') }}">About Us</a></li>
                                     <li class="{{ (Request()->is('inventory')) ? 'active':"" }}"><a href="{{ route('inventory') }}">Inventory</a></li>
-                                    <li class="{{ (Request()->is('training')) ? 'active':"" }}"><a href="{{ route('training') }} ">Training Hub</a></li>
-                                    <li class="{{ (Request()->is('services')) ? 'active':"" }}"><a href="{{ route('services') }}">Services</a></li>
+                                    <li class="{{ (Request()->is('training')) ? 'active':"" }}"><a href="{{ route('training') }} ">Our Training Hub</a></li>
+                                    <li class="{{ (Request()->is('services')) ? 'active':"" }}"><a href="{{ route('services') }}">Our Services</a></li>
                                     <li class="{{ (Request()->is('gallery')) ? 'active':"" }}"><a href="{{ route('gallery') }}">Gallery</a></li>
                                 </ul>
                             </nav>
