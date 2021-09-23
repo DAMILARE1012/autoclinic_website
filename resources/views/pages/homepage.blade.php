@@ -142,7 +142,7 @@
                                                     target="_blank" style="display: inline;">info@ngsautoclinic.com.ng</a>
                                             </span></li>
                                     </ul>
-                                    <a href="{{ route('contact') }}">CONTACT NGS<i class="fa fa-long-arrow-right"></i></a>
+                                    <a href="{{ route('contact') }}">CONTACT US<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
                         </div>
@@ -383,6 +383,29 @@
                     </div>
                     <!-- End Single Blog -->
                 </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <!-- Single Blog -->
+                    <div class="single-news">
+                        <div class="news-head">
+                            <img src="{{asset('img/inspection_2.png')}}" alt="#">
+                        </div>
+                        <div class="news-body">
+                            <div class="news-content">
+                                <div class="date">Available</div>
+                                <h2><a href="{{ route('services') }}#ac"><b>Vehicle Inspection/ Professional Advice</b></a></h2>
+                                <p class="text" style="text-align: justify;">Our easy-to-talk-to auto car advisors will explain any suggested maintenance or repairs and advise you on the health of your vehicle so that you can make the most informed decisions. 
+                                </p>
+                                <div style="color:#11db22">
+                                    <a href="{{ route('services') }}#inspection"><strong> <em> learn more...</em></strong></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Blog -->
+                </div>
+                
             </div>
         </div>
     </section>

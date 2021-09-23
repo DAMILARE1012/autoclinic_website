@@ -8,6 +8,9 @@ use Illuminate\Support\Facades\DB;
 use App\Gallery;
 use App\Inventory;
 use App\Review;
+use App\Training;
+use App\Register;
+use Illuminate\Support\Str;
 
 class AdminController extends Controller
 {
@@ -28,7 +31,8 @@ class AdminController extends Controller
         $gallery = DB::table('galleries')->get();
         $inventory = DB::table('inventories')->get();
         $review = DB::table('reviews')->get();
-        return view('admin.home', compact('gallery', 'inventory', 'review'));
+        $training = DB::table('trainings')->get();
+        return view('admin.home', compact('gallery', 'inventory', 'review', 'training'));
     }
 
     public function gallery()
@@ -66,7 +70,7 @@ class AdminController extends Controller
             $imagemodel->save();
     }
 
-            $request->session()->flash('success', 'Picture(s) Added successfully');
+            $request->session()->flash('success', 'Picture(s) Added Successfully');
             return redirect()->route('admin.gallery');
 
             }
@@ -109,7 +113,7 @@ class AdminController extends Controller
         
         $gallery->save();
 
-        $request->session()->flash('success', 'Picture updated successfully');
+        $request->session()->flash('success', 'Picture Updated Successfully');
         return redirect()->route('admin.gallery');
     }
 
@@ -142,13 +146,6 @@ class AdminController extends Controller
         return view('admin.inventory.create_inventory');
     }
 
-    /**
-     * Store a newly created resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @return \Illuminate\Http\Response
-     */
-
     public function inventoryedit($id)
     {
         $inventory = Inventory::find($id);
@@ -180,7 +177,7 @@ class AdminController extends Controller
 
         $inventory->save(); 
 
-        $request->session()->flash('success', 'Picture Added successfully');
+        $request->session()->flash('success', 'Picture Added Successfully');
         return redirect()->route('admin.inventory');
     }
 
@@ -231,7 +228,7 @@ class AdminController extends Controller
         
         $inventory->save();
 
-        $request->session()->flash('success', 'Inventory updated successfully');
+        $request->session()->flash('success', 'Inventory Updated Successfully');
         return redirect()->route('admin.inventory');
     }
 
@@ -265,17 +262,6 @@ class AdminController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
-
-    /**
-     * Display the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
 
     public function disablereview(Request $request, $id)
     {
@@ -283,7 +269,7 @@ class AdminController extends Controller
         $review->status = 0;
         $review->save();
 
-        $request->session()->flash('success', 'Review disabled');
+        $request->session()->flash('success', 'Review Disabled');
         return redirect()->back();
     }
 
@@ -309,38 +295,66 @@ class AdminController extends Controller
         return view('admin.review.show-review', compact('review_data'));
     }
 
-    /**
-     * Show the form for editing the specified resource.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function edit($id)
-    {
-        //
-    }
-
-    /**
-     * Update the specified resource in storage.
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function update(Request $request, $id)
-    {
-        //
-    }
-
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
     public function reviewdestroy($id)
     {
         Review::where('id', $id)->delete();   
-        return redirect()->back()->with('success', 'Post deleted successfully!');
+        return redirect()->back()->with('success', 'Post Deleted Successfully!');
+    }
+
+    public function training_hub()
+    {
+        $register= Register::first();
+        $training= Training::all();
+        return view('admin.training_hub.hub', compact('training', 'register'));
+    }
+
+    public function generate_hub()
+    {
+        return view('admin.training_hub.generate');
+    }
+
+    public function generatestore(Request $request)
+    {
+        // $unique = strtolower(str_random(10));
+        $this->validate($request, [
+            'name' => 'required',
+
+        ]);
+
+       $random = Str::random(10);
+        
+        $training_hub = new Training();
+
+        $training_hub->name = $request->name;
+        $training_hub->code = 'NGS_'.$random;
+
+        $training_hub->save(); 
+
+        $request->session()->flash('success', 'Unique Number: NGS_'.$random);
+        return redirect()->route('admin.training_hub');
+    }
+
+    public function hub_destroy($id)
+    {
+        Training::where('id', $id)->delete();   
+        return redirect()->back()->with('success', 'Training Deleted Successfully!');
+    }
+
+    public function enableReg(Request $request, $id)
+    {
+        $reg = Register::find($id);
+        $reg->status = 1;
+        $reg->save();
+
+        return redirect()->back()->with('success', 'Registration is Ongoing');
+    }
+
+    public function disableReg(Request $request, $id)
+    {
+        $reg = Register::find($id);
+        $reg->status = 0;
+        $reg->save();
+
+        return redirect()->back()->with('off', 'Registration is on Hold');
     }
 }

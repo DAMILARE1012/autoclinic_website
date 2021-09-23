@@ -26,11 +26,12 @@
         <div class="row w-100 mx-0">
           <div class="col-lg-4 mx-auto">
             <div class="auth-form-light text-left py-5 px-4 px-sm-5">
-              <div  style="text-align: center;">
-                <img src="{{ asset('img/favicon.png')}}" alt="logo" style="height: 100px;">
+              <div>
+                <img src="{{ asset('img/logo.png')}}" alt="logo" style="height: 70px;">
               </div>
+
               <br>
-              <h4 align="center">NGS Admin Login</h4>
+              <h4 align="center">Admin Login</h4>
               <br>
 
               <form method="POST" action="{{ route('login') }}">

@@ -24,6 +24,7 @@ Route::get('our_services', "PagesController@getServices")->name('services');
 Route::get('gallery', "PagesController@getGallery")->name('gallery');
 Route::get('reviews', "ReviewController@index")->name('reviews');
 Route::post('post/reviews', "ReviewController@store")->name('store.review');
+Route::post('our_training/form','PagesController@downloadForm')->name('download.form');
 
 //admin
 Auth::routes();
@@ -36,6 +37,12 @@ Route::post('admin/gallery/store', 'AdminController@galstore')->name('store.gall
 Route::get('admin/gallery/edit/{id}', 'AdminController@galedit')->name('edit.gallery');
 Route::post('admin/gallery/update/{id}', 'AdminController@galupdate')->name('update.gallery');
 Route::get('/admin/gallery/delete/{id}', 'AdminController@galdestroy')->name('delete.gallery');
+
+//admin Training Hub
+Route::get('/admin/training_hub', 'AdminController@training_hub')->name('admin.training_hub');
+Route::get('/admin/training_hub/generate', 'AdminController@generate_hub')->name('admin.generate_hub');
+Route::post('/admin/training_hub/generate', 'AdminController@generatestore')->name('store.generate');
+Route::get('/admin/training_hub/delete/{id}', 'AdminController@hub_destroy')->name('delete.training');
 
 //Admin Inventory
 Route::get('/admin/inventory', 'AdminController@inventory')->name('admin.inventory');
@@ -53,3 +60,7 @@ Route::get('/admin/disable-review/{id}', 'AdminController@disablereview')->name(
 Route::get('/admin/enable-review/{id}', 'AdminController@enablereview')->name('enable.review');
 Route::get('/admin/unpublished-review', 'AdminController@disabledreviewList')->name('unpublished.review');
 Route::get('/admin/review/delete/{id}', 'AdminController@reviewdestroy')->name('delete.review');
+
+//admin Registration 
+Route::get('/admin/enable-reg/{id}', 'AdminController@enableReg')->name('enable.reg');
+Route::get('/admin/disable-reg/{id}', 'AdminController@disableReg')->name('disable.reg');

@@ -137,7 +137,7 @@
                                     <p style="text-align: justify">
                                         
                                         Having noticed subpar washing techniques that produce undesired results such as: scuffing, scratching, brown stains, water residue, odour and in some cases damage, we set out to bring you the best car wash services. We utilize not only state-of-the-art equipment but also the required washing techniques and materials such as cloths, washing chemicals and much more to achieve a beautiful finish both inside and outside. <br>
-                                        With our expertise, you can be rest assured of shiny and attractive look after washing that makes you look a million bucks! Our interior detailing services provides cleaning as well disinfection that leaves a pleasant long-lasting fragrance and that new car smell!
+                                        With our expertise, you can be rest assured of shiny and attractive look after washing that makes you look a million bucks! Our interior detailing services provides cleaning as well disinfection that leaves a pleasant long-lasting fragrance and that new car smell!<br>
                                         Come on down today!
 
                                     </p>
@@ -274,6 +274,44 @@
                                         Service Emissions and Computer Control System.
                                         Our Car Make-up Services are Polishing, Paint Protection, Head Light Restoration,
                                         Windscreen/Window Restoration and Glass Restoration.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="inspection" class="col-lg-6 col-12" >
+                    <div class="row">
+                        <div class="col-12">
+                            <div class="single-main">
+                                <!-- Meta -->
+                                <div class="meta">
+                                    <h1 class="news-title">Vehicle Inspection/ Professional Advice</h1>
+                                </div>
+                                <!-- News Text -->
+                                <div class="news-text">
+                                    <div class="image-gallery">
+                                        <div class="row">
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="single-image">
+                                                    <img src="img/inspection_2.png" alt="#">
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-6 col-md-6 col-12">
+                                                <div class="single-image">
+                                                    <img src="img/inspection.png" alt="#">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <p style="text-align: justify">Our easy-to-talk-to auto car advisors will explain any suggested maintenance or repairs and advise you on the health of your vehicle so that you can make the most informed decisions when it comes to maintenance and repair 
+                                        services.
+
+                                        <br>
+                                        It is highly recommended that before you 
+                                        purchase a used vehicle, you have a 
+                                        complete used vehicle inspection. 
+                                        NGS Auto Clinic provides a thorough used vehicle inspection that covers 50+ areas of the vehicle and a test drive
                                     </p>
                                 </div>
                             </div>

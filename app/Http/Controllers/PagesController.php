@@ -6,6 +6,9 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use Mail;
 use App\Mail\contactus;
+use App\Training;
+use App\Register;
+use Response;
 
 
 class PagesController extends Controller
@@ -43,7 +46,8 @@ class PagesController extends Controller
     }
 
     public function getTraining(){
-        return view('pages.training');
+        $register = Register::first();
+        return view('pages.training', compact('register'));
     }
 
     public function getInventory(){
@@ -59,5 +63,28 @@ class PagesController extends Controller
         return view('pages.gallery', compact('gallery'));
     }
 
+    public function downloadForm(Request $request)
+    {
+        $search_name = $request->name;
+        $unique_name = Training::where('name', 'like', '%'.$search_name.'%')->first();
 
+        $search_code = $request->code;
+        $unique_code = Training::where('code', 'like', '%'.$search_code.'%')->first();
+
+
+         if ($unique_name AND $unique_code ){
+
+            // $request->session()->flash('success', 'Registration and Guarantor Form downloaded!');
+            $application = public_path().'\mail\application.pdf';
+            // $guarantor = public_path().'\mail\guarantor.pdf';
+     
+            return Response::download($application);
+            // return Response::download($guarantor);
+         }
+         else{ 
+            return redirect()->route('training')->with('bad', 'Name or Code not Found!');
+
+        }
+        
+    }
 }
