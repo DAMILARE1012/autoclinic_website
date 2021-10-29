@@ -46,3 +46,7 @@
  <link rel="stylesheet" href="{{ asset('css/responsive.css') }}">
  {{-- Light Box- CSS --}}
  <link rel="stylesheet" href="{{ asset('css/lightbox.min.css') }}">
+
+{{-- Inventory css --}}
+<link rel="stylesheet" href="{{ asset('assets/css/glightbox.min.css') }}" />
+<link rel="stylesheet" href="{{ asset('assets/css/main.css') }}" />

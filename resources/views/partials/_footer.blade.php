@@ -35,6 +35,7 @@
                                     <li><a href="{{ route('training') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Training Hub</a></li>
                                     <li><a href="{{ route('services') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Our Services</a></li>
                                     <li><a href="{{ route('contact') }}"><i class="fa fa-caret-right" aria-hidden="true"></i>Contact Us</a></li>
+                                    <li><a href="https://wa.me/message/ZFHWKAVH4HMIP1" target="_blank"><i class="fa fa-caret-right" aria-hidden="true"></i>WhatsApp Us</a></li>
                                     	
                                 </ul>
                             </div>
@@ -47,6 +48,7 @@
                         <p>We provide general repairs services, automated car wash, car make-up, full AC services, computer diagnosis, and other vehicle miscellaneous services.
                             You can always count on us!</p>
                         <ul class="time-sidual">
+                            <li class="day">Call Us <span>+234 703 711 0944</span></li>
                             <li class="day">Monday - Saturday <span>8.00am - 6.00pm</span></li>
                             <li class="day">Sunday <span>12.00pm - 5.00pm</span></li>
                         </ul>

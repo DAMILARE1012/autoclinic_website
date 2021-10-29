@@ -51,7 +51,8 @@ class PagesController extends Controller
     }
 
     public function getInventory(){
-        return view('pages.inventory');
+        $inventory = DB::table('inventories')->orderBy('created_at', 'desc')->get();
+        return view('pages.inventory', compact('inventory'));
     }
     
     public function getAbout(){

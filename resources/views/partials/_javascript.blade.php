@@ -43,3 +43,7 @@
 
 {{-- Review JavaScript --}}
 <script src="{{ asset('js/review.js') }}"></script>
+
+{{-- inventory css --}}
+<script src="assets/js/glightbox.min.js"></script>
+<script src="assets/js/main.js"></script>
