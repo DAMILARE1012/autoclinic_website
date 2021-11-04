@@ -605,15 +605,16 @@ body {
     margin-top: 150px;
 }
 .slider .single-slider h1 {
-    color: #fff;
+    color: rgb(255, 255, 255);
     font-size: 38px;
     font-weight: 700;
     margin: 0;
     padding: 0;
     line-height: 42px;
+    background-color: rgb(131, 131, 131);
 }
 .slider .single-slider h1 span {
-    color: #11db22;
+    color: #00ff15;
 }
 .slider .single-slider p {
     color: #2c2d3f;

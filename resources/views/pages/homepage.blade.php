@@ -7,7 +7,7 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/slide_3.jpg')">
+            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_3.jpg')">
                 <div class="container">
 
                     <div class="row">
@@ -29,7 +29,7 @@
             </div>
             <!-- End Single Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/slide_2.jpg')">
+            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_2.jpg')">
                 <div class="container">
 
                     <div class="row">
@@ -51,7 +51,7 @@
             </div>
             <!-- Start End Slider -->
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('img/slide_1.jpg')">
+            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_1.jpg')">
                 <div class="container">
                     <div class="row">
                         <div class="col-lg-7">
@@ -163,7 +163,7 @@
                     <div class="section-title">
                         <h2>NGS Auto Clinic Centre</h2>
                         <img src="{{asset('img/section-img.png')}}" alt="#">
-                        <p>NGS Auto Clinic Centre... <em> Your Confort is our Priority.</em>
+                        <p>NGS Auto Clinic Centre... <em> Your Comfort is our Priority.</em>
                         </p>
                     </div>
                 </div>

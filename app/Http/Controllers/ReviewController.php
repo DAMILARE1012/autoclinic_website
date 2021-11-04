@@ -49,7 +49,7 @@ class ReviewController extends Controller
         $review->name = $request->name;
         $review->email = $request->email;
         $review->message = $request->message;
-        $review->status =1;
+        $review->status =0;
         $review->save(); 
         $request->session()->flash('success', 'Thanks for your Review!');
 
