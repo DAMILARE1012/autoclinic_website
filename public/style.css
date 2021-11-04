@@ -611,7 +611,7 @@ body {
     margin: 0;
     padding: 0;
     line-height: 42px;
-    background-color: rgb(131, 131, 131);
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .slider .single-slider h1 span {
     color: #00ff15;

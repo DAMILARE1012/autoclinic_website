@@ -163,7 +163,7 @@
                     <div class="section-title">
                         <h2>NGS Auto Clinic Centre</h2>
                         <img src="{{asset('img/section-img.png')}}" alt="#">
-                        <p>NGS Auto Clinic Centre... <em> Your Comfort is our Priority.</em>
+                        <p>NGS Auto Clinic Centre... <em> Do it Once, Do it Right.</em>
                         </p>
                     </div>
                 </div>
