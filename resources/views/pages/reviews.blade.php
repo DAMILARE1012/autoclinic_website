@@ -115,6 +115,13 @@
                             <div class="supaview">
                                 <h1 class="supaview__title" style="text-align: center; color: black; margin-bottom: 10px;">
                                     Add Your review</h1>
+                                    @foreach ($errors->all() as $error)
+                                    <div class="alert  alert-danger alert-dismissible fade show">
+                                        <span class="badge badge-pill badge-danger">Error</span>
+                                        {{ $error }}
+                                    </div>
+                                    
+                                    @endforeach
                                 @if (Session::has('success'))
                                     <div class="alert  alert-success alert-dismissible fade show">
                                         <span class="badge badge-pill badge-success">Success</span>

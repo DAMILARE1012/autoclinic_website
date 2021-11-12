@@ -63,7 +63,7 @@
                           	{{ $row->rate }} Stars
                           </td>
                           <td>
-                            <a href="{{ route('enable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Enable review</a>
+                            <a href="{{ route('enable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Approve review</a>
                           </td>
                           <td>
                             <a href="{{ route('show.review', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a>

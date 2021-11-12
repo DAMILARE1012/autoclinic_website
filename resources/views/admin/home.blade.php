@@ -43,6 +43,7 @@
                     <a href="{{ route('admin.reviews') }}"><h3 class="mb-0 mb-md-2 mb-xl-0 order-md-1 order-xl-0"> {{ $review->count() }} </h3></a> 
                     <i class="ti-pencil-alt icon-md text-muted mb-0 mb-md-3 mb-xl-0"></i>
                   </div>  
+                  <p class="mb-0 mt-2 text-danger">{{ $approved_review->count() }} <span class="text-black ml-1"><small>Approved</small></span></p>
                 </div>
               </div>
             </div>

@@ -58,7 +58,7 @@ Route::get('/admin/review', 'AdminController@reviewindex')->name('admin.reviews'
 Route::get('/admin/review/{id}', 'AdminController@reviewshow')->name('show.review');
 Route::get('/admin/disable-review/{id}', 'AdminController@disablereview')->name('disable.review');
 Route::get('/admin/enable-review/{id}', 'AdminController@enablereview')->name('enable.review');
-Route::get('/admin/unpublished-review', 'AdminController@disabledreviewList')->name('unpublished.review');
+Route::get('/admin/unappoved-review', 'AdminController@disabledreviewList')->name('unpublished.review');
 Route::get('/admin/review/delete/{id}', 'AdminController@reviewdestroy')->name('delete.review');
 
 //admin Registration 

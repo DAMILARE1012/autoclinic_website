@@ -31,8 +31,9 @@ class AdminController extends Controller
         $gallery = DB::table('galleries')->get();
         $inventory = DB::table('inventories')->get();
         $review = DB::table('reviews')->get();
+        $approved_review = DB::table('reviews')->where('status' , 1)->get();
         $training = DB::table('trainings')->get();
-        return view('admin.home', compact('gallery', 'inventory', 'review', 'training'));
+        return view('admin.home', compact('gallery', 'inventory', 'review', 'training', 'approved_review'));
     }
 
     public function gallery()
