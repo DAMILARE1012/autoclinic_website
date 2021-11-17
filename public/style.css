@@ -4330,7 +4330,7 @@ body {
     justify-content: center;
 }
 .supaview__rating > input {
-    display: none;
+   opacity: 0;
 }
 .supaview__rating > label:before {
     display: inline-block;

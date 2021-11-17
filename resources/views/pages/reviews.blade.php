@@ -99,7 +99,8 @@
 
             </div>
         </div>
-    </section> --><!-- End Testimonials Section -->
+    </section>
+    <!-- End Testimonials Section -->
     @else
         <h6 class="text-center text-danger">No Reviews</h6>
     @endif
@@ -131,7 +132,7 @@
                                 <form id="review" method="POST" action=" {{ route('store.review') }} ">
                                     @csrf
                                     <fieldset class="supaview__rating">
-                                        <input type="radio" id="star5" name="rate" value="5" /><label for="star5"></label>
+                                        <input type="radio" id="star5" name="rate" value="5" required/><label for="star5"></label>
                                         <input type="radio" id="star4" name="rate" value="4" /><label for="star4"></label>
                                         <input type="radio" id="star3" name="rate" value="3" /><label for="star3"></label>
                                         <input type="radio" id="star2" name="rate" value="2" /><label for="star2"></label>
@@ -157,5 +158,8 @@
             </div>
         </div>
     </section>
-    <!--/ End Single News -->
 @endsection
+
+<div style="background-color: black;">
+    <p style="color: white;"></p>
+</div>
