@@ -1,9 +1,9 @@
  <!-- Meta Tags -->
  <meta charset="utf-8">
  <meta http-equiv="X-UA-Compatible" content="IE=edge">
- <meta name="keywords" content="Site keywords here">
- <meta name="description" content="">
- <meta name='copyright' content=''>
+ <meta name="description" content="Mechanic in Abuja">
+ <meta name="keywords" content="NGS, autoclinic, mechaninc, abuja">
+ <meta name="author" content="Benjamin Alen">
  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
  <!-- Title -->
