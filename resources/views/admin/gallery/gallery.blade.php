@@ -57,7 +57,7 @@
                             {{ $row->description }}
                           </td>
                           <td>
-                            <a href="{{ route('edit.gallery', ['id' => $row->id]) }}"> Edit |</a><a href="{{ route('delete.gallery', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"> Delete</a>
+                            <a href="{{ route('admin.edit.gallery', ['id' => $row->id]) }}"> Edit |</a><a href="{{ route('admin.delete.gallery', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"> Delete</a>
                           </td>
                         </tr>
                          @endforeach

@@ -22,7 +22,7 @@
             @endforeach
         </ul>
 
-      <form action="{{ route('store.generate') }}" method="POST" enctype="multipart/form-data" class="forms-sample">
+      <form action="{{ route('admin.store.generate') }}" method="POST" enctype="multipart/form-data" class="forms-sample">
         @csrf
         <div class="form-group">
           <label for="exampleInputName1">Name</label>

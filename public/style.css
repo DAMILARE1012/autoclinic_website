@@ -245,6 +245,7 @@ body {
 .header {
     background-color: #fff;
     position: relative;
+    
 }
 .header .navbar-collapse {
     padding: 0;
@@ -298,7 +299,7 @@ body {
 }
 .header .header-inner {
     background: #fff;
-    z-index: 999;
+    z-index: 1;
     width: 100%;
 }
 /* .get-quote{

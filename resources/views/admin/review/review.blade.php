@@ -63,12 +63,12 @@
                           	{{ $row->rate }} Stars
                           </td>
                           <td>
-                            <a href="{{ route('disable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Disable review</a>
+                            <a href="{{ route('admin.disable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Disable review</a>
                           </td>
                           <td>
-                          	<a href="{{ route('show.review', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a>
+                          	<a href="{{ route('admin.show.review', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a>
                           </td>
-                          <td><a href="{{ route('delete.review', ['id' => $row->id]) }}" class="btn btn-link text-danger"> Delete</a></td>
+                          <td><a href="{{ route('admin.delete.review', ['id' => $row->id]) }}" class="btn btn-link text-danger"> Delete</a></td>
                         </tr>
                          @endforeach
                         

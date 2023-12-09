@@ -20,7 +20,7 @@
                 <li>{{ $error }}</li>
                 @endforeach
 
-      <form action="{{ route('update.gallery', ['id' => $gallery->id]) }}" method="POST" enctype="multipart/form-data" class="forms-sample" >
+      <form action="{{ route('admin.update.gallery', ['id' => $gallery->id]) }}" method="POST" enctype="multipart/form-data" class="forms-sample" >
         @csrf
         <div class="form-group">
           <label for="exampleInputName1">Description</label>

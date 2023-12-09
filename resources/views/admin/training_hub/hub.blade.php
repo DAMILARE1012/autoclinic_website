@@ -31,11 +31,11 @@
                   @endif
 
                  @if($register->status ==0)
-                <a href="{{ route('enable.reg', ['id' => $register->id]) }}"><button type="button" class="btn btn-success btn-icon-text btn-rounded">Enable Registration Session</button> </a>
+                <a href="{{ route('admin.enable.reg', ['id' => $register->id]) }}"><button type="button" class="btn btn-success btn-icon-text btn-rounded">Enable Registration Session</button> </a>
                 <span class="btn btn text-warning">Registration is Presently On hold</span>
                 
                 @else
-                <a href="{{ route('disable.reg', ['id' => $register->id]) }}"><button type="button" class="btn btn-warning btn-icon-text btn-rounded">
+                <a href="{{ route('admin.disable.reg', ['id' => $register->id]) }}"><button type="button" class="btn btn-warning btn-icon-text btn-rounded">
                        Disable Registration Session
                     </button></a>
                 <span class="btn btn text-success">Registration is Presently Ongoing</span>
@@ -74,7 +74,7 @@
                           <td>
                             {{$row->created_at->diffForHumans()}}
                           </td>
-                          <td><a href="{{ route('delete.training', ['id' => $row->id]) }}" class="btn btn-link text-danger"> Delete</a></td>
+                          <td><a href="{{ route('admin.delete.training', ['id' => $row->id]) }}" class="btn btn-link text-danger"> Delete</a></td>
                         </tr>
                          @endforeach
                         

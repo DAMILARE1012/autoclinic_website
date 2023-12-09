@@ -1,5 +1,4 @@
 @extends ('admin.layouts.master')
-
 @section('content')
 
 <div class="content-wrapper">
@@ -16,7 +15,7 @@
   <div class="col-lg-12 grid-margin stretch-card">
               <div class="card">
                 <div class="card-body">
-                  <h4 class="card-title">Activities</h4>
+                  <h4 class="card-title">Trainings</h4>
                   @if(Session::has('success'))
                   <div class="alert  alert-success alert-dismissible fade show">
                       <span class="badge badge-pill badge-success">Success</span>
@@ -32,12 +31,12 @@
                            <h4>#</h5>
                           </th>
                           <th>
-                           <h4>name</h5> 
+                           <h4>Title</h5> 
                           </th>
                           <th>
                           </th>
                           <th>
-                            <h4>Action</h5>
+                            <h4>Actions</h5>
                           </th>
                         </h4>
                         </tr>
@@ -46,30 +45,30 @@
                         @php
                          $count = 1;
                         @endphp
-                        @foreach($inventory as $row)
+                        @foreach($singletraining as $row)
                         <tr>
                           <td>
                             <h5> {{ $count++ }} </h5>
                           </td>
                           <td>
-                            <h5>{{ $row->name }}</h5>                          
+                            <h6>{!! $row->title !!}</h6>                          
                           </td>                        
                           <td>
-                            <a href="{{ route('admin.show.inventory', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text">
+                            <a href="{{ route('admin.show.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text">
                               <i class="ti-book btn-icon-prepend"></i>
                               Read
                             </button> </a>
                           </td>
                           <td>
                             
-                            <a href="{{ route('admin.edit.inventory', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text">
+                            <a href="{{ route('admin.edit.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text">
                               <i class="ti-pencil-alt btn-icon-append"></i> 
                                Edit
                             </button> </a>
                           </td>
               
                           <td>
-                            <a href="{{ route('admin.delete.inventory', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"><button type="button" class="btn btn-outline-danger btn-icon-text">
+                            <a href="{{ route('admin.training.delete', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"><button type="button" class="btn btn-outline-danger btn-icon-text">
                               <i class="ti-trash btn-icon-prepend"></i>                                                    
                               Delete
                             </button></a>

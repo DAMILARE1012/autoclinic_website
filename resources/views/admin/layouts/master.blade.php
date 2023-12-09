@@ -9,6 +9,8 @@
   <!-- plugins:css -->
   <link rel="stylesheet" href="{{ asset('admin_assets/vendors/ti-icons/css/themify-icons.css')}}">
   <link rel="stylesheet" href="{{ asset('admin_assets/vendors/base/vendor.bundle.base.css')}}">
+  {{-- WYSIWYG --}}
+  <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script>
   <!-- endinject -->
   <!-- plugin css for this page -->
   <!-- End plugin css for this page -->
@@ -56,6 +58,7 @@
   <!-- Custom js for this page-->
   <script src="{{ asset('admin_assets/js/dashboard.js')}}"></script>
   <!-- End custom js for this page-->
+  
 </body>
 
 </html>

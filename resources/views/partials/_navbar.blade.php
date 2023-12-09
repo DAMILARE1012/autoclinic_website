@@ -1,4 +1,38 @@
-
+<style>
+    .dropdown {
+        color: #2c2d3f;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 25px 12px;
+        position: relative;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+    }
+    
+    .dropdown-content {
+        color: #2c2d3f;
+        font-size: 14px;
+        font-weight: 500;
+        text-transform: capitalize;
+        padding: 10px 12px;
+        position: relative;
+        display: grid;
+        display: none;
+        min-width: 160px;
+        
+        z-index: 2; 
+        
+    }
+    
+    .dropdown:hover .dropdown-content {
+        display: block;
+    }
+    .dropdown .dropdown-content:hover a {
+        color: #0EDC8D;
+    }
+    </style>
 <header class="header" >
     <!-- Topbar -->
     {{-- <div class="topbar">
@@ -35,7 +69,8 @@
                         <!-- Start Logo -->
                         <div class="logo">
                             <!-- <span>NGS-AUTOCLINIC</span> -->
-                            <a href="{{ route('home') }}"><img src="img/logo.png" alt="logo"></a>
+                            <a href="{{ route('home') }}"><img src="{{asset('img/logo.png') }}" alt="logo"></a>
+                            
                         </div>
                         <!-- End Logo -->
                         <!-- Mobile Nav -->
@@ -54,7 +89,7 @@
                                     <li class="{{ (Request()->is('training')) ? 'active':"" }}"><a href="{{ route('training') }} ">Our Training Hub</a></li>
                                     <li class="{{ (Request()->is('services')) ? 'active':"" }}"><a href="{{ route('services') }}">Our Services</a></li>
                                     <li class="{{ (Request()->is('gallery')) ? 'active':"" }}"><a href="{{ route('gallery') }}">Gallery</a></li>
-                                </ul>
+                                    
                             </nav>
                         </div>
                         <!--/ End Main Menu -->

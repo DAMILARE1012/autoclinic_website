@@ -20196,6 +20196,7 @@ select.form-control.border-dark:focus {
   line-height: 1.4rem;
   vertical-align: top;
   margin-bottom: .5rem;
+  margin-top: .5rem;
 }
 
 .form-group.has-danger .form-control {

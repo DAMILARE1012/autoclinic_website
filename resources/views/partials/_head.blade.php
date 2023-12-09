@@ -10,7 +10,7 @@
  <title>Autoclinic @yield('title')</title>
 
  <!-- Favicon -->
- <link rel="icon" href="img/favicon.png">
+ <link rel="icon" href="{{ asset('img/favicon.png') }} ">
 
  <!-- Google Fonts -->
  <link

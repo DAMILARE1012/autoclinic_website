@@ -8,6 +8,7 @@ use Mail;
 use App\Mail\contactus;
 use App\Training;
 use App\Register;
+use App\Singletraining;
 use Response;
 
 
@@ -46,8 +47,15 @@ class PagesController extends Controller
     }
 
     public function getTraining(){
+        $ourTrainings = Singletraining::get();
         $register = Register::first();
-        return view('pages.training', compact('register'));
+        return view('pages.training', compact('register', 'ourTrainings'));
+    }
+
+    public function ourTrainings_show($singletraining)
+    {
+        $training_data = Singletraining::find($singletraining);   
+        return view('pages.singleTraining', compact('training_data'));
     }
 
     public function getInventory(){
