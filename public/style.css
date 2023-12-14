@@ -985,12 +985,12 @@ body {
     background: #412d78;
 }
 .why-choose .choose-left p {
-    margin-bottom: 35px;
+    margin-bottom: 5px;
 }
 .why-choose .choose-left .list {
 }
 .why-choose .choose-left .list li {
-    color: #868686;
+    color: #f8f8f8;
     margin-bottom: 12px;
 }
 .why-choose .choose-left .list li:last-child {

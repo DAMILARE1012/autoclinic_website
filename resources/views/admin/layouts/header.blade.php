@@ -34,6 +34,35 @@
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#home" aria-expanded="false" aria-controls="auth">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Home</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="home">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.home.front') }} ">Sliders</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.home.create') }} ">Create Slider</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="auth">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Contacts</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="contact">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.contact') }} ">Contacts</a></li>
+                
+              </ul>
+            </div>
+          </li>
+
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic" aria-expanded="false" aria-controls="ui-basic">
               <i class="ti-gallery menu-icon"></i>

@@ -20,7 +20,6 @@ Route::post('contact', 'PagesController@mail')->name('sendmail');
 Route::get('about_us', "PagesController@getAbout")->name('about');
 Route::get('inventory', "PagesController@getInventory")->name('inventory');
 Route::get('our_training_hub', "PagesController@getTraining")->name('training');
-Route::get('our_trainings', "PagesController@ourTrainings")->name('our_training');
 Route::get('/our_trainings/{id}', 'PagesController@ourTrainings_show')->name('show_training');
 Route::get('our_services', "PagesController@getServices")->name('services');
 Route::get('gallery', "PagesController@getGallery")->name('gallery');
@@ -33,6 +32,14 @@ Auth::routes();
 Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => ['auth']], function () 
 {
     Route::get('/', 'DashboardController@index')->name('home');
+
+    //Home 
+    Route::get('/home', 'HomeController@index')->name('home.front');
+    Route::get('/home/create', 'HomeController@create')->name('home.create'); 
+    Route::post('/home/store', 'HomeController@store')->name('home.store');
+    Route::get('/home/edit/{id}', 'HomeController@edit')->name('home.edit');
+    Route::post('/home/update/{id}', 'HomeController@update')->name('home.update');
+    Route::get('/home/delete/{id}', 'HomeController@destroy')->name('home.delete');
 
     //admin Gallery
     Route::get('/gallery', 'GalleryController@index')->name('gallery');
@@ -77,6 +84,15 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/unappoved-review', 'ReviewController@disabledreviewList')->name('unpublished.review');
     Route::get('/review/delete/{id}', 'ReviewController@reviewdestroy')->name('delete.review');
     
+    //admin contact 
+    Route::get('/contact', 'ContactController@index')->name('contact');
+    Route::get('/contact/edit/{id}', 'ContactController@edit')->name('contact.edit');
+    Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.update');  
+    
+    //admin about us 
+    Route::get('/about', 'AboutController@index')->name('about');
+    Route::get('/about/edit/{id}', 'AboutController@edit')->name('about.edit');
+    Route::post('/contact/update/{id}', 'AboutController@update')->name('about.update');  
     
 });
 

@@ -7,13 +7,14 @@
     <section class="slider">
         <div class="hero-slider">
             <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_3.jpg')">
+            @forelse ($slider as $key => $item)
+            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('/img/slider/{{ $item['img'] }}')">
                 <div class="container">
 
                     <div class="row">
                         <div class="col-lg-7">
                             <div class="text">
-                                <h1>We Provide <span>Autoclinic</span> Services That You Can <span>Trust!</span></h1>
+                                <h1>{!! $item['slide'] !!}</h1> 
                                 <!-- <p style="color: white;">Auto clinic services including General Repairs Services, Automated Car Wash, Car Make-up,
                                                 Full AC Services, Computer Diagnosis, and other Vehicle Miscellaneous Services. <br> We
                                                 offer excellent services available at affordable prices to get you back on the road in
@@ -27,55 +28,9 @@
                     </div>
                 </div>
             </div>
-            <!-- End Single Slider -->
-            <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_2.jpg')">
-                <div class="container">
+            @empty
+            @endforelse      
 
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="text">
-                                <h1>We Provide <span>Automated Car Wash</span> Services</h1>
-                                <!-- <p > <h4 style="color: #d9dddb;">
-                                                Our Automated Car Wash Service includes Interior Cleaning, Exterior Soft Brush Wash, Car
-                                                Detailing, Engine Wash and Underneath Wash.</h4>
-                                            </p> -->
-                                <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About Us</a>
-                                    <a href="{{ route('services') }}" class="btn primary">Our Services</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- Start End Slider -->
-            <!-- Start Single Slider -->
-            <div class="single-slider" style="background-image: linear-gradient(rgba(0, 0, 0, 0.250), rgba(0, 0, 0, 0.250)), url('img/slide_1.jpg')">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-lg-7">
-                            <div class="text">
-                                <h1>We Have An Excellent <span>Autoclinic Technical</span> Training Centre</h1>
-                                <!-- <p style="color: white;">We offer specialized and general training program and some of our program at AutoClinic
-                                                Technical Training Centre include:
-                                                Introduction to the Automotive Industry and Shop Safety
-                                                Auto-Cosmetics and Auto Beautification
-                                                Preventive Maintenance
-                                                Service Wheels, Tires, Hubs and Bearings
-                                                Operation & Service Hydraulic Brake Systems
-                                                Operation and Servicing of Hydraulic Brake Systems etc.
-                                            </p> -->
-                                <div class="button">
-                                    <a href="{{ route('about') }}" class="btn">About Us</a>
-                                    <a href="{{ route('services') }}" class="btn primary">Our Services</a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Slider -->
         </div>
     </section>
     <!--/ End Slider Area -->
@@ -134,14 +89,14 @@
                                     {{-- <span>Donec luctus</span> --}}
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
-                                        <li class="day">Monday - Saturday <span>8.00am - 6.00pm</span></li>
-                                        <li class="day">Sunday<span>12.00pm - 5.00pm</span></li>
-                                        <li class="day">Location<span><a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6"
+                                        <li class="day">Monday - Saturday <span>{{ $contact->mon_open }} </span></li>
+                                        <li class="day">Sunday<span>{{ $contact->sun_open }} </span></li>
+                                        <li class="day">Location<span><a href="{{ $contact->google_link }} "
                                                     target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
                                         <li class="day"> <span> </span></li>
-                                        <li class="day">Contact<span>+234 703 711 0944</span></li>
-                                        <li class="day">Email<span><a href="mailto:info@ngsautoclinic.com.ng"
-                                                    target="_blank" style="display: inline;">info@ngsautoclinic.com.ng</a>
+                                        <li class="day">Contact<span>{{ $contact->phone }} </span></li>
+                                        <li class="day">Email<span><a href="mailto:{{ $contact->email }}"
+                                                    target="_blank" style="display: inline;">{{ $contact->email }} </a>
                                             </span></li>
                                     </ul>
                                     <a href="{{ route('contact') }}">CONTACT US<i class="fa fa-long-arrow-right"></i></a>

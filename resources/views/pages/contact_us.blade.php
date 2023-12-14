@@ -30,8 +30,17 @@
 						<div class="col-lg-6">
 							<div class="contact-us-left">
 								<!--Start Google-map -->
-								<div class="mapouter"><div class="gmap_canvas"><iframe width="549" height="515" id="gmap_canvas" src="https://maps.google.com/maps?q=NGS%20Auto%20Clinic%20Centre,%20Abuja&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe><a href="https://yggtorrent-fr.com"></a><br><style>.mapouter{position:relative;text-align:right;height:515px;width:549px;}</style><a href="https://google-map-generator.com"></a><style>.gmap_canvas {overflow:hidden;background:none!important;height:515px;width:549px;}</style></div></div>
+								<div class="mapouter">
+									<div class="gmap_canvas">
+										<iframe width="549" height="515" id="gmap_canvas" src="https://maps.google.com/maps?q=NGS%20Auto%20Clinic%20Centre,%20Abuja&t=&z=11&ie=UTF8&iwloc=&output=embed" frameborder="0" scrolling="no" marginheight="0" marginwidth="0"></iframe>
+										<a href="https://yggtorrent-fr.com"></a>
+										<br>
+										<style>.mapouter{position:relative;text-align:right;height:515px;width:549px;}</style>
+										<a href="https://google-map-generator.com"></a>
+										<style>.gmap_canvas {overflow:hidden;background:none!important;height:515px;width:549px;}</style>
+									</div>
 								</div>
+							</div>
 								<!--/End Google-map -->
 						</div>
 						<div class="col-lg-6 col-offset-3">
@@ -94,9 +103,9 @@
 							<div class="single-info">
 								<i class="icofont icofont-ui-call"></i>
 								<div class="content">
-									<h3>+234 703 711 0944</h3><p>
-									<h3> <a href="https://wa.me/message/ZFHWKAVH4HMIP1" target="_blank">WhatsApp Us</a> </h3></p>
-									<p> <a href="mailto:info@ngsautoclinic.com.ng">info@ngsautoclinic.com.ng</a> </p>
+									<h3>{{ $contact->phone }} </h3><p>
+									<h3> <a href="{{ $contact->whatsapp_link }} " target="_blank">WhatsApp Us</a> </h3></p>
+									<p> <a href="mailto:{{ $contact->email }}">info@ngsautoclinic.com.ng</a> </p>
 								</div>
 							</div>
 						</div>
@@ -106,7 +115,7 @@
 							<div class="single-info">
 								<i class="icofont-google-map"></i>
 								<div class="content">
-									<p> <a href="https://goo.gl/maps/DNXrSC9rUMTzHQLf6" target="_blank">Plot CP-129A, ONEX Along Dei-Dei Zuba Road by Dantata Junction Abuja, Nigeria</a> </p>
+									<p> <a href="{{ $contact->google_link }} " target="_blank">{{ $contact->address }}</a> </p>
 								</div>
 							</div>
 						</div>
@@ -116,8 +125,8 @@
 							<div class="single-info">
 								<i class="icofont icofont-wall-clock"></i>
 								<div class="content">
-									<p>Mon - Sat: 8am - 6pm</p>
-									<p>Sunday 12am - 5pm</p>
+									<p>Mon - Fri: {{$contact->mon_open }} </p>
+									<p>Sunday: {{ $contact->sun_open }} </p>
 								</div>
 							</div>
 						</div>

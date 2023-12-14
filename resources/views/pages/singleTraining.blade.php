@@ -12,7 +12,7 @@
                         <ul class="bread-list">
                             <li><a href="{{ route('home') }} ">Home</a></li>
                             <li><i class="icofont-simple-right"></i></li>
-                            <li><a href="{{ route('our_training') }} ">Our Training Hub</a></li>
+                            <li><a href="{{ route('training') }} ">Our Training Hub</a></li>
                             <li><i class="icofont-simple-right"></i></li>
                             <li class="active">{{ $training_data->title }}</li>
                         </ul>
@@ -44,7 +44,7 @@
                     </div>
                 	
                     <div class="col-md-12" align="center">
-                        <img src="{{ asset('img/trainings/'.$training_data->img) }}"style="height:400px; width:900px" class="img-fluid">
+                        <img src="{{ asset('img/trainings/'.$training_data->img) }}" class="img-fluid">
                         
                         <br>
                         <hr>

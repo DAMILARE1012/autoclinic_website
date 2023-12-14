@@ -9,17 +9,22 @@ use App\Mail\contactus;
 use App\Training;
 use App\Register;
 use App\Singletraining;
+use App\Home;
+use App\Contact;
 use Response;
 
 
 class PagesController extends Controller
 {
     public function getHomepage(){
-        return view('pages.homepage');
+        $contact = Contact::first();
+        $slider = Home::get();
+        return view('pages.homepage', compact('slider', 'contact'));
     }
 
     public function getContact(){
-        return view('pages.contact_us');
+        $contact = Contact::first();
+        return view('pages.contact_us', compact('contact'));
     }
 
     public function appointment()

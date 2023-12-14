@@ -76,47 +76,31 @@
                         </div>
                     </div>
                     <br>
-                    
                     <h3>Our Trainings</h3> 
-                    <section id="repairs" class="news-single section" style="padding-top: 0px;">
-                        <div class="container">
-                            <div class="row">
-                               
-                                @forelse ($ourTrainings as $key => $item)
-                                <div class="col-lg-4 col-4">
-                                    <div class="row">
-                                        <div class="col-12">
-                                            <div class="single-main">
-                                                <!-- Meta -->
-                                                <div class="meta">
-                                                    <a href="{{ route('show_training', $item['id']) }}"><h6>{!! $item['title'] !!}</h6></a> 
-                                                </div>
-                                                <!-- News Text -->
-                                                <div class="news-text">
-                                                    <div class="image-gallery">
-                                                        <div class="single-image">
-                                                            <a href="{{ asset('/img/trainings/'.$item['img'] ) }}" data-lightbox="mygallery" data-title="{{$item['title'] }} ">
-                                                            <img src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="flyer" style="height:163px; width:1100px" class="img-fluid"></a>
-                                                        </div>
-                                                       
-                                                    </div>
-                                                    <p style="text-align: justify">{!! \Illuminate\Support\Str::limit($item['description'], 34, $end='...') !!} <em><a href="{{ route('show_training', $item['id']) }}" style="color:red"> Read More</a></em> </p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>  
-                                @empty
-                                <div class="container">
-                                    <div class="row justify-content-center align-item-center">
-                                            <h5><strong>Training Coming soon!!</strong></h5>
+                    <div class="row">
+                        
+                        @forelse ($ourTrainings as $key => $item)
+                            <div class="col-sm-4">
+                                <div class="card mb-4" style="width: 20rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;">
+                                    <a href="{{ asset('/img/trainings/'.$item['img'] ) }}" data-lightbox="mygallery" data-title="{{$item['title'] }} "><img class="card-img-top" src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="Card image cap" style="height: 200px; object-fit: cover;"></a>
+                                    <div class="card-body">
+                                        <a href="{{ route('show_training', $item['id']) }}"><h5 class="card-title">{!! $item['title'] !!}</h5></a>
+                                        <p class="card-text">{!! \Illuminate\Support\Str::limit($item['description'], 100, $end='...') !!} 
+                                            <a href="{{ route('show_training', $item['id']) }}" class="btn btn-primary btn-xs" style="padding: 3px 5px; color:white;">Learn More</a>
+                                        </p>
+                                  
+                                            
+                                                                               
                                     </div>
                                 </div>
-                                @endforelse             
                             </div>
-                        </div>
-                    </section>
-
+                        @empty
+                            <div>
+                                <h4>No record</h4>
+                            </div>
+                        @endif
+                    </div>
+                    
                     <h3>Trainings/Faculty Members</h3>
                     <br>
                     <div class="row">
@@ -221,5 +205,5 @@
             </div>
         </div>
     </section>
-
+    
 @endsection
