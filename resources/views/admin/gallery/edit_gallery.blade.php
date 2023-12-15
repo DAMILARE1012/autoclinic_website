@@ -31,7 +31,7 @@
           <br>
                 <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file"></div>
                 <small class="form-text text-success">Only if you want to update the current Image</small>
-            </div>
+        </div>
 
         
         <button type="submit" class="btn btn-primary mr-2">Send</button>

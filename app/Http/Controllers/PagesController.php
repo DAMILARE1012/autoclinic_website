@@ -11,6 +11,7 @@ use App\Register;
 use App\Singletraining;
 use App\Home;
 use App\Contact;
+use App\About;
 use Response;
 
 
@@ -18,8 +19,9 @@ class PagesController extends Controller
 {
     public function getHomepage(){
         $contact = Contact::first();
+        $about = About::first();
         $slider = Home::get();
-        return view('pages.homepage', compact('slider', 'contact'));
+        return view('pages.homepage', compact('slider', 'contact', 'about'));
     }
 
     public function getContact(){
@@ -69,7 +71,8 @@ class PagesController extends Controller
     }
     
     public function getAbout(){
-        return view('pages.about_us');
+        $about = About::first();
+        return view('pages.about_us', compact('about'));
     }
 
     public function getGallery(){

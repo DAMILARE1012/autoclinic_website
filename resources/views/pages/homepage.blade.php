@@ -48,11 +48,8 @@
                                     <i class="fa fa-history"></i>
                                 </div>
                                 <div class="single-content">
-                                    {{-- <span>Lorem Amet</span> --}}
                                     <h4>History</h4>
-                                    <p style="text-align: justify;">NGS Auto Clinic Centre, since 2017. We are the first to
-                                        provide comprehensive auto clinic services offering excellent services available at
-                                        affordable prices to get you back on the road in no time.</p>
+                                        {!! $about->history !!}
                                     <a href="{{ route('about') }}">READ MORE<i class="fa fa-long-arrow-right"></i></a>
                                 </div>
                             </div>
@@ -128,31 +125,7 @@
                     <!-- Start Choose Left -->
                     <div class="choose-left">
                         <h3>About Us</h3>
-                        <p style="text-align: justify;">NGS Auto Clinic Centre is the home for all cars. Since our inception
-                            in 2017, we have remained the number one choice for every car users. With our state-of-the-art
-                            facilities, modern day equipment, and a team of highly skilled technicians that truly enjoy
-                            their work, we are always proud of our exceptional services. We use the latest technology and
-                            globally acceptable standard to keep your car humming and healthy all the time.
-                        </p>
-                        <p>We offer excellent services available at affordable prices to get you back on the road in no
-                            time. Our comprehensive auto clinic services includes: </p>
-                        <div class="row">
-                            <div class="col-lg-5">
-                                <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>General Repairs Services </li>
-                                    <li><i class="fa fa-caret-right"></i>Automated Car Wash</li>
-                                    <li><i class="fa fa-caret-right"></i>Car Make-up</li>
-                                </ul>
-                            </div>
-                            <div class="col-lg-7">
-                                <ul class="list">
-                                    <li><i class="fa fa-caret-right"></i>Full AC Services</li>
-                                    <li><i class="fa fa-caret-right"></i>Computer Diagnosis</li>
-                                    <li><i class="fa fa-caret-right"></i>Other Vehicle Miscellaneous Services</li>
-                                </ul>
-
-                            </div>
-                        </div>
+                        {!! $about->home_about !!}
                         <br>
                         <p>
                             <span style="color:#fff" class="btn btn-primary btn-xs"><a
