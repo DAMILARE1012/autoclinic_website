@@ -24,44 +24,64 @@
         @csrf
         <div class="form-group">
             <label for="exampleInputName1">About</label>
-          <textarea class="form-control"id="editor" name="about_us" rows="4" cols="50">
-          {{$about->about_us}}
-          </textarea>
-          <script>
-            ClassicEditor
-                .create( document.querySelector( '#editor' ) )
-                .catch( error => {
-                    console.error( error );
-                } );
-            </script>
-        </div>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+          <div class="sample">
+            <textarea id="edit" name="about_us">
+              {{$about->about_us}}
+            </textarea>
 
+            <script>
+              new FroalaEditor('#edit', {
+              
+              fileUploadURL: '/UploadFiles',
+              
+              fileUploadParams: {
+              id: 'my_editor'
+              }
+              })
+            </script>
+          </div>
+        </div>
         <div class="form-group">
             <label for="exampleInputName1">History (Home Page)</label>
-          <textarea class="form-control"id="editor1" name="history" rows="4" cols="50">
-          {{$about->history}}
-          </textarea>
-          <script>
-            ClassicEditor
-                .create( document.querySelector( '#editor1' ) )
-                .catch( error => {
-                    console.error( error );
-                } );
-            </script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+          <div class="sample">
+            <textarea id="edit1" name="history">
+              {{$about->history}}
+            </textarea>
+
+            <script>
+              new FroalaEditor('#edit1', {
+              
+              fileUploadURL: '/UploadFiles',
+              
+              fileUploadParams: {
+              id: 'my_editor'
+              }
+              })
+              </script>
+          </div>
         </div>
 
         <div class="form-group">
             <label for="exampleInputName1">About (Home Page)</label>
-          <textarea class="form-control"id="editor3" name="home_about" rows="4" cols="50">
-          {{$about->home_about}}
-          </textarea>
-          <script>
-            ClassicEditor
-                .create( document.querySelector( '#editor3' ) )
-                .catch( error => {
-                    console.error( error );
-                } );
-            </script>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+          <div class="sample">
+            <textarea id="edit2" name="home_about">
+              {{$about->home_about}}
+            </textarea>
+
+            <script>
+              new FroalaEditor('#edit2', {
+              
+              fileUploadURL: '/UploadFiles',
+              
+              fileUploadParams: {
+              id: 'my_editor'
+              }
+              })
+              </script>
+          </div>
         </div>
 
         <div class="form-group">

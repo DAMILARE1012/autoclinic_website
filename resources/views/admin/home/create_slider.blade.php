@@ -25,18 +25,24 @@
       <form action="{{ route('admin.home.store') }}" method="POST" enctype="multipart/form-data" class="forms-sample" >
         @csrf
         <div class="form-group">
-            <label for="exampleInputName1">Slide Text</label>
-            <textarea class="form-control" id="editor" name="slide" rows="4" cols="50">
+          <label for="exampleInputName1">Slide Text</label>        
+          <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+          <div class="sample">
+            <form>
+            <textarea id="edit" name="slide">
               {{ old('slide') }}
             </textarea>
-        
-          <script>
-           ClassicEditor
-               .create( document.querySelector( '#editor' ) )
-               .catch( error => {
-                   console.error( error );
-               } );
-           </script>
+
+            <script>
+              new FroalaEditor('#edit', {
+              
+              fileUploadURL: '/UploadFiles',
+              
+              fileUploadParams: {
+              id: 'my_editor'
+              }
+              })
+            </script>
         </div>
         
         

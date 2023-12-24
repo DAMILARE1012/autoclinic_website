@@ -51,7 +51,7 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     
     //admin Training Hub
     Route::get('/training_hub/trainings', 'TrainingController@training')->name('trainings');
-    Route::get('/training_hub/students', 'TrainingController@index')->name('training_hub');
+    Route::get('/training_hub/a', 'TrainingController@index')->name('training_hub');
 
     Route::get('/training_hub/trainings/create', 'TrainingController@training_create')->name('training.create');
     Route::post('/training_hub/trainings/store', 'TrainingController@training_store')->name('store.training');
@@ -87,12 +87,12 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     //admin contact 
     Route::get('/contact', 'ContactController@index')->name('contact');
     Route::get('/contact/edit/{id}', 'ContactController@edit')->name('contact.edit');
-    Route::post('/contact/update/{id}', 'ContactController@update')->name('contact.update');  
+    Route::post('/contact/update/{id}', 'ContactController@conupdate')->name('contact.update');  
     
     //admin about us 
     Route::get('/about', 'AboutController@index')->name('about');
     Route::get('/about/edit/{id}', 'AboutController@edit')->name('about.edit');
-    Route::post('/contact/update/{id}', 'AboutController@update')->name('about.update');  
+    Route::post('/about/update/{id}', 'AboutController@update')->name('about.update');  
     
 });
 

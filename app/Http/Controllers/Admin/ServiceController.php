@@ -4,9 +4,8 @@ namespace App\Http\Controllers\Admin;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use App\Contact;
 
-class ContactController extends Controller
+class ServiceController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -15,8 +14,7 @@ class ContactController extends Controller
      */
     public function index()
     {
-        $contact= Contact::first();
-        return view('admin.contact.index', compact('contact'));
+        //
     }
 
     /**
@@ -59,8 +57,7 @@ class ContactController extends Controller
      */
     public function edit($id)
     {
-        $contact = Contact::find($id);
-        return view('admin.contact.edit_contact', compact('contact'));
+        //
     }
 
     /**
@@ -70,28 +67,9 @@ class ContactController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function conupdate(Request $request, $id)
+    public function update(Request $request, $id)
     {
-    
-        $this->validate($request, [
-            'phone' => 'required',
-            'email' => 'required',
-            'address' => 'required',
-            'sun_open' => 'required',
-            'mon_open' => 'required'
-        ]);
-
-        $contact = Contact::find($id);
-        $contact->phone = $request->phone;
-        $contact->email = $request->email;
-        $contact->address = $request->address;
-        $contact->sun_open = $request->sun_open;
-        $contact->mon_open = $request->mon_open;
-
-        $contact->save();
-
-        $request->session()->flash('success', 'Contact Updated Successfully');
-        return redirect()->route('admin.contact');
+        //
     }
 
     /**

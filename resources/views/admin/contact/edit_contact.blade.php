@@ -47,7 +47,7 @@
             <input type="text" class="form-control" value="{{ $contact->sun_open }}" name="sun_open" id="exampleInputName1" placeholder="Price" required>
         </div>
         
-        <button type="submit" class="btn btn-primary mr-2">Send</button>
+        <button type="submit" class="btn btn-primary">Send</button>
       </form>
     </div>
   </div>

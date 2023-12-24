@@ -8,6 +8,7 @@ use Illuminate\Support\Facades\DB;
 use App\Training;
 use App\Register;
 use App\Singletraining;
+use App\Traininghub;
 use Image;
 
 class TrainingController extends Controller
@@ -210,4 +211,5 @@ class TrainingController extends Controller
 
         return redirect()->back()->with('off', 'Registration is on Hold');
     }
+
 }
