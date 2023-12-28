@@ -22,7 +22,7 @@
 
       <form action="{{ route('admin.home.update', ['id' => $slider->id]) }}" method="POST" enctype="multipart/form-data" class="forms-sample" >
         @csrf
-        <div class="form-group">
+          <div class="form-group">
             <label for="exampleInputName1">Slide Text</label>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
             <div class="sample">
@@ -41,7 +41,8 @@
                 }
                 })
                 </script>
-        </div>
+            </div>
+          </div>
         <div class="form-group">
           <label>Image upload</label>
           <br>

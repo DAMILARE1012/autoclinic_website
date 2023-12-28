@@ -13,7 +13,58 @@ use Image;
 
 class TrainingController extends Controller
 {
+
     public function index()
+    {
+        $training_hub= Traininghub::first();
+        return view('admin.training_hub.index', compact('training_hub'));
+    }
+
+    public function index_edit($id)
+    {
+        $training_hub = Traininghub::find($id);
+        return view('admin.training_hub.edit_index', compact('training_hub'));
+    }
+
+    public function index_update(Request $request, $id)
+    {
+        $traininghub = Traininghub::find($id);
+
+        $this->validate($request, [
+            'training_hub' => 'required',
+            'facilities' => 'required',
+            'expectations' => 'required',
+            'title' => 'required',
+        ]);
+
+        if ($request->has('img')){ 
+
+            $this->validate($request, [
+                'img' => 'required|file|mimes:jpeg,png,jpg|max:2048'
+            ]);
+
+            $path = public_path().'/img/trainings/';      
+            $originalImage = $request->file('img');
+            $name = time().$originalImage->getClientOriginalName();
+            $image = Image::make($originalImage);
+            $image->resize(540, 360);
+            $image->save($path.$name); 
+            $traininghub->img = $name; 
+            }
+
+            $traininghub->training_hub= $request->training_hub;
+            $traininghub->facilities= $request->facilities;
+            $traininghub->expectations= $request->expectations;
+            $traininghub->title= $request->title;
+            
+        $traininghub->save();
+
+        $request->session()->flash('success', 'Training Updated Successfully');
+        return redirect()->route('admin.training_index');
+    }
+
+
+    public function students()
     {
         $register= Register::first();
         $training= Training::all();

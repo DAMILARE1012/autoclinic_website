@@ -17,9 +17,9 @@ class CreateTraininghubsTable extends Migration
             $table->id();
             $table->text('training_hub');
             $table->string('img');
-            $table->text('Facilities');
-            $table->text('Expectations');
-            $table->text('home_about');
+            $table->text('facilities');
+            $table->text('expectations');
+            $table->text('title');
             $table->timestamps();
         });
     }

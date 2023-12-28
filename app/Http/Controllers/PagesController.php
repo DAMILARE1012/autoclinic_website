@@ -13,7 +13,7 @@ use App\Home;
 use App\Contact;
 use App\About;
 use Response;
-
+use App\Traininghub;
 
 class PagesController extends Controller
 {
@@ -54,9 +54,10 @@ class PagesController extends Controller
     }
 
     public function getTraining(){
+        $traininghub = Traininghub::first();
         $ourTrainings = Singletraining::get();
         $register = Register::first();
-        return view('pages.training', compact('register', 'ourTrainings'));
+        return view('pages.training', compact('register', 'ourTrainings', 'traininghub'));
     }
 
     public function ourTrainings_show($singletraining)

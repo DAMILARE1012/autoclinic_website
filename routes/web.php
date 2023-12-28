@@ -51,7 +51,10 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     
     //admin Training Hub
     Route::get('/training_hub/trainings', 'TrainingController@training')->name('trainings');
-    Route::get('/training_hub/a', 'TrainingController@index')->name('training_hub');
+    Route::get('/training_hub', 'TrainingController@index')->name('training_index');
+    Route::get('/training_hub/edit/{id}', 'TrainingController@index_edit')->name('edit.index');
+    Route::post('/training_hub/update/{id}', 'TrainingController@index_update')->name('update.index');
+    Route::get('/training_hub/students', 'TrainingController@students')->name('training_hub');
 
     Route::get('/training_hub/trainings/create', 'TrainingController@training_create')->name('training.create');
     Route::post('/training_hub/trainings/store', 'TrainingController@training_store')->name('store.training');

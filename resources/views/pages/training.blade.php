@@ -27,7 +27,7 @@
             <div class="col-md-12 col-12">
                 <!-- Start Choose Left -->
                 <div class="choose-left">
-                	<h3>AUTOCLINIC TECHNICAL TRAINING CENTRE</h3>
+                	{!! $traininghub->title !!}
                     
                     @if(Session::has('success'))
                   <div class="alert  alert-success alert-dismissible fade show">
@@ -37,22 +37,19 @@
                   @endif
                 	<div class="row">
                 		<div class="col-md-6">
-                			{{-- <p style="text-align: justify;">At Autoclinic Technical Training Centre (ATTC), we aim to equip people with knowledge, know-how, skills and/or competences required in handling today’s information communication technology (ICT) and artificial intelligence enabled automobile system. <br>
-                    		Therefore, at ATTC, we shall provide high quality automobile education and training that have a strong work-based learning element that will facilitate young people’s transition to work and contribute to reducing unemployment and supporting economic development. <br>
-                    		Thus, we are at ATTC, we shall provide means of empowering people to develop their full capabilities, enabling them to seize social and employment opportunities, and increasing their productivity and their enterprises. This will be done through the use of formal, non-formal and informal vocational learning, workplace and work-based learning, and other learning opportunities in the formal and informal economies. Hence, we shall be committed to supporting life-long learning approach to economic growth, and good employment and social objectives of Nigeria. 
-                        
-                    		</p> --}}
-                            <p style="text-align: justify;">
+                			
+                            <!-- <p style="text-align: justify;">
                                 The NGS Auto Mechanic Training program provides learners with organized learning experiences along with actual shop training with the sole aim of equipping them with the necessary knowledge and experience required for diagnosis and repairing automobiles.<br>
                                 The combination of both classroom theory (25%) and hands-on training (75%) offers the learners the experiences that are required for entry-level Auto Mechanic Jobs.<br> 
                                 This Auto Mechanic Pre-Apprenticeship program prepares learners in the art of servicing and maintenance of all types and brands of cars. The NGS Automotive Training Centre Instructors all have relevant field experiences and provide practical and knowledgeable sources of education to our learners.
 
-                            </p>
+                            </p> -->
+                            {!! $traininghub->training_hub !!}
                 		</div>
                 		<div class="col-md-6">
                 		<div class="news-head">
-                		
-                			<img src="img/training.png" alt="training image">
+                            
+                			<img src="{{ asset('img/trainings/'.$traininghub->img) }}" alt="training image">
                     	</div>
                 		</div>
                 	</div>
@@ -61,18 +58,20 @@
                     <div class="row">
                         <div class="col-md-6">
                             <h3>Our Facilities</h3>
-                                <p style="text-align: justify;">
+                                <!-- <p style="text-align: justify;">
                                     In addition to our relatively serene and conducive environment, the classrooms are equipped with modern day learning facilities and our workshop is next to none in terms of sophisticated mechanical tools, machines and gadgets.
 
-                                </p>
+                                </p> -->
+                                {!! $traininghub->facilities !!}
                        
                         </div>
                         <div class="col-md-6">
                             <h3>Our Expectations</h3>
-                                <p style="text-align: justify;">
+                                <!-- <p style="text-align: justify;">
                                     At the end of the training you will come out as competent Auto diagnostician and as well as Auto Service Technician, you will also have the skills to use any modern diagnostic tool to communicate with and retrieve codes from any Onboard Diagnostics Compliant vehicle. <br><br>
                                     Furthermore you would be able to interpret the codes retrieved from the vehicle’s computer, use the codes with the vehicles manufacturers' e-repair manuals to fix the vehicle or to design maintenance and repair work schedule for other technicians.
-                                </p>
+                                </p> -->
+                                {!! $traininghub->expectations !!}
                         </div>
                     </div>
                     <br>
