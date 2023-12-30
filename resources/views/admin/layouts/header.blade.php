@@ -137,6 +137,19 @@
             </div>
           </li>
           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#service" aria-expanded="false" aria-controls="service">
+              <i class="ti-desktop menu-icon"></i>
+              <span class="menu-title">Service</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="service">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{route('admin.service') }}"> services</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{route('admin.service.create')}}">Add service</a></li>
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }} " onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();" >
               <i class="ti-power-off menu-icon"></i>

@@ -48,6 +48,8 @@
         </div>
         
         <button type="submit" class="btn btn-primary">Send</button>
+
+        <a href="{{ URL:: previous() }}" style="padding-left: 20px;"><button type="submit" class="btn btn-secondary mr-2">Back</button></a>
       </form>
     </div>
   </div>

@@ -52,6 +52,8 @@
           <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file" required></div>
         </div>
         <button type="submit" class="btn btn-primary mr-2">Submit</button>
+
+        <a href="{{ URL:: previous() }}" style="padding-left: 20px;"><button type="submit" class="btn btn-secondary mr-2">Back</button></a>
       </form>
     </div>
   </div>

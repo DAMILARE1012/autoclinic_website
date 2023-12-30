@@ -14,6 +14,7 @@ use App\Contact;
 use App\About;
 use Response;
 use App\Traininghub;
+use App\Service;
 
 class PagesController extends Controller
 {
@@ -21,7 +22,8 @@ class PagesController extends Controller
         $contact = Contact::first();
         $about = About::first();
         $slider = Home::get();
-        return view('pages.homepage', compact('slider', 'contact', 'about'));
+        $service = Service::get();
+        return view('pages.homepage', compact('slider', 'contact', 'about', 'service'));
     }
 
     public function getContact(){
@@ -50,7 +52,8 @@ class PagesController extends Controller
     }
 
     public function getServices(){
-        return view('pages.services');
+        $service = Service::get();
+        return view('pages.services', compact('service'));
     }
 
     public function getTraining(){

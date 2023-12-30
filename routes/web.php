@@ -97,5 +97,13 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/about/edit/{id}', 'AboutController@edit')->name('about.edit');
     Route::post('/about/update/{id}', 'AboutController@update')->name('about.update');  
     
+    //Admin Services 
+    Route::get('/service', 'ServiceController@index')->name('service');
+    Route::get('/service/create', 'ServiceController@create')->name('service.create'); 
+    Route::post('/service/store', 'ServiceController@store')->name('store.service');
+    Route::get('/service/{id}', 'ServiceController@show')->name('show.service');
+    Route::get('/service/edit/{id}', 'ServiceController@edit')->name('edit.service');
+    Route::post('/service/update/{id}', 'ServiceController@update')->name('update.service');
+    Route::get('/service/delete/{id}', 'ServiceController@destroy')->name('delete.service');
 });
 

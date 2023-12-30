@@ -172,169 +172,34 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
+                @forelse ($service as $key => $item)
+                <div class="col-lg-4 col-md-6 col-12" style="padding-bottom: 20px;">
                     <!-- Single Blog -->
+                    
                     <div class="single-news">
                         <div class="news-head">
-                            <img src="{{ asset('img/gcr_4.png')}}" alt="img">
+                            <img src="{{ asset('img/services/'.$item['img1']) }}" alt="img">
                         </div>
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#repairs "><b>General Repairs Services</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS General Repairs Services include but not
-                                    limited to Fleet Maintenance Repairs, Oil Change, Brake Pads, Tyre Change, and Wheel
-                                    Balancing.
-                                    We are capable and reliable!
-                                </p>
+                                <h2><a href="{{ route('services') }}"> {!! $item['title'] !!} </a></h2>
+                                
+                                {!! $item['home_description'] !!}
                                 <div style="color:#11db22">
-                                    <a href="{{ route('services') }}#repairs"><strong> <em> learn
+                                    <a href="{{ route('services') }}"><strong> <em> learn
                                                 more...</em></strong></a>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    
                     <!-- End Single Blog -->
                 </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/gcr_1.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#make-up"><b>Car Make-Up</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS Car Make-up Services are Polishing, Paint
-                                    Protection, Head Light Restoration, Windscreen/Window Restoration and Glass Restoration.
-                                </p>
-                                <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#make-up"><strong> <em> learn
-                                                more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/slider.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#wash"><b>Automated Car Wash</b></a></h2>
-                                <p class="text" style="text-align: justify;">
-                                    Having noticed subpar washing techniques that produce undesired results such as:
-                                    scuffing, scratching, brown stains, water residue, odour and in some cases damage...
-                                </p>
-                                <div style="color:#11db22">
-                                    <a href="{{ route('services') }}#wash"><strong> <em> learn more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-            </div>
-            <br>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/cd_1.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#ac"><b>Full AC Services / Auto Refill</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS AC service covers the following: Car AC
-                                    Troubleshooting, AC Diagnose, and Automated AC Vacuum/Refill.
-
-                                    Cooling should never be your problem again.
-                                </p>
-                                <div style="color:#11db22">
-                                    <a href="{{ route('services') }}#ac"><strong> <em> learn more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/diagnosis.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#computer"><b>Computer Diagnosis</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS Computer Diagnosis Services include but not
-                                    limited to the following: Brake Diagnosis, Warning Light Diagnosis, Check Engine Light,
-                                    and All Kinds of Key Programming.
-                                </p>
-                                <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#computer"><strong> <em> learn
-                                                more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/trc_1.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#training"><b>Technical Training Centre</b></a></h2>
-                                <p class="text" style="text-align: justify;">NGS offer specialized and general training
-                                    program and some of NGD's program at AutoClinic Technical Training Centre include and
-                                    introduction to the automotive industry and shop safety and more.
-                                </p>
-                                <div style="color: #11db22">
-                                    <a href="{{ route('services') }}#training"><strong> <em> learn
-                                                more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6 col-12">
-                    <!-- Single Blog -->
-                    <div class="single-news">
-                        <div class="news-head">
-                            <img src="{{asset('img/inspection_2.jpg')}}" alt="#">
-                        </div>
-                        <div class="news-body">
-                            <div class="news-content">
-                                <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}#ac"><b>Vehicle Inspection/ Professional Advice</b></a></h2>
-                                <p class="text" style="text-align: justify;">Our easy-to-talk-to auto car advisors will explain any suggested maintenance or repairs and advise you on the health of your vehicle so that you can make the most informed decisions. 
-                                </p>
-                                <div style="color:#11db22">
-                                    <a href="{{ route('services') }}#inspection"><strong> <em> learn more...</em></strong></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Blog -->
-                </div>
+                
+                @empty
+                @endforelse    
+               
                 
             </div>
         </div>
