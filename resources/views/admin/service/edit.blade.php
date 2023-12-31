@@ -2,7 +2,6 @@
 @section('content')
 
 <div class="content-wrapper">
-    <br>
     <div class="row">
         <div class="col-lg-12 grid-margin">
             <div class="d-flex justify-content-between align-items-center">
@@ -116,7 +115,6 @@
                     </div>
                 </div>
                 <button type="submit" class="btn btn-primary mr-2">Send</button>
-                <a href="{{ URL:: previous() }}" style="padding-left: 20px;"><button type="submit" class="btn btn-secondary mr-2">Back</button></a>
             </form>
         </div>
     </div>
