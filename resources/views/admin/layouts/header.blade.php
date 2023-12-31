@@ -30,14 +30,14 @@
         <ul class="nav">
           <li class="nav-item">
             <a class="nav-link" href="{{ route('admin.home') }} ">
-              <i class="ti-shield menu-icon"></i>
+              <i class="ti-dashboard menu-icon"></i>
               <span class="menu-title">Dashboard</span>
             </a>
           </li>
 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#home" aria-expanded="false" aria-controls="auth">
-              <i class="ti-write menu-icon"></i>
+              <i class="ti-home menu-icon"></i>
               <span class="menu-title">Home</span>
               <i class="menu-arrow"></i>
             </a>
@@ -65,7 +65,7 @@
 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#about" aria-expanded="false" aria-controls="auth">
-              <i class="ti-write menu-icon"></i>
+              <i class="ti-pencil-alt menu-icon"></i>
               <span class="menu-title">About</span>
               <i class="menu-arrow"></i>
             </a>
@@ -93,7 +93,7 @@
 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#ui-basic2" aria-expanded="false" aria-controls="ui-basic2">
-              <i class="ti-gallery menu-icon"></i>
+              <i class="ti-cup menu-icon"></i>
               <span class="menu-title">Training Hub</span>
               <i class="menu-arrow"></i>
             </a>
@@ -112,7 +112,7 @@
 
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
-              <i class="ti-write menu-icon"></i>
+              <i class="ti-comments-smiley menu-icon"></i>
               <span class="menu-title">Customer Review</span>
               <i class="menu-arrow"></i>
             </a>
@@ -125,7 +125,7 @@
           </li>
            <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth3" aria-expanded="false" aria-controls="auth3">
-              <i class="ti-desktop menu-icon"></i>
+              <i class="ti-layers-alt menu-icon"></i>
               <span class="menu-title">Inventory</span>
               <i class="menu-arrow"></i>
             </a>
