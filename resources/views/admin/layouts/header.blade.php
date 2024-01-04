@@ -102,6 +102,8 @@
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.training_index') }}  ">Training Hub</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.trainings') }}  ">Trainings</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.training.create') }} ">Create Training</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.trainer_student') }}  ">Trainers/students</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.trainer_student.create') }} ">Create Trainers/students</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.training_hub') }} ">Students</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.generate_hub') }} ">Generate Code</a></li>
                 

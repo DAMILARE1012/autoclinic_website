@@ -15,6 +15,7 @@ use App\About;
 use Response;
 use App\Traininghub;
 use App\Service;
+use App\TrainerStudent;
 
 class PagesController extends Controller
 {
@@ -60,7 +61,9 @@ class PagesController extends Controller
         $traininghub = Traininghub::first();
         $ourTrainings = Singletraining::get();
         $register = Register::first();
-        return view('pages.training', compact('register', 'ourTrainings', 'traininghub'));
+        $trainer = TrainerStudent::where('who', '=', 0)->get();
+        $student = TrainerStudent::where('who', '=', 1)->get();
+        return view('pages.training', compact('register', 'ourTrainings', 'traininghub', 'trainer', 'student'));
     }
 
     public function ourTrainings_show($singletraining)

@@ -103,25 +103,19 @@
                     <h3>Trainings/Faculty Members</h3>
                     <br>
                     <div class="row">
+                        @forelse ($trainer as $key => $item)
                 		<div class="col-md-4">
                 			<div class="news-head">
                 			
-                			<img src="img/facilitator1.png" alt="training image" width="">
-                			<p>Engr. Prof. A. M. Aibinu</p>
+                			<img src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="training image" width="">
+                			<p>{{ $item['title'] }}</p>
                     	</div>
                 		</div>
-                		<div class="col-md-4">
-                			<div class="news-head">
-                			<img src="img/facilitator2.png" alt="training image">
-                			<p>Engr. B. S. Ajagun</p>
-                    	</div>
-                		</div>
-                		<div class="col-md-4">
-                			<div class="news-head">
-                			<img src="img/facilitator3.png" alt="training image">
-                			<p>Engr. Dr. A. T. Folorunso</p>
-                    	</div>
-                		</div>
+                        @empty
+                            <div>
+                                <h4>No record</h4>
+                            </div>
+                        @endif
                 	</div>
                 	<br>
                     <h3>Past Organized Trainings</h3>
@@ -130,9 +124,7 @@
                         <div class="col-md-4">
                             <div class="news-head">
                                 <a href="img/training1.png "><img src="img/training1.png" alt="training image" width=""></a>
-                            
-                            <p></p>
-                        </div>
+                            </div>
                         </div>
                         <div class="col-md-4">
                             <div class="news-head">
@@ -178,25 +170,19 @@
                     <h3>Trainees/Students</h3>
 					<br>
                 	<div class="row">
+                        @forelse ($student as $key => $item)
                 		<div class="col-md-4">
                 			<div class="news-head">
-                			<img src="img/student1.png" alt="training image" width="">
-                			<p></p>
-                    	</div>
+                                <img src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="training image" width="">
+                                <p>{{ $item['title'] }}</p>
+                                
+                    	    </div>
                 		</div>
-                		<div class="col-md-4">
-                			<div class="news-head">
-                			<img src="img/student2.png" alt="training image">
-                			<p></p>
-                    	</div>
-                		</div>
-                        <div class="col-md-4">
-                           <div class="news-head">
-                            <img src="img/student3.png" alt="training image">
-                            <p></p>
-                        </div> 
-                        </div>
-                		
+                        @empty
+                            <div>
+                                <h4>No record</h4>
+                            </div>
+                        @endif                		
                 	</div>
                     
                 </div>

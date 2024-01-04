@@ -47,7 +47,7 @@ class TrainingController extends Controller
             $originalImage = $request->file('img');
             $name = time().$originalImage->getClientOriginalName();
             $image = Image::make($originalImage);
-            $image->resize(540, 360);
+            // $image->resize(540, 360);
             $image->save($path.$name); 
             $traininghub->img = $name; 
             }
@@ -112,7 +112,7 @@ class TrainingController extends Controller
             $originalImage = $request->file('img');
             $name = time().$originalImage->getClientOriginalName();
             $image = Image::make($originalImage);
-            $image->resize(1200, 799);
+            // $image->resize(1200, 799);
             $image->save($path.$name); 
 
             $training= new Singletraining();
@@ -181,7 +181,7 @@ class TrainingController extends Controller
             $originalImage = $request->file('img');
             $name = time().$originalImage->getClientOriginalName();
             $image = Image::make($originalImage);
-            $image->resize(1200, 799);
+            // $image->resize(1200, 799);
             $image->save($path.$name); 
             $training->img = $name; 
             }

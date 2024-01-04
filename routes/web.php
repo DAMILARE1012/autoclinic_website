@@ -69,6 +69,14 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     //Training Registration switch 
     Route::get('/enable-reg/{id}', 'TrainingController@enableReg')->name('enable.reg');
     Route::get('/disable-reg/{id}', 'TrainingController@disableReg')->name('disable.reg');
+
+    //Trianers and Students
+    Route::get('/training_hub/trainer_student', 'TrainerStudentController@index')->name('trainer_student');
+    Route::get('/training_hub/trainer_student/create', 'TrainerStudentController@create')->name('trainer_student.create'); 
+    Route::post('/training_hub/trainer_student/store', 'TrainerStudentController@store')->name('store.trainer_student');
+    Route::get('/training_hub/trainer_student/edit/{id}', 'TrainerStudentController@edit')->name('edit.trainer_student');
+    Route::post('/training_hub/trainer_student/update/{id}', 'TrainerStudentController@update')->name('update.trainer_student');
+    Route::get('/training_hub/trainer_student/delete/{id}', 'TrainerStudentController@destroy')->name('delete.trainer_student');
     
     //Admin Inventory
     Route::get('/inventory', 'InventoryController@index')->name('inventory');

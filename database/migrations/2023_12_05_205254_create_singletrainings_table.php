@@ -29,6 +29,7 @@ class CreateSingletrainingsTable extends Migration
             $table->string('courses');
             $table->text('expected_outcome');
             $table->boolean('status');
+            $table->boolean('archive');
             $table->timestamps();
         });
     }
