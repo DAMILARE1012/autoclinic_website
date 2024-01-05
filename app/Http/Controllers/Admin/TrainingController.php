@@ -130,6 +130,8 @@ class TrainingController extends Controller
             $training->courses= $request->courses;
             $training->expected_outcome= $request->expected_outcome;
             $training->status= $request->status;
+            $training->archive= 0;
+
             $training->save();
 
             $request->session()->flash('success', 'Training Added Successfully');
@@ -199,11 +201,30 @@ class TrainingController extends Controller
             $training->courses= $request->courses;
             $training->expected_outcome= $request->expected_outcome;
             $training->status= $request->status;
+            $training->archive= 0;
         
         $training->save();
 
         $request->session()->flash('success', 'Training Updated Successfully');
         return redirect()->route('admin.trainings');
+    }
+
+    public function archive(Request $request, $id)
+    {
+        $archive_data = Singletraining::find($id);
+        $archive_data->archive = 1;
+        $archive_data->save();
+
+        return redirect()->back()->with('success', 'Training Archived');
+    }
+
+    public function unarchive(Request $request, $id)
+    {
+        $archive_data = Singletraining::find($id);
+        $archive_data->archive = 0;
+        $archive_data->save();
+
+        return redirect()->back()->with('success', 'Training Unarchived');
     }
 
     public function training_destroy($id)

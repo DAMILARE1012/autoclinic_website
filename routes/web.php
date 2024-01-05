@@ -62,6 +62,9 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/training_hub/trainings/edit/{id}', 'TrainingController@training_edit')->name('edit.training');
     Route::post('/training_hub/trainings/update/{id}', 'TrainingController@training_update')->name('update.training');
     Route::get('/training_hub/trainings/delete/{id}', 'TrainingController@training_destroy')->name('training.delete');
+     //archive and unarchive Training 
+     Route::get('/training_hub/trainings/archive/{id}', 'TrainingController@archive')->name('archive');
+     Route::get('/training_hub/trainings/unarchive/{id}', 'TrainingController@unarchive')->name('unarchive');
 
     Route::get('/training_hub/students/generate', 'TrainingController@generate_hub')->name('generate_hub');
     Route::post('/training_hub/students/generate', 'TrainingController@generatestore')->name('store.generate');

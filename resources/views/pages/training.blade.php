@@ -118,55 +118,31 @@
                         @endif
                 	</div>
                 	<br>
-                    <h3>Past Organized Trainings</h3>
-                    <br>
+                    <h3>Past Organized Trainings</h3> 
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="news-head">
-                                <a href="img/training1.png "><img src="img/training1.png" alt="training image" width=""></a>
-                            </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="news-head">
-                                <a href="img/training2.png"><img src="img/training2.png" alt="training image"></a>
-                            
-                            <p></p>
-                        </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="news-head">
-                            <a href="img/training3.png"><img src="img/training3.png" alt="training image"></a>
-                            
-                            <p></p>
-                        </div> 
-                        </div>
                         
+                        @forelse ($archiveTrainings as $key => $item)
+                            <div class="col-sm-4">
+                                <div class="card mb-4" style="width: 20rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;">
+                                    <a href="{{ asset('/img/trainings/'.$item['img'] ) }}" data-lightbox="mygallery" data-title="{{$item['title'] }} "><img class="card-img-top" src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="Card image cap" style="height: 200px; object-fit: cover;"></a>
+                                    <div class="card-body">
+                                        <a href="{{ route('show_training', $item['id']) }}"><h5 class="card-title">{!! $item['title'] !!}</h5></a>
+                                        <p class="card-text">{!! \Illuminate\Support\Str::limit($item['description'], 100, $end='...') !!} 
+                                            <a href="{{ route('show_training', $item['id']) }}" class="btn btn-primary btn-xs" style="padding: 3px 5px; color:white;">Learn More</a>
+                                        </p>
+                                  
+                                            
+                                                                               
+                                    </div>
+                                </div>
+                            </div>
+                        @empty
+                            <div>
+                                <h4>No record</h4>
+                            </div>
+                        @endif
                     </div>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-4">
-                            <div class="news-head">
-                                <a href="img/training4.png "><img src="img/training1.png" alt="training image" width=""></a>
-                            
-                            <p></p>
-                        </div>
-                        </div>
-                        <div class="col-md-4">
-                            <div class="news-head">
-                                <a href="img/training5.png"><img src="img/training5.png" alt="training image"></a>
-                            
-                            <p></p>
-                        </div>
-                        </div>
-                        <div class="col-md-4">
-                           <div class="news-head">
-                            <a href="img/training6.png"><img src="img/training6.png" alt="training image"></a>
-                            
-                            <p></p>
-                        </div> 
-                        </div>
-                            
-                    </div>
+
                     <h3>Trainees/Students</h3>
 					<br>
                 	<div class="row">

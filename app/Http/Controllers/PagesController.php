@@ -59,11 +59,13 @@ class PagesController extends Controller
 
     public function getTraining(){
         $traininghub = Traininghub::first();
-        $ourTrainings = Singletraining::get();
+
+        $ourTrainings = Singletraining::where('archive', 0)->get();
+        $archiveTrainings = Singletraining::where('archive', 1)->get();
         $register = Register::first();
         $trainer = TrainerStudent::where('who', '=', 0)->get();
         $student = TrainerStudent::where('who', '=', 1)->get();
-        return view('pages.training', compact('register', 'ourTrainings', 'traininghub', 'trainer', 'student'));
+        return view('pages.training', compact('register', 'ourTrainings', 'traininghub', 'trainer', 'student', 'archiveTrainings'));
     }
 
     public function ourTrainings_show($singletraining)

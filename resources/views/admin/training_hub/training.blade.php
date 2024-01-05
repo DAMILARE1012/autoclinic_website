@@ -33,6 +33,10 @@
                           <th>
                            <h4>Title</h5> 
                           </th>
+                          
+                          <th>
+                            <h4>Status</h4>
+                          </th>
                           <th>
                           </th>
                           <th>
@@ -52,23 +56,38 @@
                           </td>
                           <td>
                             <h6>{!! $row->title !!}</h6>                          
-                          </td>                        
+                          </td>  
                           <td>
-                            <a href="{{ route('admin.show.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text">
+                            @if( $row->archive == 0  )
+                            <a href="{{ route('admin.archive', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-success btn-icon-text btn-sm">
+                              <i class="ti-archive btn-icon-prepend"></i>
+                              Archive
+                            </button> </a>
+                            @else
+                            <a href="{{ route('admin.unarchive', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-secondary btn-icon-text btn-sm">
+                              <i class="ti-eraser btn-icon-prepend"></i>
+                              Unarchive
+                            </button> </a>
+                            @endif
+                            
+                          </td>                      
+                          <td>
+                            <a href="{{ route('admin.show.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text btn-sm">
                               <i class="ti-book btn-icon-prepend"></i>
                               Read
                             </button> </a>
                           </td>
+                          
                           <td>
                             
-                            <a href="{{ route('admin.edit.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text">
+                            <a href="{{ route('admin.edit.training', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
                               <i class="ti-pencil-alt btn-icon-append"></i> 
                                Edit
                             </button> </a>
                           </td>
               
                           <td>
-                            <a href="{{ route('admin.training.delete', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"><button type="button" class="btn btn-outline-danger btn-icon-text">
+                            <a href="{{ route('admin.training.delete', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"><button type="button" class="btn btn-outline-danger btn-icon-text btn-sm">
                               <i class="ti-trash btn-icon-prepend"></i>                                                    
                               Delete
                             </button></a>
