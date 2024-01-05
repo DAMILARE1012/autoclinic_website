@@ -38,7 +38,7 @@ class HomeController extends Controller
      */
     public function store(Request $request)
     {
-        dd($request);
+        // dd($request);
         $this->validate($request, [
 
             'slide' => 'required',

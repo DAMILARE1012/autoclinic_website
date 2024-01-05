@@ -15,7 +15,11 @@
         <div class="card">
           <div class="card-body">
             <p>
-              <a href="{{ route('admin.edit.training', ['id' => $training_data->id]) }}"> <h6><span class="badge badge-pill badge-primary">Edit</span></h6></a>
+              <a href="{{ route('admin.edit.training', ['id' => $training_data->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                <i class="ti-pencil-alt btn-icon-append"></i> 
+                 Edit
+              </button> </a>
+              
             </p>
               
               <div class="col-md-12" align="center">

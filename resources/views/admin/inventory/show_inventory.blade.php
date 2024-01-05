@@ -31,8 +31,15 @@
                           <div class="col-md-6">
                              <strong><h4> Inventory Details</h4> </strong>     
                           </div>
+                          <div class="col-md-6">
+                            <a href="{{ route('admin.edit.inventory', ['id' => $inventory_data->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                              <i class="ti-pencil-alt btn-icon-append"></i>
+                               Edit
+                            </button> </a>
+                          </div>
                          
-                        </div>                       
+                        </div>  
+                        <br>                     
 
                               <div class="card">                   
                                 <div class="col-md-8">

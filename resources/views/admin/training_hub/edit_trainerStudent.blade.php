@@ -39,8 +39,16 @@
         <div class="form-group">
           <label>Image upload</label>
           <br>
-                <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file"></div>
-                <small class="form-text text-success">Only if you want to update the current Image</small>
+          <div class="row">
+            <div class="col-6">
+              <div class="col-12 col-md-9"><input type="file" id="img" name="img" class="form-control-file"></div>
+              <small class="form-text text-success">Only if you want to update the current Image</small>
+            </div>
+            <div class="col-6">
+              <img src="{{ asset('img/trainings/'.$trainer_student->img) }}" style="height: 100px; width: 240px" class="img-fluid">
+            </div>
+          </div>
+                
         </div>
 
         

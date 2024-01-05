@@ -15,7 +15,11 @@
             <div class="card">
                 <div class="card-body">
                     <p>
-                        <a href="{{ route('admin.edit.service', ['id' => $service_data->id]) }}"><button type="button" class="btn btn-primary btn-sm">Edit</button></a>
+                        <a href="{{ route('admin.edit.service', ['id' => $service_data->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                            <i class="ti-pencil-alt btn-icon-append"></i>  
+                             Edit
+                          </button> </a>
+
                       </p>
                     <div class="row">
                         <div class="col-md-6" align="center">

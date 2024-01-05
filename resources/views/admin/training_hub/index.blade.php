@@ -26,7 +26,10 @@
                                     <div class="col-6">
                                         
                                         <p>
-                                            <a href="{{ route('admin.edit.index', ['id' => $training_hub->id]) }}"><button type="button" class="btn btn-primary btn-sm">Edit</button></a>
+                                            <a href="{{ route('admin.edit.index', ['id' => $training_hub->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                                                <i class="ti-pencil-alt btn-icon-append"></i> 
+                                                 Edit
+                                              </button> </a>
                                           </p>
                                     </div>
                                 </div>

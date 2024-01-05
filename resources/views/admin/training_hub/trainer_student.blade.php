@@ -63,7 +63,13 @@
                             {{ ($row->who == 0 ? 'Faculty Member': 'Students') }}
                           </td>
                           <td>
-                            <a href="{{ route('admin.edit.trainer_student', ['id' => $row->id]) }}"> Edit |</a><a href="{{ route('admin.delete.trainer_student', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"> Delete</a>
+                            <a href="{{ route('admin.edit.trainer_student', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                              <i class="ti-pencil-alt btn-icon-append"></i> 
+                               Edit
+                            </button> </a>
+                          </td>
+                          <td>
+                            <a href="{{ route('admin.delete.trainer_student', ['id' => $row->id]) }}" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure?')"> <i class="ti-trash btn-icon-prepend"></i>Delete</a>
                           </td>
                         </tr>
                          @endforeach

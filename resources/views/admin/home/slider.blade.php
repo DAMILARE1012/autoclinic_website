@@ -58,7 +58,10 @@
                           
                           </td>
                           <td>
-                            <a href="{{ route('admin.home.edit', ['id' => $row->id]) }}"> Edit |</a><a href="{{ route('admin.home.delete', ['id' => $row->id]) }}"  onclick="return confirm('Are you sure?')"> Delete</a>
+                            <a href="{{ route('admin.home.edit', ['id' => $row->id]) }}" class="btn btn-outline-warning btn-xs"><i class="ti-pencil-alt btn-icon-append"></i> Edit</a>                            
+                          </td>
+                          <td>
+                            <a href="{{ route('admin.home.delete', ['id' => $row->id]) }}" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure?')"> <i class="ti-trash btn-icon-prepend"></i>Delete</a>
                           </td>
                         </tr>
                          @endforeach

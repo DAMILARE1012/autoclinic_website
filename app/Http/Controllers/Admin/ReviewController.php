@@ -30,7 +30,7 @@ class ReviewController extends Controller
         $review->save();
 
         $request->session()->flash('success', 'Review Disabled');
-        return redirect()->back();
+        return redirect()->route('admin.unpublished.review');
     }
 
     public function enablereview(Request $request, $id)
@@ -40,7 +40,7 @@ class ReviewController extends Controller
         $review->save();
 
         $request->session()->flash('success', 'Review Enabled');
-        return redirect()->back();
+        return redirect()->route('admin.reviews');
     }
 
     public function disabledreviewlist()

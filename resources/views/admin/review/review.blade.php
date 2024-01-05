@@ -60,15 +60,21 @@
                             {{ $row->email }}
                           </td>
                           <td>
-                          	{{ $row->rate }} Stars
+                          	{{ $row->rate }} <i class="ti-star btn-icon-append"></i> 
                           </td>
                           <td>
-                            <a href="{{ route('admin.disable.review', ['id' => $row->id]) }}" class="btn btn-link text-danger">Disable review</a>
+                            <a href="{{ route('admin.disable.review', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                              <i class="ti-archive btn-icon-append"></i> 
+                               Disable
+                            </button> </a>
                           </td>
                           <td>
-                          	<a href="{{ route('admin.show.review', ['id' => $row->id]) }}" class="btn btn-link text-primary">Read</a>
+                            <a href="{{ route('admin.show.review', ['id' => $row->id]) }}"><button type="button" class="btn btn-outline-primary btn-xs"> <i class="ti-book btn-icon-prepend"></i> Read
+                            </button> </a>  
                           </td>
-                          <td><a href="{{ route('admin.delete.review', ['id' => $row->id]) }}" class="btn btn-link text-danger"> Delete</a></td>
+                          <td>
+                            <a href="{{ route('admin.delete.review', ['id' => $row->id]) }}" class="btn btn-outline-danger btn-xs" onclick="return confirm('Are you sure?')"> <i class="ti-trash btn-icon-prepend"></i>Delete</a>
+                          </td>
                         </tr>
                          @endforeach
                         

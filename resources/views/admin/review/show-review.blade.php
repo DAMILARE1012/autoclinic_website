@@ -26,9 +26,24 @@
                           <div class="col-md-6">
                              <strong><h4> Review Details</h4> </strong>     
                           </div>
+                          <div class="col-md-6">
+                            @if($review_data->status ==1)
+                            <a href="{{ route('admin.disable.review', ['id' => $review_data->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                              <i class="ti-archive btn-icon-append"></i> 
+                               Disable
+                            </button> </a>
+                            @else 
+                            <a href="{{ route('admin.enable.review', ['id' => $review_data->id]) }}"><button type="button" class="btn btn-outline-warning btn-icon-text btn-sm">
+                              <i class="ti-archive btn-icon-append"></i> 
+                               Enable
+                            </button> </a>
+                            @endif
+                          </div>
+                          
                          
                         </div>                       
-
+                              <br>
+                       
                               <div class="card">                   
                                 <div class="col-md-8">
                                 <div class="card-body my-3"><p> <b>Name: </b>{{ $review_data->name }}</p>
