@@ -11,6 +11,7 @@ use App\Inventory;
 use App\Review;
 use App\Training;
 use App\Register;
+use App\Singletrainings;
 use Illuminate\Support\Str;
 
 class DashboardController extends Controller
@@ -22,7 +23,9 @@ class DashboardController extends Controller
         $review = DB::table('reviews')->get();
         $approved_review = DB::table('reviews')->where('status' , 1)->get();
         $training = DB::table('trainings')->get();
-        return view('admin.home', compact('gallery', 'inventory', 'review', 'training', 'approved_review'));
+        $singletrainings= DB::table('singletrainings')->where('archive' , 0)->get();
+        $archive= DB::table('singletrainings')->where('archive' , 1)->get();
+        return view('admin.home', compact('gallery', 'inventory', 'review', 'training', 'approved_review','singletrainings','archive'));
     }
 
 

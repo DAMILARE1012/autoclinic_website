@@ -44,7 +44,7 @@
                               <div class="card">                   
                                 <div class="col-md-8">
                                 <div class="card-body my-3"><p> <b>Name: </b>{{ $inventory_data->name }}</p>
-                                  <p> <b> Price: </b>{{ $inventory_data->price }} </p>
+                                  <p> <b> Price:₦</b>{{ $inventory_data->price }} </p>
 
                               </div>
                             </div>
@@ -61,7 +61,7 @@
                               <div class="card">                   
                                 <div class="col-md-8">
                                 <div class="card-body my-3">
-                                  <p>{{ $inventory_data->description }} </p>
+                                  <p>{!! $inventory_data->description !!} </p>
                               </div>
                             </div>
                             <br>

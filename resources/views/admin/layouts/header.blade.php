@@ -152,6 +152,19 @@
             </div>
           </li>
           <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#contact" aria-expanded="false" aria-controls="auth">
+              <i class="ti-write menu-icon"></i>
+              <span class="menu-title">Footer</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="contact">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.footer') }} ">Footer</a></li>
+                
+              </ul>
+            </div>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="{{ route('logout') }} " onclick="event.preventDefault();
                             document.getElementById('logout-form').submit();" >
               <i class="ti-power-off menu-icon"></i>

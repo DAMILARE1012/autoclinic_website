@@ -116,5 +116,10 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/service/edit/{id}', 'ServiceController@edit')->name('edit.service');
     Route::post('/service/update/{id}', 'ServiceController@update')->name('update.service');
     Route::get('/service/delete/{id}', 'ServiceController@destroy')->name('delete.service');
+
+    //Admin Footer 
+    Route::get('/footer', 'FooterSectionController@index')->name('footer');
+    Route::get('/footer/edit/{id}', 'FooterSectionController@edit')->name('footer.edit');
+    Route::post('/footer/update/{id}', 'FooterSectionController@update')->name('footer.update'); 
 });
 
