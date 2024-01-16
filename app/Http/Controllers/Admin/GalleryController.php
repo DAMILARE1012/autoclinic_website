@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use App\Gallery;
 use Image;
 
@@ -101,8 +102,14 @@ class GalleryController extends Controller
      */
     public function galdestroy($id)
     {
-        Gallery::where('id', $id)->delete();  
+        $data = Gallery::find($id);
+        $image_path = public_path().'/img/galleryz/'.$data->img;
 
+        if(File::exists($image_path))
+        {
+            File::delete($image_path);   
+        }  
+        $data->delete(); 
         return redirect()->route('admin.gallery')->with('success', 'Picture Deleted successfully');
     }
 

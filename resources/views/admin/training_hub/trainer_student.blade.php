@@ -40,7 +40,7 @@
                             Title
                           </th>
                           <th>
-                            Who
+                            Category
                           </th>
                         </tr>
                       </thead>

@@ -95,7 +95,8 @@
                             </div>
                         @empty
                             <div>
-                                <h4>No record</h4>
+                                <h5>Trainings Coming Soon!</h5>
+                                <br>
                             </div>
                         @endif
                     </div>
@@ -124,21 +125,13 @@
                         @forelse ($archiveTrainings as $key => $item)
                             <div class="col-sm-4">
                                 <div class="card mb-4" style="width: 20rem; box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;">
-                                    <a href="{{ asset('/img/trainings/'.$item['img'] ) }}" data-lightbox="mygallery" data-title="{{$item['title'] }} "><img class="card-img-top" src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="Card image cap" style="height: 200px; object-fit: cover;"></a>
-                                    <div class="card-body">
-                                        <a href="{{ route('show_training', $item['id']) }}"><h5 class="card-title">{!! $item['title'] !!}</h5></a>
-                                        <p class="card-text">{!! \Illuminate\Support\Str::limit($item['description'], 100, $end='...') !!} 
-                                            <a href="{{ route('show_training', $item['id']) }}" class="btn btn-primary btn-xs" style="padding: 3px 5px; color:white;">Learn More</a>
-                                        </p>
-                                  
-                                            
-                                                                               
-                                    </div>
+                                    <a href="{{ asset('/img/trainings/'.$item['img'] ) }}" data-lightbox="mygallery" data-title="{{$item['title'] }} "><img class="card-img-top" src="{{ asset('/img/trainings/'.$item['img'] ) }}" alt="Card image cap" style="height: 100%; object-fit: cover;"></a>
+                                    
                                 </div>
                             </div>
                         @empty
                             <div>
-                                <h4>No record</h4>
+                                <h4>No records</h4>
                             </div>
                         @endif
                     </div>

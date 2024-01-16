@@ -38,7 +38,7 @@
                             <div class="single-main">
                                 <!-- Meta -->
                                 <div class="meta">
-                                    <h1 class="news-title">{!! $row->title !!} </h1>
+                                    {!! $row->title !!}
                                 </div>
                                 <!-- News Text -->
                                 <div class="news-text">

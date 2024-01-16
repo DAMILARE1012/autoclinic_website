@@ -136,6 +136,7 @@ class HomeController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Home::where('id', $id)->delete();   
+        return redirect()->back()->with('success', 'Slide Deleted Successfully!');
     }
 }

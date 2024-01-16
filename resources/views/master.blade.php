@@ -29,7 +29,7 @@
         <li>Hi there!</li>
         <li>How can we help you ?</li>
         <div class="button">
-            <a href="https://wa.me/message/ZFHWKAVH4HMIP1" target="_blank" class="btn">WhatsApp Us?</a>
+            <a href="{{ $contactData->whatsapp_link }}" target="_blank" class="btn">WhatsApp Us?</a>
             <a href="{{ route('appointment') }}" target="_blank" class="btn">Book an appointment?</a>
             <a href="{{ route('contact') }}" target="_blank" class="btn">Contact our Office?</a>
             <a href="{{ route('reviews') }}" class="btn">Our reviews?</a>

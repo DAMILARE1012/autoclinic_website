@@ -86,6 +86,25 @@
                 })
               </script>
             </div>
+
+            <label for="exampleInputName1">Training Outline</label>
+            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
+            <div class="sample">
+              <textarea id="editx" name="outline">
+                {{ old('outline') }}
+              </textarea>
+
+              <script>
+                new FroalaEditor('#editx', {
+                
+                fileUploadURL: '/UploadFiles',
+                
+                fileUploadParams: {
+                id: 'my_editor'
+                }
+                })
+              </script>
+            </div>
             
             <label>Training Eligibility</label>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
@@ -127,7 +146,7 @@
               <div class="col-6">
                   <label>Flyer Image Upload</label>
                   <div class="col-12 col-md-9">
-                    <input type="file" id="img" name="img" class="form-control-file" multiple  required>
+                    <input type="file" id="img" value="{{ old('img') }}" name="img" class="form-control-file" multiple  required>
                   </div>
                 </div>
             

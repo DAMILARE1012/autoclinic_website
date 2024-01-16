@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Admin;
-
+use Illuminate\Support\Facades\File;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use App\TrainerStudent;
@@ -137,7 +137,14 @@ class TrainerStudentController extends Controller
      */
     public function destroy($id)
     {
-        TrainerStudent::where('id', $id)->delete();  
+        $data = TrainerStudent::find($id);
+        $image_path = public_path().'/img/trainings/'.$data->img;
+
+        if(File::exists($image_path))
+        {
+            File::delete($image_path);
+        }   
+        $data->delete();
         return redirect()->route('admin.trainer_student')->with('success', 'Delete successful');
     }
 }

@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use App\Inventory;
 
 class InventoryController extends Controller
@@ -119,7 +120,14 @@ class InventoryController extends Controller
      */
     public function inventorydestroy($id)
     {
-        Inventory::where('id', $id)->delete();   
+        $data = Inventory::find($id);
+        $image_path = public_path().'/img/inventoryz/'.$data->img;
+
+        if(File::exists($image_path))
+        {
+            File::delete($image_path);
+        }   
+        $data->delete();
         return redirect()->route('admin.inventory')->with('success', 'Inventory Deleted successfully');
     }
 

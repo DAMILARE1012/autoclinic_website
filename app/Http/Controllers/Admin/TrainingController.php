@@ -5,6 +5,7 @@ namespace App\Http\Controllers\Admin;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\File;
 use App\Training;
 use App\Register;
 use App\Singletraining;
@@ -229,9 +230,14 @@ class TrainingController extends Controller
 
     public function training_destroy($id)
     {
-        Singletraining::where('id', $id)->delete();  
-
-        return redirect()->route('admin.trainings')->with('success', 'Training Deleted successfully');
+        $data = Singletraining::find($id);
+        $image_path = public_path().'/img/trainings/'.$data->img;
+        if(File::exists($image_path))
+        {
+            File::delete($image_path);  
+        }   
+        $data->delete();
+        return redirect()->route('admin.trainings')->with('success', 'Training Deleted successfully');  
     }
 
     public function generate_hub()
@@ -263,7 +269,7 @@ class TrainingController extends Controller
     public function hub_destroy($id)
     {
         Training::where('id', $id)->delete();   
-        return redirect()->back()->with('success', 'Training Deleted Successfully!');
+        return redirect()->back()->with('success', 'Student record Deleted Successfully!');
     }
 
     public function enableReg(Request $request, $id)
