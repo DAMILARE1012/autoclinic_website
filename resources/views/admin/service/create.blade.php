@@ -24,24 +24,10 @@
         <form action="{{ route('admin.store.service') }}" method="POST" enctype="multipart/form-data" class="forms-sample" >
           @csrf
           <div class="form-group">
-            <label for="exampleInputName1">Servie Title</label>        
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-                <textarea id="title" name="title">
-                {{ old('title') }}
-                </textarea>
+            <label for="exampleInputName1">Servie Title</label>   
+              <input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="Service Title" required>
+          </div>     
 
-                <script>
-                    new FroalaEditor('#title', {
-                    
-                    fileUploadURL: '/UploadFiles',
-                    
-                    fileUploadParams: {
-                    id: 'my_editor'
-                    }
-                    })
-                </script>
-            </div>
             <label for="exampleInputName1">Home Description</label>        
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
             <div class="sample">

@@ -183,7 +183,7 @@
                         <div class="news-body">
                             <div class="news-content">
                                 <div class="date">Available</div>
-                                <h2><a href="{{ route('services') }}"> {!! $item['title'] !!} </a></h2>
+                                <a href="{{ route('services') }}"> <h4 class="news-title">{{ $item['title'] }}</h4></a>
                                 
                                 {!! $item['home_description'] !!}
                                 <div style="color:#11db22">

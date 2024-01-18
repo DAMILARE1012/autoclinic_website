@@ -46,7 +46,7 @@
                 <div class="col-lg-4 col-md-6 col-12">
                     <div class="single-footer">
                         <h2>Open Hours</h2>
-                        {!! $footerData->footer !!}
+                        <p>{{ $footerData->footer }}</p>
                         <ul class="time-sidual">
                             <li class="day">Call Us <span>{{ $contactData->phone }}</span></li>
                             <li class="day">Monday - Saturday <span>{{ $contactData->mon_open }}</span></li>

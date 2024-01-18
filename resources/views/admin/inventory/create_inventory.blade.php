@@ -31,23 +31,9 @@
           
           <div class="form-group">
             <label for="exampleInputName1">Description</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="edit" name="description">
-                {{ old('description') }}
-              </textarea>
+            <textarea name="description" id="elm1" rows="3" class="form-control">{{ old('description') }}</textarea required>
+          </div>
 
-              <script>
-                new FroalaEditor('#edit', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
-              </script>
-            </div>
           <div class="form-group">
             <label for="exampleInputName1">Price</label>
             <input type="text" class="form-control" name="price" id="exampleInputName1" placeholder="Price" required>

@@ -25,23 +25,8 @@
                 @csrf
                 <div class="form-group">
                     <label for="exampleInputName1">Title</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                        <textarea id="edit" name="title">
-                            {{ $service->title }}
-                        </textarea>
-    
-                        <script>
-                            new FroalaEditor('#edit', {
-                            
-                            fileUploadURL: '/UploadFiles',
-                            
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                    <input type="text" class="form-control" name="title" id="exampleInputName1" value="{{ $service->title }}" required>
+                    
                 </div>
 
                 <div class="form-group">
