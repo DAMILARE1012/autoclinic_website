@@ -24,64 +24,43 @@
         @csrf
         <div class="form-group">
             <label for="exampleInputName1">About</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-          <div class="sample">
-            <textarea id="edit" name="about_us">
+
+            <textarea id="tiny3" name="about_us">
               {{$about->about_us}}
             </textarea>
 
             <script>
-              new FroalaEditor('#edit', {
-              
-              fileUploadURL: '/UploadFiles',
-              
-              fileUploadParams: {
-              id: 'my_editor'
-              }
-              })
+              tinymce.init({
+                selector: 'textarea#tiny3'
+              });
             </script>
-          </div>
         </div>
         <div class="form-group">
             <label for="exampleInputName1">History (Home Page)</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-          <div class="sample">
-            <textarea id="edit1" name="history">
+            <textarea id="tiny" name="history">
               {{$about->history}}
             </textarea>
-
             <script>
-              new FroalaEditor('#edit1', {
-              
-              fileUploadURL: '/UploadFiles',
-              
-              fileUploadParams: {
-              id: 'my_editor'
-              }
-              })
-              </script>
-          </div>
+              tinymce.init({
+                selector: 'textarea#tiny'
+              });
+            </script>
+
         </div>
 
         <div class="form-group">
             <label for="exampleInputName1">About (Home Page)</label>
             <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-          <div class="sample">
-            <textarea id="edit2" name="home_about">
+          
+            <textarea id="tiny2" name="home_about">
               {{$about->home_about}}
             </textarea>
-
             <script>
-              new FroalaEditor('#edit2', {
-              
-              fileUploadURL: '/UploadFiles',
-              
-              fileUploadParams: {
-              id: 'my_editor'
-              }
-              })
-              </script>
-          </div>
+              tinymce.init({
+                selector: 'textarea#tiny2'
+              });
+            </script>
+
         </div>
 
         <div class="form-group">

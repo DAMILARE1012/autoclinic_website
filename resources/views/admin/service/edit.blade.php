@@ -31,45 +31,29 @@
 
                 <div class="form-group">
                     <label for="exampleInputName1">Home Description</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                   
-                        <textarea id="edit2" name="home_description">
+                    
+                        <textarea id="tiny" name="home_description">
                             {{ $service->home_description }}
                         </textarea>
-            
                         <script>
-                            new FroalaEditor('#edit2', {
-                        
-                            fileUploadURL: '/UploadFiles',
-                        
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny'
+                            });
+                          </script>
+
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputName1">Description</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                        <textarea id="edit3" name="description">
+                    
+                        <textarea id="tiny2" name="description">
                             {{ $service->description }}
                         </textarea>
-            
                         <script>
-                            new FroalaEditor('#edit3', {
-                            
-                            fileUploadURL: '/UploadFiles',
-                            
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny2'
+                            });
+                          </script>
                 </div>
 
                 <div class="row">

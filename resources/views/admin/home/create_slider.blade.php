@@ -25,25 +25,16 @@
           @csrf
           <div class="form-group">
             <label for="exampleInputName1">Slide Text</label>        
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="edit" name="slide">
+            
+              <textarea id="tiny" name="slide">
                 {{ old('slide') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#edit', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny'
+                });
               </script>
-            </div>
-          
-          
+       
           <div class="form-group">
             <label>Slide Image</label>
             <br>

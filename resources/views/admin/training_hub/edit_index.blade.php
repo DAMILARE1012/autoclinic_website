@@ -26,88 +26,57 @@
                 @csrf
                 <div class="form-group">
                     <label for="exampleInputName1">Title</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                        <textarea id="edit" name="title">
+                    
+                        <textarea id="tiny" name="title">
                             {{ $training_hub->title }}
                         </textarea>
-    
                         <script>
-                            new FroalaEditor('#edit', {
-                            
-                            fileUploadURL: '/UploadFiles',
-                            
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny'
+                            });
+                          </script>
+                        
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputName1">Background</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                   
-                        <textarea id="edit2" name="training_hub">
+                    
+                        <textarea id="tiny2" name="training_hub">
                             {{ $training_hub->training_hub }}
                         </textarea>
-            
                         <script>
-                            new FroalaEditor('#edit2', {
-                        
-                            fileUploadURL: '/UploadFiles',
-                        
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny2'
+                            });
+                          </script>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputName1">Facilities</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                        <textarea id="edit3" name="facilities">
+                    
+                        <textarea id="tiny3" name="facilities">
                             {{ $training_hub->facilities }}
                         </textarea>
-            
+                        
                         <script>
-                            new FroalaEditor('#edit3', {
-                            
-                            fileUploadURL: '/UploadFiles',
-                            
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny3'
+                            });
+                          </script>
                 </div>
 
                 <div class="form-group">
                     <label for="exampleInputName1">Expectations</label>
-                    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-                    <div class="sample">
-                        
-                        <textarea id="edit4" name="expectations">
+                   
+                        <textarea id="tiny4" name="expectations">
                             {{ $training_hub->expectations }}
                         </textarea>
             
                         <script>
-                            new FroalaEditor('#edit4', {
-                            
-                            fileUploadURL: '/UploadFiles',
-                            
-                            fileUploadParams: {
-                            id: 'my_editor'
-                            }
-                            })
-                        </script>
-                    </div>
+                            tinymce.init({
+                              selector: 'textarea#tiny4'
+                            });
+                          </script>
                 </div>
                 <div class="row">
                     <div class="col-6">

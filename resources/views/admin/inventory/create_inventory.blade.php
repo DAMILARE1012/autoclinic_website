@@ -31,7 +31,14 @@
           
           <div class="form-group">
             <label for="exampleInputName1">Description</label>
-            <textarea name="description" id="elm1" rows="3" class="form-control">{{ old('description') }}</textarea required>
+            <textarea name="description" id="tiny">
+              {{ old('description') }}
+            </textarea required>
+            <script>
+              tinymce.init({
+                selector: 'textarea#tiny'
+              });
+            </script>
           </div>
 
           <div class="form-group">

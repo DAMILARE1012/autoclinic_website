@@ -39,7 +39,7 @@
                             </div>
                             <div class="content">
                                 <h3><a href="javascript:void(0)" style="pointer-events:note">{{ $row->name }}</a></h3>
-                                <p>{{ $row->description }}</p>
+                                <p>{!! $row->description !!}</p>
                             </div>
                            
                         </div>

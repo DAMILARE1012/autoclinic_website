@@ -31,117 +31,71 @@
             <label for="exampleInputName1">Training Routine</label>
             <input type="text" value="{{ old('routine') }}" class="form-control" name="routine" id="exampleInputName1" placeholder="Training Routine" required>
             <label for="exampleInputName1">Training Description</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="description" name="description">
+            
+              <textarea id="tiny2" name="description">
                 {{ old('description') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#description', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny2'
+                });
               </script>
-            </div>
-            
+              
             <label for="exampleInputName1">Who is the training for?</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="training_for" name="training_for">
+            
+              <textarea id="tiny3" name="training_for">
                 {{ old('training_for') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#training_for', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny3'
+                });
               </script>
-            </div>
     
             <label for="exampleInputName1">Training Courses</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="edit" name="courses">
+            
+              <textarea id="tiny4" name="courses">
                 {{ old('courses') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#edit', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny4'
+                });
               </script>
-            </div>
 
             <label for="exampleInputName1">Training Outline</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="editx" name="outline">
+            
+              <textarea id="tiny5" name="outline">
                 {{ old('outline') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#editx', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny5'
+                });
               </script>
-            </div>
-            
+
+              
             <label>Training Eligibility</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="edit4" name="eligibility">
+            
+              <textarea id="tiny6" name="eligibility">
                 {{ old('eligibility') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#edit4', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny6'
+                });
               </script>
-            </div>
             <label for="exampleInputName1">Training Expected Outcome</label>
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="edit5" name="expected_outcome">
+
+              <textarea id="tiny" name="expected_outcome">
                 {{ old('expected_outcome') }}
               </textarea>
-
               <script>
-                new FroalaEditor('#edit5', {
-                
-                fileUploadURL: '/UploadFiles',
-                
-                fileUploadParams: {
-                id: 'my_editor'
-                }
-                })
+                tinymce.init({
+                  selector: 'textarea#tiny'
+                });
               </script>
-            </div>
+
             <div class="row">
               <div class="col-6">
                   <label>Flyer Image Upload</label>

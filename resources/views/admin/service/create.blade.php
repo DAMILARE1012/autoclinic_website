@@ -29,42 +29,27 @@
           </div>     
 
             <label for="exampleInputName1">Home Description</label>        
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="home" name="home_description">
+            
+              <textarea id="tiny" name="home_description">
               {{ old('home_description') }}
               </textarea>
-
               <script>
-                  new FroalaEditor('#home', {
-                  
-                  fileUploadURL: '/UploadFiles',
-                  
-                  fileUploadParams: {
-                  id: 'my_editor'
-                  }
-                  })
+                tinymce.init({
+                  selector: 'textarea#tiny'
+                });
               </script>
-            </div>
 
             <label for="exampleInputName1">Description</label>        
-            <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/froala-editor@latest/js/froala_editor.pkgd.min.js"></script>
-            <div class="sample">
-              <textarea id="desc" name="description">
+            
+              <textarea id="tiny2" name="description">
               {{ old('description') }}
               </textarea>
-
               <script>
-                  new FroalaEditor('#desc', {
-                  
-                  fileUploadURL: '/UploadFiles',
-                  
-                  fileUploadParams: {
-                  id: 'my_editor'
-                  }
-                  })
+                tinymce.init({
+                  selector: 'textarea#tiny2'
+                });
               </script>
-            </div>
+
             <br>
           
           <div class="row">
