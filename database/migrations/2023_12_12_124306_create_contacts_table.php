@@ -19,6 +19,7 @@ class CreateContactsTable extends Migration
             $table->string('email');
             $table->string('address');
             $table->string('sun_open');
+            $table->boolean('sun_status');
             $table->string('mon_open');
             $table->string('whatsapp_link');
             $table->string('google_link');

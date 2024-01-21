@@ -87,7 +87,11 @@
                                     <h4>Opening Hours</h4>
                                     <ul class="time-sidual">
                                         <li class="day">Monday - Saturday <span>{{ $contact->mon_open }} </span></li>
+                                        @if($contact->sun_status == 0)
                                         <li class="day">Sunday<span>{{ $contact->sun_open }} </span></li>
+                                        @else
+                                        <li class="day">Sunday<span>Closed </span></li>
+                                        @endif
                                         <li class="day">Location<span><a href="{{ $contact->google_link }} "
                                                     target="_blank" style="display: inline;">Abuja, Nigeria</a></span></li>
                                         <li class="day"> <span> </span></li>

@@ -102,6 +102,9 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/contact', 'ContactController@index')->name('contact');
     Route::get('/contact/edit/{id}', 'ContactController@edit')->name('contact.edit');
     Route::post('/contact/update/{id}', 'ContactController@conupdate')->name('contact.update');  
+    //Sunday trigger
+    Route::get('/enable-sun/{id}', 'ContactController@enableSun')->name('enable.sun');
+    Route::get('/disable-sun/{id}', 'ContactController@disableSun')->name('disable.sun');
     
     //admin about us 
     Route::get('/about', 'AboutController@index')->name('about');

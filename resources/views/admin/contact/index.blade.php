@@ -40,6 +40,13 @@
                                     {{ Session::get('success') }}
                                 </div>
                                 @endif
+
+                                @if(Session::has('off'))
+                                <div class="alert  alert-warning alert-dismissible fade show">
+                                    <span class="badge badge-pill badge-warning">Success</span>
+                                    {{ Session::get('success') }}
+                                </div>
+                                @endif
                                 
                                         <hr>     
 
@@ -95,8 +102,40 @@
                                 </div>          
                                 <div class="card">                   
                                     <div class="col-md-11">
-                                        <div class="card-body my-3"><p>{{ $contact->sun_open }}</p>
+                                        @if($contact->sun_status == 0)
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="card-body my-3"><p>{{ $contact->sun_open }}</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body my-3">
+                                                    <a href="{{ route('admin.disable.sun', ['id' => $contact->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text btn-sm">
+                                                        <i class="ti-power-off btn-icon-append"></i> 
+                                                        Turn off
+                                                      </button> </a>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+                                        </div> 
+  
+                                        @else
+                                        <div class="row">
+                                            <div class="col-6">
+                                                <div class="card-body my-3"><p>Sunday Off</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="card-body my-3">
+                                                    <a href="{{ route('admin.enable.sun', ['id' => $contact->id]) }}"><button type="button" class="btn btn-outline-primary btn-icon-text btn-sm">
+                                                        <i class="ti-power-off btn-icon-append"></i> 
+                                                        Turn On
+                                                      </button> </a>
+                                                </div>
+                                            </div>
                                         </div>
+                                        @endif
                                     </div>
                                     <br>
                                 </div>

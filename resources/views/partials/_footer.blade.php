@@ -50,7 +50,11 @@
                         <ul class="time-sidual">
                             <li class="day">Call Us <span>{{ $contactData->phone }}</span></li>
                             <li class="day">Monday - Saturday <span>{{ $contactData->mon_open }}</span></li>
+                            @if($contact->sun_status == 0)
                             <li class="day">Sunday <span>{{ $contactData->sun_open }}</span></li>
+                            @else 
+                            <li class="day">Sunday <span>Closed</span></li>
+                            @endif
                         </ul>
                     </div>
                 </div>

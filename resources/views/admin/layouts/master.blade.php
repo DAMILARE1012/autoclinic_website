@@ -11,7 +11,10 @@
   <link rel="stylesheet" href="{{ asset('admin_assets/vendors/base/vendor.bundle.base.css')}}">
   {{-- WYSIWYG --}}
   <!-- <script src="https://cdn.ckeditor.com/ckeditor5/40.1.0/classic/ckeditor.js"></script> -->
-  <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" />
+  <!-- <link href="https://cdn.jsdelivr.net/npm/froala-editor@latest/css/froala_editor.pkgd.min.css" rel="stylesheet" type="text/css" /> -->
+
+  <script src="https://cdn.tiny.cloud/1/h3fr5zsrxtdsjxg37p3he5x980txzx1c2qr4nek8kw4rb9du/tinymce/6/tinymce.min.js" referrerpolicy="origin"></script>
+
 
   <!-- endinject -->
   <!-- plugin css for this page -->

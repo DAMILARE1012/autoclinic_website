@@ -94,14 +94,23 @@ class ContactController extends Controller
         return redirect()->route('admin.contact');
     }
 
-    /**
-     * Remove the specified resource from storage.
-     *
-     * @param  int  $id
-     * @return \Illuminate\Http\Response
-     */
-    public function destroy($id)
+    public function enableSun(Request $request, $id)
     {
-        //
+        $sun = Contact::find($id);
+        $sun->sun_status = 0;
+        $sun->save();
+
+        return redirect()->back()->with('success', 'Sunday is Enabled');
     }
+
+    public function disableSun(Request $request, $id)
+    {
+        $reg = Contact::find($id);
+        $reg->sun_status = 1;
+        $reg->save();
+
+        return redirect()->back()->with('off', 'Sunday is Off');
+    }
+
+    
 }
