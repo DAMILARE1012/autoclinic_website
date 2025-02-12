@@ -60,8 +60,8 @@ class PagesController extends Controller
     public function getTraining(){
         $traininghub = Traininghub::first();
 
-        $ourTrainings = Singletraining::where('archive', 0)->get();
-        $archiveTrainings = Singletraining::where('archive', 1)->get();
+        $ourTrainings = Singletraining::where('archive', 0)->orderBy('created_at', 'desc')->get();
+        $archiveTrainings = Singletraining::where('archive', 1)->orderBy('created_at', 'desc')->get();
         $register = Register::first();
         $trainer = TrainerStudent::where('who', '=', 0)->get();
         $student = TrainerStudent::where('who', '=', 1)->get();

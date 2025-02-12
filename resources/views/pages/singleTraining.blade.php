@@ -28,19 +28,36 @@
             <div class="col-md-12 col-12">
                 <!-- Start Choose Left -->
                 <div class="choose-left">
+                    <style>
+                        /* Custom CSS for blinking effect */
+                        .blinking-button {
+                          animation: blink 1s infinite;
+                        }
+                    
+                        @keyframes blink {
+                          0%, 100% {
+                            opacity: 1;
+                          }
+                          50% {
+                            opacity: 0.5;
+                          }
+                        }
+                    </style>
                     <div class="col-md-12 col-12">
                         <h4>{{ $training_data->title }}</h4>
                     </div>
                     <div class="col-md-12 col-12">
                         @if($training_data->status ==1)
-                            <p style="text-align: justify;">
-                                <h5><span class="badge badge-pill badge-success"><a href="{{ $training_data->ext_reg }}"> Registration is Ongoing</a></span></h5><br><a href="{{ $training_data->ext_reg }}"> Click to register now to join the training!</a>
+                            <p style="text-align: justify;" class="pb-1">
+                                <h5><span class="badge badge-pill badge-success"><a href="{{ $training_data->ext_reg }}"> Registration is Ongoing</a></span></h5><br><a href="{{ $training_data->ext_reg }}" class="btn btn-primary btn-xs blinking-button" style="padding: 3px 5px; color:white;">APPLY NOW!</a>
+                                
+                                
                             </p>
-                            @else
+                        @else
                                 <p style="text-align: justify;">
                                 <h5><span class="badge badge-pill badge-primary">Registration is Onhold</span></h5>
                             </p>
-                            @endif 
+                        @endif 
                     </div>
                 	
                     <div class="col-md-12" align="center">
@@ -134,6 +151,10 @@
                                 </p>
                         </div> -->
                     </div>
+                    <div class="pt-4">
+                        <a href="{{ $training_data->ext_reg }}"><button class="btn btn-primary blinking-button">APPLY NOW!</button></a> 
+                    </div>
+                    
                     <br>
                 </div>
                 <!-- End Choose Left -->

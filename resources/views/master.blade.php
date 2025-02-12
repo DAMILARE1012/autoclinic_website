@@ -8,7 +8,7 @@
 <body>
 
     <!-- Preloader -->
-    <div class="preloader">
+    <!-- <div class="preloader">
         <div class="loader">
             <div class="loader-outter"></div>
             <div class="loader-inner"></div>
@@ -20,7 +20,7 @@
                 </svg>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Preloader -->
 
     <!-- Get Pro Button -->

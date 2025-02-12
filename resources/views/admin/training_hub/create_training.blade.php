@@ -27,9 +27,27 @@
             <label for="exampleInputName1">Training Title</label>
             <input type="text" class="form-control" value="{{ old('title') }}" name="title" id="exampleInputName1" placeholder="Training Title" required>
             <label for="exampleInputName1">Training Requirements</label>
-            <input type="text" class="form-control" value="{{ old('requirement') }}" name="requirement" id="exampleInputName1" placeholder="Training Requirements" required>
+            
+              <textarea id="tiny12" name="requirement">
+                {{ old('requirement') }}
+              </textarea>
+              <script>
+                tinymce.init({
+                  selector: 'textarea#tiny12'
+                });
+              </script>
+
             <label for="exampleInputName1">Training Routine</label>
-            <input type="text" value="{{ old('routine') }}" class="form-control" name="routine" id="exampleInputName1" placeholder="Training Routine" required>
+            
+              <textarea id="tiny11" name="routine">
+                {{ old('routine') }}
+              </textarea>
+              <script>
+                tinymce.init({
+                  selector: 'textarea#tiny11'
+                });
+              </script>
+
             <label for="exampleInputName1">Training Description</label>
             
               <textarea id="tiny2" name="description">
