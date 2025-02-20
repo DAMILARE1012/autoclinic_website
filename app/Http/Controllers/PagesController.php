@@ -15,6 +15,8 @@ use App\About;
 use Response;
 use App\Traininghub;
 use App\Service;
+use App\Program;
+use App\Option;
 use App\TrainerStudent;
 
 class PagesController extends Controller
@@ -65,13 +67,22 @@ class PagesController extends Controller
         $register = Register::first();
         $trainer = TrainerStudent::where('who', '=', 0)->get();
         $student = TrainerStudent::where('who', '=', 1)->get();
-        return view('pages.training', compact('register', 'ourTrainings', 'traininghub', 'trainer', 'student', 'archiveTrainings'));
+        $programs = Program::with('options')->get();
+        return view('pages.training', compact('register', 'ourTrainings', 'traininghub', 'trainer', 'student', 'archiveTrainings', 'programs'));
     }
 
     public function ourTrainings_show($singletraining)
     {
         $training_data = Singletraining::find($singletraining);   
         return view('pages.singleTraining', compact('training_data'));
+    }
+
+    // Options
+
+    Public function option($id){
+
+        $option_data = Option::find($id);  
+        return view('pages.option', compact('option_data'));
     }
 
     public function getInventory(){

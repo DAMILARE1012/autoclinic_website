@@ -2671,6 +2671,23 @@ ol {
 }
 
 /*======================================
+    Program CSS
+========================================*/ 
+.option-item {  
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */  
+}  
+
+.option-item:hover {  
+    background-color: #f0f0f0; /* Change background color on hover */  
+    color: #007bff; /* Change text color on hover (Bootstrap primary color) */  
+}  
+
+.card:hover {  
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);  /* Shadow on hover to indicate it's clickable */  
+}  
+
+
+/*======================================
     Newsletter CSS
 ========================================*/
 .newsletter-area {

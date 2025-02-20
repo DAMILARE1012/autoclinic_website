@@ -22,6 +22,7 @@
 
  <!-- Bootstrap CSS -->
  <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+ <link href="{{ asset('bootstrap-icons/bootstrap-icons.css')}}" rel="stylesheet">
 
  <!-- Nice Select CSS -->
  <link rel="stylesheet" href="{{ asset('css/nice-select.css') }}">

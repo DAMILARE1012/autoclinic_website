@@ -26,6 +26,7 @@ Route::get('gallery', "PagesController@getGallery")->name('gallery');
 Route::get('reviews', "ReviewController@index")->name('reviews');
 Route::post('post/reviews', "ReviewController@store")->name('store.review');
 Route::post('our_training/form','PagesController@downloadForm')->name('download.form');
+Route::get('/our_trainings/program/option/{id}', 'PagesController@option')->name('option');
 
 //admin
 Auth::routes();
@@ -80,6 +81,27 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/training_hub/trainer_student/edit/{id}', 'TrainerStudentController@edit')->name('edit.trainer_student');
     Route::post('/training_hub/trainer_student/update/{id}', 'TrainerStudentController@update')->name('update.trainer_student');
     Route::get('/training_hub/trainer_student/delete/{id}', 'TrainerStudentController@destroy')->name('delete.trainer_student');
+
+    // programs
+
+    Route::resource('programs', ProgramController::class);
+    Route::resource('options', OptionController::class);
+
+    Route::get('/programs', 'ProgramController@index')->name('programs');
+    Route::get('/program/create', 'ProgramController@create')->name('program.create'); 
+    Route::post('/program/store', 'ProgramController@store')->name('store.program');
+    Route::get('/program/{id}', 'ProgramController@show')->name('show.program');
+    Route::get('/program/edit/{id}', 'ProgramController@edit')->name('edit.program');
+    Route::post('/program/update/{id}', 'ProgramController@update')->name('update.program');
+    Route::get('/program/delete/{id}', 'ProgramController@destroy')->name('delete.program');
+
+    // Program options
+    Route::get('/option/create', 'OptionController@create')->name('option.create'); 
+    Route::post('/option/store', 'OptionController@store')->name('store.option');
+    Route::get('/option/{id}', 'OptionController@show')->name('show.option');
+    Route::get('/option/edit/{id}', 'OptionController@edit')->name('edit.option');
+    Route::post('/option/update/{id}', 'OptionController@update')->name('update.option');
+    Route::get('/option/delete/{id}', 'OptionController@destroy')->name('delete.option');
     
     //Admin Inventory
     Route::get('/inventory', 'InventoryController@index')->name('inventory');

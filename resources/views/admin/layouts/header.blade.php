@@ -115,6 +115,21 @@
           <li class="nav-item">
             <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
               <i class="ti-comments-smiley menu-icon"></i>
+              <span class="menu-title">Programs</span>
+              <i class="menu-arrow"></i>
+            </a>
+            <div class="collapse" id="auth">
+              <ul class="nav flex-column sub-menu">
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.programs') }} ">Programs</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.program.create') }} ">Add Program</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.option.create') }} ">Add Option</a></li>
+              </ul>
+            </div>
+          </li>
+
+          <li class="nav-item">
+            <a class="nav-link" data-toggle="collapse" href="#auth" aria-expanded="false" aria-controls="auth">
+              <i class="ti-comments-smiley menu-icon"></i>
               <span class="menu-title">Customer Review</span>
               <i class="menu-arrow"></i>
             </a>

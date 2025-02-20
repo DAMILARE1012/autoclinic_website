@@ -75,6 +75,48 @@
                         </div>
                     </div>
                     <br>
+                    <!-- project start -->
+                    <h3>Our Projects</h3>   
+                    <div class="container mt-4">  
+                        <div class="row">  
+                            @foreach($programs as $program)  
+                            <div class="col-md-4 pb-2">  
+                                <div class="card"   
+                                        data-toggle="collapse"   
+                                        data-target="#collapseCard{{$program->id}}"   
+                                        aria-expanded="false"   
+                                        aria-controls="collapseCard{{$program->id}}"  
+                                        style="cursor: pointer;">  <!-- Change cursor to pointer -->  
+                                        
+                                    <img src="{{ asset('/img/programs/'.$program->img ) }}" class="card-img-top" alt="Image of {{ $program->name }}" style="cursor: pointer;">  <!-- Change cursor for image -->  
+                                    
+                                    <div class="card-body">  
+                                        <h6 class="card-title">{{ $program->name }}</h6>  
+                                        <span><em> Click to see courses!</em></span>  
+                                    </div>  
+                                </div>  
+                                <div class="collapse" id="collapseCard{{$program->id}}">  
+                                    <div class="card card-body">  
+                                        <ul class="list-group">  
+                                            @if($program->options->isEmpty())  
+                                                <p>No Course available for this program.</p>  
+                                            @else  
+                                                @foreach($program->options as $option)  
+                                                <a href="{{ route('option',$option->id) }}"><li class="list-group-item option-item">{{ $option->title }}</li></a>   <!-- Add a class for options -->  
+                                                @endforeach  
+                                            @endif   
+                                        </ul>                 
+                                    </div>  
+                                </div>  
+                            </div>  
+                            @endforeach  
+                        </div>  
+                    </div>  
+                    <br>
+                
+                    <!-- project section ends -->
+
+                    <!-- Our Trainings start -->
                     <h3>Our Trainings</h3> 
                     <div class="row">
                         
@@ -100,6 +142,7 @@
                             </div>
                         @endif
                     </div>
+                    <!-- Our trainings end -->
                     
                     <h3>Trainings/Faculty Members</h3>
                     <br>
