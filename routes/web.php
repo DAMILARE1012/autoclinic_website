@@ -27,6 +27,9 @@ Route::get('reviews', "ReviewController@index")->name('reviews');
 Route::post('post/reviews', "ReviewController@store")->name('store.review');
 Route::post('our_training/form','PagesController@downloadForm')->name('download.form');
 Route::get('/our_trainings/program/option/{id}', 'PagesController@option')->name('option');
+ // Apply
+ Route::get('/program/apply', 'PagesController@apply')->name('apply');
+ Route::post('/program/apply_form', 'PagesController@applyform')->name('apply.form');
 
 //admin
 Auth::routes();
@@ -102,6 +105,7 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::get('/option/edit/{id}', 'OptionController@edit')->name('edit.option');
     Route::post('/option/update/{id}', 'OptionController@update')->name('update.option');
     Route::get('/option/delete/{id}', 'OptionController@destroy')->name('delete.option');
+
     
     //Admin Inventory
     Route::get('/inventory', 'InventoryController@index')->name('inventory');

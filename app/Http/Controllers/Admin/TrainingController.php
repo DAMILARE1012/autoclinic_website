@@ -249,7 +249,7 @@ class TrainingController extends Controller
     {
         // $unique = strtolower(str_random(10));
         $this->validate($request, [
-            'name' => 'required',
+            'name' => 'required|string|max:255',
 
         ]);
 

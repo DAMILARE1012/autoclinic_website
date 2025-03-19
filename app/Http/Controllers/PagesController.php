@@ -85,6 +85,10 @@ class PagesController extends Controller
         return view('pages.option', compact('option_data'));
     }
 
+    public function apply(){
+        return view ('pages.apply');
+    }
+
     public function getInventory(){
         $inventory = DB::table('inventories')->orderBy('created_at', 'desc')->get();
         return view('pages.inventory', compact('inventory'));
@@ -123,5 +127,26 @@ class PagesController extends Controller
 
         }
         
+        
+    }
+
+    public function applyForm(Request $request)
+    {
+        $validated = $request->validate([
+            'name' => 'required|string|max:255',
+            'code' => 'required|string|max:255',
+        ]);
+        // Check if the name and code exist in the database
+        $training = Training::where('name', $validated['name'])
+                             ->where('code', $validated['code'])
+                             ->first();
+
+        if ($training) {
+            // Redirect to the Google Form link
+            return redirect('https://docs.google.com/'); // Replace with your actual Google Form link
+        } else {
+            // Show an error message
+            return redirect()->back()->withErrors(['invalid' => 'Invalid name or code. Please try again.']);
+        }
     }
 }

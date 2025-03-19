@@ -117,7 +117,7 @@
                         <h5>{{ $option_data->title }}</h5>
                     </div>
 
-                    <a href="{{ strpos($option_data->reg_link, 'http') === 0 ? $option_data->reg_link : 'https://' . $option_data->reg_link }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xs blinking-button" style="padding: 3px 5px; color:white;">
+                    <a href="{{ route('apply') }} " target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xs blinking-button" style="padding: 3px 5px; color:white;">
                         APPLY NOW!
                       </a>
 
@@ -256,7 +256,7 @@
                     </div>
 
                     <div class="pt-4">
-                        <a href="{{ strpos($option_data->reg_link, 'http') === 0 ? $option_data->reg_link : 'https://' . $option_data->reg_link }}" target="_blank" rel="noopener noreferrer">
+                        <a href="{{ route('apply') }}" target="_blank" rel="noopener noreferrer">
                             <button class="btn btn-primary blinking-button">APPLY NOW!</button>
                           </a>
                     </div>
