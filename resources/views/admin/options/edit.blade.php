@@ -122,6 +122,11 @@
                   selector: 'textarea#tiny08'
                 });
               </script>
+
+            <div class="form-group">
+            <label for="exampleInputName1">Registeration Link</label>
+            <input type="text" class="form-control" value="{{ $option->reg_link }}" name="reg_link" id="exampleInputName1" placeholder="registration link" required>
+          </div>
           
           <div class="form-group">
             <div class="row">

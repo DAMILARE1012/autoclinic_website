@@ -152,6 +152,24 @@
                       </div>
                     </div>
                     <br>
+
+                    <div class="row">
+                      <div class="col-md-12">
+                          <strong><h4>Registration Link</h4></strong>     
+                      </div>                      
+                  </div>                       
+                  <div class="card">                   
+                      <div class="col-md-8">
+                          <div class="card-body my-3">
+                              <p>
+                                  <a href="{{ strpos($option_data->reg_link, 'http') === 0 ? $option_data->reg_link : 'https://' . $option_data->reg_link }}" target="_blank" rel="noopener noreferrer">
+                                    {!! $option_data->reg_link !!} 
+                                  </a> 
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+                    <br>
                     
                   </div>
                 </div>

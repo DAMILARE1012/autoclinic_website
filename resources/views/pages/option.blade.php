@@ -116,7 +116,11 @@
                     <div class="col-md-12 col-12 py-3">
                         <h5>{{ $option_data->title }}</h5>
                     </div>
-                	
+
+                    <a href="{{ strpos($option_data->reg_link, 'http') === 0 ? $option_data->reg_link : 'https://' . $option_data->reg_link }}" target="_blank" rel="noopener noreferrer" class="btn btn-primary btn-xs blinking-button" style="padding: 3px 5px; color:white;">
+                        APPLY NOW!
+                      </a>
+
                     <div class="col-md-12 pb-1" align="center">
                         <img src="{{ asset('img/options/'.$option_data->img) }}" class="img-fluid">
                         <hr>
@@ -210,7 +214,7 @@
                                       <div class="collapse" id="collapse5" aria-labelledby="heading5" data-parent="#faqAccordion">
                                         <div class="card-body">
                                             <p>
-                                                {!! $option_data->routine !!}
+                                                {!! $option_data->duration !!}
                                             </p>
                                         </div>
                                       </div>
@@ -251,9 +255,11 @@
                         </div>
                     </div>
 
-                    <!-- <div class="pt-4">
-                        <a href="{{ $option_data->ext_reg }}"><button class="btn btn-primary blinking-button">APPLY NOW!</button></a> 
-                    </div> -->
+                    <div class="pt-4">
+                        <a href="{{ strpos($option_data->reg_link, 'http') === 0 ? $option_data->reg_link : 'https://' . $option_data->reg_link }}" target="_blank" rel="noopener noreferrer">
+                            <button class="btn btn-primary blinking-button">APPLY NOW!</button>
+                          </a>
+                    </div>
                     
                     <br>
                 </div>

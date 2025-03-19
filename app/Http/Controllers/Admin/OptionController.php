@@ -53,6 +53,7 @@ class OptionController extends Controller
             'routine' => 'nullable|string',
             'cost' => 'nullable|string',
             'duration' => 'nullable|string',
+            'reg_link' => 'nullable|string',
             'img' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
         ]);
 
@@ -75,6 +76,7 @@ class OptionController extends Controller
         $option->routine = $request->routine;
         $option->cost = $request->cost;
         $option->duration = $request->duration;
+        $option->reg_link = $request->reg_link;
         $option->img = $name;
 
         $option->save(); 
@@ -129,6 +131,7 @@ class OptionController extends Controller
             'routine' => 'nullable|string',
             'cost' => 'nullable|string',
             'duration' => 'nullable|string',
+            'reg_link' => 'nullable|string',
             'img' => 'image|mimes:jpeg,png,jpg,gif|max:2048'
 
         ]);
@@ -154,6 +157,7 @@ class OptionController extends Controller
         $option->cost = $request->cost;
         $option->duration = $request->duration;
         $option->program_id = $request->program_id;
+        $option->reg_link = $request->reg_link;
         $option->save();
 
         return redirect()->route('admin.show.program', ['id' => $option->program_id])->with('success', 'Option updated successfully.');

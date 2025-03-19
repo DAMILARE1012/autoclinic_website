@@ -26,7 +26,7 @@
           @csrf
           <div class="form-group">
             <label for="exampleInputName1">Program</label>
-            <select name="program_id" id="program_id" class="form-control" required>
+            <select name="program_id" id="program_id" value="{{ old('program_id') }}" class="form-control" required>
                 <option value="">Select a Program</option>
                 @foreach($programs as $program)
                     <option value="{{ $program->id }}">{{ $program->name }}</option>
@@ -36,7 +36,7 @@
 
           <div class="form-group">
             <label for="exampleInputName1">Option Title</label>
-            <input type="text" class="form-control" name="title" id="exampleInputName1" placeholder="Title" required>
+            <input type="text" value="{{ old('title') }}" class="form-control" name="title" id="exampleInputName1" placeholder="Title" required>
           </div>
 
           <label for="exampleInputName1 px-1">Introduction</label>
@@ -120,6 +120,11 @@
                   selector: 'textarea#tiny08'
                 });
               </script>
+
+            <div class="form-group">
+            <label for="exampleInputName1">Registration link</label>
+            <input type="text" value="{{ old('reg_link') }}" class="form-control" name="reg_link" id="exampleInputName1" placeholder="registration link" required>
+          </div>
           
           <div class="form-group">
             <label>Image upload</label>

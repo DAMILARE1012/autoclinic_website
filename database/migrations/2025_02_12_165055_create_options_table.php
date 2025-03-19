@@ -25,6 +25,7 @@ class CreateOptionsTable extends Migration
             $table->text('routine')->nullable();
             $table->string('cost')->nullable();
             $table->text('duration')->nullable();
+            $table->string('reg_link')->nullable();
             $table->string('img')->nullable();
 
             $table->timestamps();
