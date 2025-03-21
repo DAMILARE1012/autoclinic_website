@@ -17,6 +17,7 @@ use App\Traininghub;
 use App\Service;
 use App\Program;
 use App\Option;
+use App\Apply;
 use App\TrainerStudent;
 
 class PagesController extends Controller
@@ -86,7 +87,8 @@ class PagesController extends Controller
     }
 
     public function apply(){
-        return view ('pages.apply');
+        $apply = Apply::first();
+        return view ('pages.apply', compact('apply'));
     }
 
     public function getInventory(){
@@ -132,6 +134,7 @@ class PagesController extends Controller
 
     public function applyForm(Request $request)
     {
+        $apply = Apply::first();
         $validated = $request->validate([
             'name' => 'required|string|max:255',
             'code' => 'required|string|max:255',
@@ -143,7 +146,7 @@ class PagesController extends Controller
 
         if ($training) {
             // Redirect to the Google Form link
-            return redirect('https://docs.google.com/'); // Replace with your actual Google Form link
+            return redirect($apply->link); // Replace with your actual Google Form link
         } else {
             // Show an error message
             return redirect()->back()->withErrors(['invalid' => 'Invalid name or code. Please try again.']);

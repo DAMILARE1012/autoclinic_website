@@ -34,30 +34,7 @@
                         
                         <div class="col-md-8">
                             <h3>Registration Procedure</h3>
-                            {{-- <span class="badge badge-pill badge-success">Registration is Ongoing </span>
-                            <span class="badge badge-pill badge-danger">Registration is On Hold </span> --}}
-                                <p style="text-align: justify;">
-                                   <strong>You can register for the program by:</strong>
-                                   <br><br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Visiting our Admission Department at the training center in person
-                                <br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Obtain APPLICATION/REGISTRATION FORM for N5, 000.00
-                                <br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Complete the registration forms and submit the form at the training center before the training commencement date.<br>
-                                <strong>Or</strong> 
-                                <br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Make the sum of N5,000.00 payment for APPLICATION/REGISTRATION FORM to the following Account details:<br><strong><br>
-                                Account Name:AUTO CLINIC CENTRE LTD<br> 
-                                Account Number:0087195294<br>
-                                Bank:Diamond-Access  </strong><br><br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Contact the <strong>School Admin</strong> on <strong>07037110944</strong>  for <strong>Application Number</strong><br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Download the <strong>APPLICATION/REGISTRATION FORM</strong> from the Training Hub of the company website using your application number.<br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Complete the Forms and submit to Admission Department at the training center before the training commencement date.<br>
-                                <i class="fas fa-hand-point-right" aria-hidden="true"></i> Present your proof of payment to the account department at the institute.<br>
-
-                                <strong>Upon completion of this process, you will receive a notification/confirmation and call from the Academic Advisor of the institute detailing your admission status, advice, resumption date and other vital information.</strong>
- 
-                                </p>
+                                {!! $apply->procedure  !!}
                         </div>
                     </div>
                     <div class="row">

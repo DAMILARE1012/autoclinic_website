@@ -11,6 +11,7 @@ use App\Register;
 use App\Singletraining;
 use App\Traininghub;
 use Image;
+use Illuminate\Support\Str;
 
 class TrainingController extends Controller
 {
@@ -68,7 +69,7 @@ class TrainingController extends Controller
     public function students()
     {
         $register= Register::first();
-        $training= Training::all();
+        $training= Training::orderBy('created_at', 'desc')->get();
         return view('admin.training_hub.hub', compact('training', 'register'));
     }
 

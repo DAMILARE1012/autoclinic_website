@@ -123,6 +123,7 @@
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.programs') }} ">Programs</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.program.create') }} ">Add Program</a></li>
                 <li class="nav-item"> <a class="nav-link" href="{{ route('admin.option.create') }} ">Add Option</a></li>
+                <li class="nav-item"> <a class="nav-link" href="{{ route('admin.apply') }} ">Reg Procedure</a></li>
               </ul>
             </div>
           </li>

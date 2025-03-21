@@ -106,6 +106,10 @@ Route::group(['as' => 'admin.', 'prefix' => 'admin', 'namespace' => 'Admin', 'mi
     Route::post('/option/update/{id}', 'OptionController@update')->name('update.option');
     Route::get('/option/delete/{id}', 'OptionController@destroy')->name('delete.option');
 
+    //Apply
+    Route::get('/apply', 'ApplyController@index')->name('apply');
+    Route::get('/apply/edit/{id}', 'ApplyController@edit')->name('apply.edit');
+    Route::post('/apply/update/{id}', 'ApplyController@update')->name('apply.update');  
     
     //Admin Inventory
     Route::get('/inventory', 'InventoryController@index')->name('inventory');
